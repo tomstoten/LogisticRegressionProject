@@ -1,5 +1,95 @@
 ---
-title: "Report"
-output: html_document
+output:
+  bookdown::pdf_document2:
+    toc: false
+    number_sections: false
+documentclass: article
+geometry: margin=0.95in
+classoption:
+- twocolumn
+bibliography: Approximations.bib
+csl: alex_vancouver.csl
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(dplyr)
+library(kableExtra) # load for tables
+
+clinicalData <- read.csv("clinical_and_imaging_info.csv") %>% 
+  mutate(
+    pcr = replace_na(pcr, replace=0)
+  )
+relevantData <- clinicalData %>% 
+  select(
+    pcr,
+    bilateral_breast_cancer,
+    multifocal_cancer,
+    hr, er, pr, her2,
+    nottingham_grade,
+    tumor_subtype,
+    age, weight, bmi_group,
+    menopause, ethnicity
+  )
+
+# Encode clinical variables using one-hot for categorical data
+```
+
+<!-- Title here: -->
+
+# \textit{Predicting Pathologic Complete Response from Clinical Variables}
+
+<!-- Name here: -->
+
+Tom Stoughton, MS Candidate[^1]
+
+[^1]: Department of Biostatistics and Informatics, Colorado School of Public Health, University of Colorado Anschutz Medical Campus, Aurora, CO
+
+## Abstract
+
+...
+
+*Keywords: Pathologic Complete Response, Breast Cancer, Logistic Regression, *
+
+## Introduction
+
+De Moivre (1738)[@de1738doctrine]
+
+## Motivating Problem
+
+...
+
+## Methods
+
+... logistic regression yes...
+
+## Results
+
+...
+
+## Conclusion
+
+...
+
+<!-- The code below creates a new page with a single column for your references and code used in the manuscript -->
+
+\newpage
+\onecolumn
+
+## References
+
+\vspace{2mm}
+
+<!-- Remove the following line of code if not using a .bib file to generate references -->
+
+::: {#refs}
+:::
+
+## Code Appendix
+
+<!-- The following code pulls all your code chunks from the paper and puts them here at the end (so you can keep "echo=F" in the code chunks above but they still appear here) -->
+
+```{r, ref.label=knitr::all_labels(), echo=TRUE, eval=FALSE}
+```
