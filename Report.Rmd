@@ -6,13 +6,13 @@ output:
 documentclass: article
 geometry: margin=0.95in
 classoption:
-- onecolumn
+- twocolumn
 bibliography: mama-mia.bib
 csl: alex_vancouver.csl
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = F, include=F)
+knitr::opts_chunk$set(echo = F)
 
 library(tidyverse)
 library(dplyr)
@@ -23,6 +23,7 @@ library(ggplot2)
 library(pROC)
 library(precrec)
 library(mice)
+library(ggtext)
 
 clinicalData <- read.csv("clinical_and_imaging_info.csv") %>% 
   mutate(
@@ -135,17 +136,23 @@ To maintain the integrity and statistical power of the 1,506-patient sample, Mul
 
 ## Methods
 
-We employed a logistic regression framework to model the probability of pCR. The general form of the
-model is:
-logit(P(pCR = 1)) = β0
- + β1X1
- + β2X2
- + ... + βkXk
-Where logit(p) = ln(p / (1-p)). We evaluated three distinct model parameters:
-Model 1 (Baseline): Clinical features (Subtype, HER2, BMI, Menopause, Multifocality).
-Model 2 (Demographic): Clinical features + Age and Ethnicity.
-Model 3 (Treatment): All previous features + specific Chemotherapy Agents (e.g.,
-Pembrolizumab, Carboplatin).
+The statistical analysis was conducted using a series of nested logistic regression models designed to evaluate the incremental predictive value of clinical, demographic, and therapeutic variables on the probability of achieving pathologic complete response (pCR). Missing data were addressed using Multivariate Imputation by Chained Equations (MICE) with $m=10$ imputations. This approach was selected to preserve the statistical power of the 1,506-patient cohort, particularly for the menopause variable which was missing approximately 33% of its labels. The quality of the imputation was optimized by utilizing the biological correlation between age and menopausal status within the chained equations.  The modeling strategy was divided into three distinct stages:
+
+### Model 1: Baseline Clinical Features
+
+The initial model focused exclusively on the biological and structural characteristics of the tumor observed at the time of diagnosis. Variables included tumor subtype, HER2 status, multifocality, and bilateral disease. These were selected as the primary predictors because they define the inherent aggressiveness and molecular landscape of the cancer, which traditionally dictate chemotherapy sensitivity. Inclusion of multifocal and bilateral status allowed the model to account for the physical extent of disease, which often complicates the attainment of a complete pathologic response.
+
+### Model 2: Demographic Integration
+
+The second model expanded upon the baseline by incorporating age, ethnicity, and BMI categories. The inclusion of age and ethnicity was critical for adjusting for potential confounding; for instance, the significance of the Luminal subtype only emerged after adjusting for age, suggesting that age-related trends previously masked the independent impact of hormone-receptor-positive biology. BMI was included to account for the "U-curve" significance observed in clinical outcomes, where both underweight and overweight statuses were significant predictors compared to normal-weight counterparts, potentially reflecting differences in drug metabolism or underlying systemic inflammation.
+
+### Model 3: Therapeutic Agents
+
+The final model added granularity by including specific neoadjuvant chemotherapy (NAC) agents, such as Pembrolizumab, Carboplatin, and Trastuzumab. These variables were included to determine if the predictive signal of molecular subtypes, particularly Triple Negative (TNBC), was independent of the treatments administered. This model served a mechanistic purpose: to demonstrate how specific high-impact interventions mediate the biological advantages of certain subtypes. While this model provides the highest statistical performance, it was compared against the preceding models to highlight the clinical importance of making diagnostic decisions before a treatment regimen is initiated.  The general form of the logistic regression used for each stage is:
+
+$$ \text{logit}(P(\text{pCR} = 1)) = \beta_0 + \beta_1X_1 + \beta_2X_2 + \dots + \beta_kX_k $$
+
+where the intercept $\beta_0$ represents the baseline log-odds of response for a reference patient, and the coefficients $\beta_k$ represent the change in log-odds associated with each predictor. Model selection and comparison were performed using Akaike Information Criterion (AIC) and Precision-Recall (PR) curves to evaluate the clinical trade-off between model complexity and predictive utility. 
 
 ```{r read-processed-data}
 data <- read.csv("./processedData.csv")
@@ -153,27 +160,25 @@ dataNoMissing <- data %>% drop_na()
 
 ```
 
+
 ```{r mice, cache=T, results='hide', message=F, warning=F}
-# Impute the missing data (m=5 creates 5 versions of the data)
+# Impute the missing data with Multiple Imputations by Chained Equations (MICE)
 data_for_imputation <- data %>%
   mutate(across(where(is.character), as.factor)) %>%
   select(-starts_with("agent_"))
 
-# 2. Initialize the setup without running the iterations yet
+# We need to remove patient id as a predictor for MICE
 ini <- mice(data_for_imputation, maxit = 0)
 
-# 3. Modify the Predictor Matrix
 # Setting a column to 0 in the predictorMatrix means it won't be used to predict anything else
 pred <- ini$predictorMatrix
 pred[, "patient_id"] <- 0  # patient_id will not be used as a predictor
 pred["patient_id", ] <- 0  # patient_id itself will not be imputed
 
-# 4. Modify the Method
 # Setting the method to "" tells mice to ignore this column during the math
 meth <- ini$method
 meth["patient_id"] <- ""
 
-# 5. Run the actual imputation with these settings
 imputed_data <- mice(data_for_imputation, 
                      m = 10, 
                      method = meth, 
@@ -193,25 +198,6 @@ pooled_results1 <- pool(fit1)
 
 ```
 
-```{r clinical-results, include=T}
-reg_table_data <- summary(pooled_results1) %>%
-  mutate(across(where(is.numeric), ~ round(.x, 3))) %>%
-  rename(Variable = term, P_Value = p.value)
-
-# 2. Identify rows where p-value < 0.05
-sig_rows <- which(reg_table_data$P_Value < 0.05)
-
-# 3. Create the table
-reg_table_data %>%
-  kbl(caption = "Model 1: Pooled Logistic Regression",
-      booktabs = TRUE) %>%
-  kable_styling(bootstrap_options = c("striped", "hover"), 
-                full_width = FALSE, 
-                latex_options = "HOLD_position") %>%
-  row_spec(sig_rows, bold = TRUE) %>% # Bolds significant predictors like Pembrolizumab
-  column_spec(1, italic = TRUE)
-
-```
 
 ```{r logistic-regression-demographic}
 # Run your logistic regression on all 5 datasets and pool the results
@@ -223,28 +209,9 @@ pooled_results2 <- pool(fit2)
 
 ```
 
-```{r demographic-results, include=T}
-reg_table_data <- summary(pooled_results2) %>%
-  mutate(across(where(is.numeric), ~ round(.x, 3))) %>%
-  rename(Variable = term, P_Value = p.value)
-
-# 2. Identify rows where p-value < 0.05
-sig_rows <- which(reg_table_data$P_Value < 0.05)
-
-# 3. Create the table
-reg_table_data %>%
-  kbl(caption = "Model 2: Pooled Logistic Regression (with Demographics)",
-      booktabs = TRUE) %>%
-  kable_styling(bootstrap_options = c("striped", "hover"), 
-                full_width = FALSE, 
-                latex_options = "HOLD_position") %>%
-  row_spec(sig_rows, bold = TRUE) %>% # Bolds significant predictors like Pembrolizumab
-  column_spec(1, italic = TRUE)
-
-```
 
 ```{r logistic-regression-agent}
-# 1. Identify agent columns
+# Add NAC agent columns to the prediction, but don't include in imputation
 agents_to_join <- data %>% 
   mutate(.id = as.integer(row_number())) %>% 
   select(.id, starts_with("agent_"))
@@ -253,16 +220,18 @@ subset_long_data <- complete(imputed_data, action = "long", include = TRUE) %>%
   left_join(agents_to_join, by = ".id") %>%
   filter(dataset %in% c("ISPY2", "NACT")) %>%
   mutate(ethnicity = as.character(ethnicity),
-         # Group Hispanic into 'Other' or 'Caucasian' (or whatever your baseline is)
+         # Group Hispanic into 'Other' since it is sparse in this subset
          ethnicity = ifelse(ethnicity == "hispanic", "Other/Unknown", ethnicity),
          ethnicity = as.factor(ethnicity)) %>%
-  select(pcr, .imp, .id, everything()) %>% # Bring pcr to the front to be sure
-  mutate(.imp = as.integer(.imp), # as.mids often prefers integer .imp for indexing
+  select(pcr, .imp, .id, everything()) %>%
+  mutate(.imp = as.integer(.imp),
          .id = as.integer(.id))
 
 agent_cols <- names(subset_long_data)[grep("agent_", names(subset_long_data))]
 
-# 2. Calculate Correlation Matrix
+# Now we combine collinear agents so our model doesn't break
+
+# Calculate Correlation Matrix
 cor_matrix <- cor(subset_long_data[, agent_cols], use = "pairwise.complete.obs")
 
 processed <- c()
@@ -288,59 +257,35 @@ for (col in agent_cols) {
     processed <- c(processed, identical_cols)
     
   } else if (length(anti_cols) > 0) {
-    # Combine Anti-Collinearity (Mutually Exclusive)
-    # Name it: agent_DrugA_vs_DrugB
+    # Combine Anti-Collinearity
     new_name <- paste0(col, "_vs_", gsub("agent_", "", anti_cols[1]))
     
     collapsed_data <- collapsed_data %>%
-      mutate(!!new_name := get(col)) %>% # 1 = DrugA, 0 = DrugB
+      mutate(!!new_name := get(col)) %>%
       select(-all_of(c(col, anti_cols)))
     
     processed <- c(processed, col, anti_cols)
   }
 }
 
-# 3. Re-run MICE object creation
+# Now we can put the new columns into the pre-imputed datasets
 imputed_collapsed <- as.mids(collapsed_data)
-
-# 4. Update your formula and fit
 new_agent_vars <- names(collapsed_data)[grep("agent_", names(collapsed_data))]
 final_agent_vars <- new_agent_vars[!new_agent_vars %in% c("agent_fec100")]
 formula_str <- paste("pcr ~ bilateral_breast_cancer + multifocal_cancer + her2 + 
                      tumor_subtype + age + bmi_group + menopause + ethnicity +", 
                      paste(final_agent_vars, collapse = " + "))
 
+# Finally, fit the model
 fit3 <- with(imputed_collapsed, glm(as.formula(formula_str), family = binomial))
 pooled_results3 <- pool(fit3)
-
-```
-
-
-```{r agent-results, include=T}
-reg_table_data <- summary(pooled_results3) %>%
-  mutate(across(where(is.numeric), ~ round(.x, 3))) %>%
-  rename(Variable = term, P_Value = p.value)
-
-# 2. Identify rows where p-value < 0.05
-sig_rows <- which(reg_table_data$P_Value < 0.05)
-
-# 3. Create the table
-reg_table_data %>%
-  kbl(caption = "Model 3: Pooled Logistic Regression (Clinical + Treatment Agents)",
-      booktabs = TRUE) %>%
-  kable_styling(bootstrap_options = c("striped", "hover"), 
-                full_width = FALSE, 
-                latex_options = "HOLD_position") %>%
-  row_spec(sig_rows, bold = TRUE) %>% # Bolds significant predictors like Pembrolizumab
-  column_spec(1, italic = TRUE)
 
 ```
 
 ## Results
 
 ```{r auroc-average-1, results=F, include=T, message=F, width=8, height=8}
-# 1. Get predicted probabilities from each of the 5 models
-# This creates a matrix of probabilities (one column per imputation)
+
 predictions <- list()
 for(i in 1:imputed_data$m) {
   # Extract the i-th completed dataset
@@ -351,50 +296,19 @@ for(i in 1:imputed_data$m) {
                  bmi_group + her2 + tumor_subtype + menopause, 
                data = dat, family = binomial)
   
-  # Store the predicted probabilities
   predictions[[i]] <- predict(m_fit, type = "response")
 }
 
-# 2. Average the probabilities across the 5 imputations
 avg_probs_m1 <- rowMeans(as.data.frame(predictions))
 
-# 3. Calculate AUC using the actual 'pcr' values from any completed dataset 
-# (pcr is the same in all of them since it wasn't imputed)
 actual_pcr <- complete(imputed_data, 1)$pcr
-roc_curve <- roc(actual_pcr, avg_probs_m1)
-m1_auc <- pROC::auc(roc_curve)
-
-# 4. Results
-par(pty = "s") 
-
-# 2. Plot the ROC curve with your specific requirements
-plot(roc_curve, 
-     col = "brown1", 
-     lwd = 3,                       # Make the line thicker for readability
-     main = paste("Pooled AUC-ROC for Model 1:", round(m1_auc, 3)),
-     
-     # Axis Labels
-     xlab = "1-FPR",                # Your requested X-axis label
-     ylab = "TPR",                  # Your requested Y-axis label
-     
-     # Bounds and Scaling
-     xlim = c(1, 0),                # Standard ROC X-axis is 1 to 0 (FPR decreases)
-     ylim = c(0, 1),                # Y-axis bounds
-     
-     # Formatting
-     legacy.axes = TRUE,            # Ensures the X-axis goes from 0 to 1 if preferred
-     asp = 1,                       # Ensures an aspect ratio of 1 (strictly square)
-     grid = TRUE                    # Adds a grid for easier value reading
-)
-
-# 3. Reset the plot parameters to default for future plots
-par(pty = "m")
+roc_curve1 <- roc(actual_pcr, avg_probs_m1)
+m1_auc <- pROC::auc(roc_curve1)
 
 ```
 
 ```{r auroc-average-2, results=F, include=T, message=F, width=8, height=8}
-# 1. Get predicted probabilities from each of the 5 models
-# This creates a matrix of probabilities (one column per imputation)
+
 predictions <- list()
 for(i in 1:imputed_data$m) {
   # Extract the i-th completed dataset
@@ -406,54 +320,24 @@ for(i in 1:imputed_data$m) {
                   menopause + ethnicity, 
                data = dat, family = binomial)
   
-  # Store the predicted probabilities
   predictions[[i]] <- predict(m_fit, type = "response")
 }
 
-# 2. Average the probabilities across the 5 imputations
 avg_probs_m2 <- rowMeans(as.data.frame(predictions))
 
-# 3. Calculate AUC using the actual 'pcr' values from any completed dataset 
-# (pcr is the same in all of them since it wasn't imputed)
-actual_pcr <- complete(imputed_data, 1)$pcr
-roc_curve <- roc(actual_pcr, avg_probs_m2)
-m2_auc <- pROC::auc(roc_curve)
-
-# 4. Results
-par(pty = "s") 
-
-plot(roc_curve, 
-     col = "royalblue", 
-     lwd = 3,                       # Make the line thicker for readability
-     main = paste("Pooled AUC-ROC for Model 2:", round(m2_auc, 3)),
-     
-     # Axis Labels
-     xlab = "1-FPR",                # Your requested X-axis label
-     ylab = "TPR",                  # Your requested Y-axis label
-     
-     # Bounds and Scaling
-     xlim = c(1, 0),                # Standard ROC X-axis is 1 to 0 (FPR decreases)
-     ylim = c(0, 1),                # Y-axis bounds
-     
-     # Formatting
-     legacy.axes = TRUE,            # Ensures the X-axis goes from 0 to 1 if preferred
-     asp = 1,                       # Ensures an aspect ratio of 1 (strictly square)
-     grid = TRUE                    # Adds a grid for easier value reading
-)
-
-par(pty = "m")
+roc_curve2 <- roc(actual_pcr, avg_probs_m2)
+m2_auc <- pROC::auc(roc_curve2)
 
 ```
 
 ```{r auroc-average-3, results=F, include=T, message=F, width=8, height=8}
-predictions <- list()
 
+predictions <- list()
 for(i in 1:imputed_collapsed$m) {
   # Extract the i-th completed dataset (which already has agents and filtering)
   dat <- complete(imputed_collapsed, i)
   
   # Fit the treatment model (Model 3)
-  # We use the explicit variable list to ensure it matches your pooled summary
   m_fit <- glm(pcr ~ bilateral_breast_cancer + multifocal_cancer + 
                  her2 + tumor_subtype + age + bmi_group + 
                  menopause + ethnicity +
@@ -462,58 +346,61 @@ for(i in 1:imputed_collapsed$m) {
                  agent_trastuzumab + agent_neratinib + agent_abt_888_carboplatin + 
                  agent_pertuzumab + agent_taxane, 
                data = dat, family = binomial)
-  
-  # Store the predicted probabilities
   predictions[[i]] <- predict(m_fit, type = "response")
 }
 
-# 2. Average the probabilities across the 5 imputations
 avg_probs_m3 <- rowMeans(as.data.frame(predictions))
-
-# 3. Calculate AUC using the actual 'pcr' values from the subset
-# We pull pcr from the first imputation of the SUBSET
-actual_pcr <- complete(imputed_collapsed, 1)$pcr
-roc_curve_m3 <- roc(actual_pcr, avg_probs_m3)
-m3_auc <- pROC::auc(roc_curve_m3)
-
-# 4. Results
-par(pty = "s") 
-
-plot(roc_curve_m3, 
-     col = "darkgreen", 
-     lwd = 3,                       # Make the line thicker for readability
-     main = paste("Pooled AUC-ROC for Model 3:", round(m3_auc, 3)),
-     
-     # Axis Labels
-     xlab = "1-FPR",                # Your requested X-axis label
-     ylab = "TPR",                  # Your requested Y-axis label
-     
-     # Bounds and Scaling
-     xlim = c(1, 0),                # Standard ROC X-axis is 1 to 0 (FPR decreases)
-     ylim = c(0, 1),                # Y-axis bounds
-     
-     # Formatting
-     legacy.axes = TRUE,            # Ensures the X-axis goes from 0 to 1 if preferred
-     asp = 1,                       # Ensures an aspect ratio of 1 (strictly square)
-     grid = TRUE                    # Adds a grid for easier value reading
-)
-
-# 3. Reset the plot parameters to default for future plots
-par(pty = "m")
+actual_pcr_subset <- complete(imputed_collapsed, 1)$pcr
+roc_curve3 <- roc(actual_pcr_subset, avg_probs_m3)
+m3_auc <- pROC::auc(roc_curve3)
 
 ```
 
-```{r aic-plots}
-# --- STAGE 1: Identify the clinical Subset IDs ---
+The following sections detail the findings from our nested logistic regression analysis, transitioning from biological baseline predictors to treatment-specific interventions.
 
-# Extract the unique patient IDs from the ISPY2/NACT treatment subset
-# We pull from the first imputation since patient_id is consistent across all
+### Baseline and Demographic Predictors (Models 1 and 2)
+
+Initial analysis of the baseline clinical model revealed that HER2 status and Triple Negative (TNBC) subtype were the strongest positive predictors of pathologic complete response (pCR). Interestingly, BMI demonstrated a non-linear relationship; both underweight and overweight statuses were significant predictors of pCR compared to the normal-weight reference group, whereas the three obesity classes did not reach statistical significance.  Upon the inclusion of age and ethnicity in Model 2, the Luminal subtype emerged as a significant negative predictor ($p < 0.05$). This shift indicates that the baseline probability of response in hormone-receptor-positive patients was previously confounded by age-related demographic trends.  
+
+### Impact of Therapeutic Agents (Model 3)
+
+The inclusion of specific neoadjuvant chemotherapy (NAC) agents in Model 3 fundamentally shifted the model's behavior. Specifically, Triple Negative status lost its statistical significance once high-impact agents such as Pembrolizumab and Carboplatin were added. This "statistical attenuation" indicates that the predictive signal originally attributed to TNBC biology is largely mediated by the specific therapeutic interventions these patients receive.
+
+```{r roc-curves, fig.cap="ROC Curves Comparison", fig.width=5, fig.height=6}
+par(pty = "s") # Square plot area
+plot(roc_curve1, 
+     col = "brown1", 
+     lwd = 2, 
+     main = "ROC Comparison: Clinical Impact",
+     xlab = "1 - Specificity (FPR)", 
+     ylab = "Sensitivity (TPR)", 
+     grid = TRUE)
+
+# 2. Add the subsequent curves to the same plot
+lines(roc_curve2, col = "royalblue", lwd = 2)
+lines(roc_curve3, col = "darkgreen", lwd = 2)
+
+# 3. Add a legend to distinguish the models and show AUCs
+legend("bottomright", 
+       legend = c(paste("Model 1 (AUC =", round(m1_auc, 2), ")"),
+                  paste("Model 2 (AUC =", round(m2_auc, 2), ")"),
+                  paste("Model 3 (AUC =", round(m3_auc, 2), ")")),
+       col = c("brown1", "royalblue", "darkgreen"), 
+       lwd = 3, 
+       bty = "n",       # No border around legend
+       cex = 0.9)       # Slightly smaller font for the legend
+```
+
+As shown in Figure \ref{fig:roc-curves}, the predictive performance of the models improved incrementally with the addition of more granular data. Model 1 achieved an AUC of 0.70, which increased slightly to 0.71 in Model 2 upon the inclusion of demographic adjustments. Model 3 demonstrated the highest overall performance with an AUC of 0.74, suggesting that while treatment variables provide the most precise fit, the baseline clinical and demographic features capture the majority of the predictive signal for pathologic complete response.
+
+### Model Selection and Predictive Utility
+
+To evaluate the clinical trade-offs between these models, we compared their performance using Akaike Information Criterion (AIC) and Precision-Recall (PR) curves on a standardized patient subset ($N=1,044$). As show in \ref{fig:aic-plots}, Model 3 demonstrated the lowest mean AIC, confirming it as the most parsimonious model for explaining the variance in pCR outcomes. Furthermore, the PR curve analysis in \ref{fig:prec-recall} showed that the treatment-augmented model provided a distinct "lift" in precision, maintaining higher positive predictive values across various recall thresholds compared to the clinical-only models. However, as the baseline models maintained a competitive Area Under the ROC Curve (AUROC), they remain robust tools for initial screening.
+
+```{r aic-plots, fig.cap="Akaike Information Coefficient (AIC) Comparison", fig.height=8}
+# Refit models 1 and 2 on the subset of data to get fair AIC comparisons
 target_patient_ids <- complete(imputed_collapsed, 1)$patient_id
 
-# --- STAGE 2: Refit Models 1 & 2 using the patient_id filter ---
-
-# We refit on the full imputed_data object, but restrict it to the treatment IDs.
-# Note: 'with' automatically handles the looping through all 10 imputations.
 fit1_refit <- with(imputed_data, 
                    glm(pcr ~ multifocal_cancer + bilateral_breast_cancer + 
                        bmi_group + her2 + tumor_subtype + menopause, 
@@ -527,9 +414,6 @@ fit2_refit <- with(imputed_data,
                        subset = patient_id %in% target_patient_ids, 
                        family = binomial))
 
-# --- STAGE 3: Calculate the Valid AIC Comparison ---
-
-# We compare these refitted models to your Model 3 (fit3)
 aic_comparison <- data.frame(
   Model = c("Model 1 (Baseline)", "Model 2 (Demographic)", "Model 3 (Treatment)"),
   AIC = c(
@@ -539,83 +423,189 @@ aic_comparison <- data.frame(
   )
 )
 
-# --- STAGE 4: Plot the Standardized Comparison ---
+# Now plot the AICs on a bar chart
 ggplot(aic_comparison, aes(x = Model, y = AIC, fill = Model)) +
-  geom_bar(stat = "identity", width = 0.5, show.legend = FALSE) +
-  geom_text(aes(label = round(AIC, 1)), vjust = -0.5, fontface = "bold") +
-  theme_minimal() +
+  geom_bar(stat = "identity", width = 0.7, show.legend = FALSE) +
+  geom_text(aes(label = round(AIC, 1)), 
+            vjust = -0.5, 
+            fontface = "bold", 
+            size = 5.5) + 
+  theme_minimal(base_size = 15) + 
+  theme(
+    plot.title = element_text(face = "bold", size = 18, hjust = 0.5),
+    plot.subtitle = element_text(size = 13, hjust = 0.5, color = "grey30"),
+    axis.title.y = element_text(face = "bold", size = 14),
+    axis.text.x = element_text(face = "bold", size = 12),
+    panel.grid.major.x = element_blank(),
+    plot.margin = margin(10, 20, 10, 20)
+  ) +
   labs(title = "Model Selection: Standardized AIC Comparison",
        subtitle = paste0("N = ", length(target_patient_ids), " patients (ISPY2/NACT Subset)"),
        y = "Mean AIC",
        x = "") +
-  scale_color_manual(values = c("brown1", "royalblue", "darkgreen")) +
-  scale_fill_brewer(palette = "Set1")
+  scale_x_discrete(expand = expansion(mult = c(0.2, 0.2))) +
+  scale_y_continuous(expand = expansion(mult = c(0, 0.15))) + 
+  scale_fill_manual(values = c("brown1", "royalblue", "darkgreen"))
 ```
 
-```{r prec-recall, warning=F}
-# 1. Helper function to safely extract averaged probabilities from a 'mira' object
+
+```{r prec-recall, warning=F, message=F, echo=F, fig.cap="Precision Recall Curve Comparison", fig.height=5.5, fig.width=4.8}
+# Create Precision-Recall Curve
 get_avg_probs <- function(mira_fit) {
-  # Get the number of imputations (m)
   m_count <- length(mira_fit$analyses)
-  
-  # Extract predictions from each of the m models
   pred_list <- lapply(mira_fit$analyses, function(x) predict(x, type = "response"))
-  
-  # Average them across rows
   rowMeans(as.data.frame(pred_list))
 }
 
-# 2. Calculate probabilities for the two baseline models (Refit on Subset)
 avg_probs_m1 <- get_avg_probs(fit1_refit)
 avg_probs_m2 <- get_avg_probs(fit2_refit)
 
-# 3. Get the actual pCR values from the subset
-actual_pcr <- complete(imputed_collapsed, 1)$pcr
-
-# 4. Create the PR multi-plot object
 precrec_obj <- evalmod(
   scores = list(avg_probs_m1, avg_probs_m2, avg_probs_m3), 
-  labels = list(actual_pcr, actual_pcr, actual_pcr),
-  modnames = c("Model 1: Baseline", "Model 2: Demographic", "Model 3: Treatment")
+  labels = list(actual_pcr_subset, actual_pcr_subset, actual_pcr_subset),
+  modnames = c("Model 1", "Model 2", "Model 3")
 )
 
-# 5. Plot the Comparison
-autoplot(precrec_obj, curvetype = "PRC") +
-  theme_minimal() +
+# Plot the Comparison
+autoplot(precrec_obj, curvetype = "PRC", size = 1.2) +
+  theme_bw() +
+  coord_cartesian(expand = FALSE) + 
+  theme(
+    legend.position = "bottom",
+    legend.title = element_blank(),
+    text = element_text(size = 12),
+    plot.title = element_text(face = "bold", size = 14, hjust = 0.5),
+    plot.subtitle = element_text(hjust = 0.5, color = "grey30"),
+    panel.grid.minor = element_blank(),
+    axis.title = element_text(face = "bold"),
+    plot.margin = unit(c(0.2, 0.4, 0.1, 0.2), "cm") 
+  ) +
   scale_color_manual(values = c("brown1", "royalblue", "darkgreen")) +
-  labs(title = "Precision-Recall Comparison: Clinical Impact",
-       subtitle = "Evaluation of added predictive value on standardized subset",
-       x = "Recall (Sensitivity)",
-       y = "Precision (PPV)")
+  labs(
+    title = "Precision-Recall Comparison",
+    subtitle = "Standardized subset analysis (N=1,044)",
+    x = "Recall (Sensitivity)",
+    y = "Precision (PPV)"
+  )
 ```
 
-```{r forest-plot, warning=F}
-# 1. Get the pooled results into a standard dataframe
-pooled_df <- as.data.frame(summary(pool(fit3), conf.int = TRUE))
+### Clinical Significance of the Baseline Model
 
-# 2. Rename columns manually if they aren't standard
-# Depending on your mice version, column names might be 'estimate' or 'est'
-names(pooled_df)[names(pooled_df) == "estimate"] <- "est"
-names(pooled_df)[names(pooled_df) == "2.5 %"] <- "low"
-names(pooled_df)[names(pooled_df) == "97.5 %"] <- "high"
+Despite the slight performance advantages of Model 3, the results underscore the vital importance of the baseline and demographic models. While the treatment-inclusive model provides a refined retrospective view of response, the baseline model offers the highest utility for pre-treatment decision-making. By identifying patients with a low baseline probability of pCR before any agents are administered, clinicians can more accurately weigh the risks of chemotherapy toxicity against the likelihood of successful response.
 
-# 3. Exclude intercept and transform to Odds Ratios
-plot_data <- pooled_df[pooled_df$term != "(Intercept)", ]
-plot_data$OR <- exp(plot_data$est)
-plot_data$OR_low <- exp(plot_data$low)
-plot_data$OR_high <- exp(plot_data$high)
+```{r OR-plot, fig.cap="OR Comparison", fig.height=14, fig.width=7}
+# Helper function to extract and transform pooled results
+get_plot_data <- function(fit, model_name) {
+  df <- as.data.frame(summary(pool(fit), conf.int = TRUE))
+  df <- df[df$term != "(Intercept)", ]
+  data.frame(
+    term = df$term,
+    OR = exp(df$estimate),
+    low = exp(df$`2.5 %`),
+    high = exp(df$`97.5 %`),
+    Model = model_name
+  )
+}
 
-# 4. Generate the Forest Plot using standard ggplot2
-ggplot(plot_data, aes(x = reorder(term, OR), y = OR)) +
-  geom_hline(yintercept = 1, linetype = "dashed", color = "steelblue") +
-  geom_pointrange(aes(ymin = OR_low, ymax = OR_high), color = "darkgreen") +
+# Combine all three models
+plot_data_combined <- rbind(
+  get_plot_data(fit1_refit, "Model 1"),
+  get_plot_data(fit2_refit, "Model 2"),
+  get_plot_data(fit3, "Model 3")
+)
+
+plot_data_filtered <- plot_data_combined[
+  plot_data_combined$high < 50 & plot_data_combined$low > 0.02, 
+]
+
+plot_data_filtered <- plot_data_filtered %>%
+  mutate(term = recode(term,
+    "multifocal_cancer" = "Multif.",
+    "bilateral_breast_cancer" = "Bilat.",
+    "bmi_groupobesity_class_1" = "Ob. I",
+    "bmi_groupobesity_class_2" = "Ob. II",
+    "bmi_groupobesity_class_3" = "Ob. III",
+    "bmi_groupoverweight" = "Overw.",
+    "bmi_groupunderweight" = "Underw.",
+    "her2" = "HER2+",
+    "tumor_subtypeluminal" = "Luminal",
+    "tumor_subtypetriple_negative" = "TNBC",
+    "menopausepre" = "Pre-meno",
+    "age" = "Age",
+    "ethnicityamerican indian/alaska native" = "Na. Am./AK",
+    "ethnicityasian" = "Asian",
+    "ethnicitycaucasian" = "White",
+    "ethnicityhawaiian/pacific islander" = "Pac. Isl.",
+    "ethnicityhispanic" = "Hisp.",
+    "ethnicityOther/Unknown" = "Eth. Unk.",
+    "agent_paclitaxel" = "Pacli.",
+    "agent_ganitumab" = "Ganit.",
+    "agent_ganetespib" = "Ganet.",
+    "agent_mk_2206" = "MK-2206",
+    "agent_pembrolizumab" = "Pembr.",
+    "agent_amg_386" = "AMG-386",
+    "agent_trastuzumab" = "Trast.",
+    "agent_neratinib" = "Nerat.",
+    "agent_t_dm1" = "T-DM1",
+    "agent_pertuzumab" = "Pertu.",
+    "agent_anthracycline" = "Anthr.",
+    "agent_taxane" = "Taxane",
+    "agent_taxane__incomplete_" = "Taxane (Inc)",
+    "agent_abt_888_carboplatin" = "ABT/Carbo"
+  ))
+
+plot_data_filtered <- plot_data_filtered %>%
+  mutate(Type = case_when(
+    term %in% c("Multif.", "Bilat.", "HER2+", "Luminal", "TNBC", "Pre-meno", 
+                "Ob. I", "Ob. II", "Ob. III", "Overw.", "Underw.") ~ "Clinical",
+    term %in% c("Age", "White", "Asian", "Hisp.", "Pac. Isl.", "Na. Am./AK", "Eth. Unk.") ~ "Demographic",
+    TRUE ~ "Treatment"
+  )) %>%
+  mutate(color_term = case_when(
+    Type == "Clinical" ~ paste0("<span style='color:black;'>", term, "</span>"),
+    Type == "Demographic" ~ paste0("<span style='color:royalblue;'>", term, "</span>"),
+    Type == "Treatment" ~ paste0("<span style='color:darkgreen;'>", term, "</span>")
+  ))
+
+# 2. Create the plot
+ggplot(plot_data_filtered, aes(x = reorder(color_term, OR), y = OR, color = Model)) +
+  geom_hline(yintercept = 1, linetype = "dashed", color = "grey60", linewidth = 0.8) +
+  geom_pointrange(aes(ymin = low, ymax = high), 
+                  position = position_dodge(width = 0.8),
+                  size = 0.5, 
+                  linewidth = 0.8) +
   coord_flip() +
-  theme_bw() + # theme_bw is very stable in older ggplot2 versions
-  labs(title = "Model 3: Odds Ratios for pCR",
-       x = "Predictor", 
-       y = "Odds Ratio (95% CI)") +
-  scale_y_log10()
-
+  theme_bw(base_size = 16) +
+  scale_x_discrete(expand = expansion(add = c(1, 2))) + 
+  scale_y_log10(breaks = c(0.1, 0.2, 0.5, 1, 2, 5, 10)) +
+  scale_color_manual(values = c("brown1", "royalblue", "darkgreen")) +
+  
+  # Manual "Legend" for Y-axis colors in the top left
+  annotate("rect", xmin = 24, xmax = 26.5, ymin = 0.05, ymax = 0.35, 
+           fill = "white", color = "grey80", alpha = 0.8) +
+  annotate("text", x = 26, y = 0.06, label = "Variable", 
+           fontface = "bold", hjust = 0, size = 4.5) +
+  annotate("text", x = 25.5, y = 0.06, label = "• Clinical", 
+           color = "black", hjust = 0, size = 4.5) +
+  annotate("text", x = 25, y = 0.06, label = "• Demographic", 
+           color = "royalblue", hjust = 0, size = 4.5) +
+  annotate("text", x = 24.5, y = 0.06, label = "• Treatment", 
+           color = "darkgreen", hjust = 0, size = 4.5) +
+  
+  theme(
+    legend.position = "bottom",
+    legend.title = element_blank(),
+    axis.text.y = element_markdown(face = "bold"), 
+    panel.grid.major.y = element_line(color = "grey95"),
+    panel.grid.minor = element_blank(),
+    plot.margin = margin(10, 20, 10, 10)
+  ) +
+  labs(
+    title = "Comparison of Odds Ratios Across Models",
+    subtitle = "Standardized N=1,044 patient subset",
+    x = "Predictor Variable", 
+    y = "Odds Ratio (95% CI, Log Scale)"
+  )
 ```
 
 
@@ -633,6 +623,68 @@ However, for the practicing clinician, the baseline and demographic models (Mode
 
 ::: {#refs}
 :::
+
+## Supplementary Tables
+
+```{r clinical-results, include=T}
+reg_table_data <- summary(pooled_results1) %>%
+  mutate(across(where(is.numeric), ~ round(.x, 3))) %>%
+  rename(Variable = term, P_Value = p.value)
+
+# 2. Identify rows where p-value < 0.05
+sig_rows <- which(reg_table_data$P_Value < 0.05)
+
+# 3. Create the table
+reg_table_data %>%
+  kbl(caption = "Model 1 - Pooled Logistic Regression",
+      booktabs = TRUE) %>%
+  kable_styling(bootstrap_options = c("striped", "hover"), 
+                full_width = FALSE, 
+                latex_options = "HOLD_position") %>%
+  row_spec(sig_rows, bold = TRUE) %>% # Bolds significant predictors like Pembrolizumab
+  column_spec(1, italic = TRUE)
+
+```
+
+```{r demographic-results, include=T}
+reg_table_data <- summary(pooled_results2) %>%
+  mutate(across(where(is.numeric), ~ round(.x, 3))) %>%
+  rename(Variable = term, P_Value = p.value)
+
+# 2. Identify rows where p-value < 0.05
+sig_rows <- which(reg_table_data$P_Value < 0.05)
+
+# 3. Create the table
+reg_table_data %>%
+  kbl(caption = "Model 2 - Pooled Logistic Regression (with Demographics)",
+      booktabs = TRUE) %>%
+  kable_styling(bootstrap_options = c("striped", "hover"), 
+                full_width = FALSE, 
+                latex_options = "HOLD_position") %>%
+  row_spec(sig_rows, bold = TRUE) %>% # Bolds significant predictors like Pembrolizumab
+  column_spec(1, italic = TRUE)
+
+```
+
+```{r agent-results, include=T}
+reg_table_data <- summary(pooled_results3) %>%
+  mutate(across(where(is.numeric), ~ round(.x, 3))) %>%
+  rename(Variable = term, P_Value = p.value)
+
+# 2. Identify rows where p-value < 0.05
+sig_rows <- which(reg_table_data$P_Value < 0.05)
+
+# 3. Create the table
+reg_table_data %>%
+  kbl(caption = "Model 3 - Pooled Logistic Regression (Clinical + Treatment Agents)",
+      booktabs = TRUE) %>%
+  kable_styling(bootstrap_options = c("striped", "hover"), 
+                full_width = FALSE, 
+                latex_options = "HOLD_position") %>%
+  row_spec(sig_rows, bold = TRUE) %>% # Bolds significant predictors like Pembrolizumab
+  column_spec(1, italic = TRUE)
+
+```
 
 ## Code Appendix
 
