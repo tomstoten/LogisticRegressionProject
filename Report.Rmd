@@ -12,7 +12,7 @@ csl: alex_vancouver.csl
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = F)
+knitr::opts_chunk$set(echo = F, include=F)
 
 library(tidyverse)
 library(dplyr)
@@ -118,27 +118,40 @@ Tom Stoughton, MS Candidate[^1]
 
 ## Abstract
 
-...
+Pathologic Complete Response (pCR) is a critical surrogate endpoint in neoadjuvant breast cancer treatment, traditionally used to evaluate the efficacy of systemic therapies. This study utilizes clinical, demographic, and treatment data from 1,506 patients to develop and compare predictive logistic regression models, specifically examining the trade-off between statistical performance and clinical utility. Using Multivariate Imputation by Chained Equations (MICE) to address missingness, we demonstrate that while the inclusion of specific treatment agents in Model 3 provides superior model parsimony and a slight increase in precision, baseline models focused on molecular subtypes (HER2 and Triple Negative) remain the most clinically significant. Model selection based on AIC and Precision-Recall curves indicates that treatment-augmented models refine predictions only after a therapeutic path has been chosen. In contrast, baseline models that exclude treatment variables are of higher clinical importance as they can be utilized at the point of diagnosis to inform the fundamental decision of whether neoadjuvant chemotherapy (NAC) is required at all. By identifying patients with a low probability of pCR regardless of agent, these models provide a framework for prioritizing surgical intervention and avoiding the debilitating side effects of chemotherapy when benefit is statistically minimal.
 
 *Keywords: Pathologic Complete Response, Breast Cancer, Logistic Regression, *
 
 ## Introduction
 
-This data set contains publicly available clinical and demographic information about 1,506 breast cancer patients from four different trials[@garrucho2025]
+Neoadjuvant chemotherapy (NAC) is standard of care for many breast cancer patients, aiming to shrink tumors prior to surgery. The achievement of Pathologic Complete Response (pCR)—defined as the absence of invasive cancer in the breast and lymph nodes at the time of surgery—is highly correlated with long-term survival. However, response rates vary significantly based on tumor biology and treatment regimen.
+Predicting which patients will achieve pCR remains a challenge due to the complex interplay between patient demographics, tumor molecular profiles, and varied chemotherapy agents. This project aims to determine the incremental predictive value of adding demographic and treatment-specific data to a baseline clinical model.
 
-## Motivating Problem
+## Dataset
 
-...
+This data set contains publicly available clinical and demographic information about 1,506 breast cancer patients sourced from four different clinical trials[@garrucho2025]. This dataset includes a robust array of diagnostic indicators essential for assessing treatment efficacy, such as HER2 status, Nottingham grade, and tumor subtype classifications including Triple Negative, Luminal, and HER2-enriched profiles. Clinical assessments also accounted for the presence of multifocal or bilateral disease to capture disease extent. Patient-level demographic variables integrated into the analysis include age, ethnicity, weight, BMI category, and menopausal status. For a significant subset of 1,100 patients, granular neoadjuvant chemotherapy (NAC) data were available, identifying the administration of specific therapeutic agents such as Pembrolizumab, Paclitaxel, Carboplatin, and Trastuzumab. 
+
+To maintain the integrity and statistical power of the 1,506-patient sample, Multivariate Imputation by Chained Equations (MICE) (m=10 imputations) was utilized to address missingness, which was most prevalent in the menopause (~33%) and ethnicity variables. A Random Forest method was employed to capture non-linear relationships. Predictors included tumor subtype, HER2 status, BMI, age, and ethnicity.
 
 ## Methods
+
+We employed a logistic regression framework to model the probability of pCR. The general form of the
+model is:
+logit(P(pCR = 1)) = β0
+ + β1X1
+ + β2X2
+ + ... + βkXk
+Where logit(p) = ln(p / (1-p)). We evaluated three distinct model parameters:
+Model 1 (Baseline): Clinical features (Subtype, HER2, BMI, Menopause, Multifocality).
+Model 2 (Demographic): Clinical features + Age and Ethnicity.
+Model 3 (Treatment): All previous features + specific Chemotherapy Agents (e.g.,
+Pembrolizumab, Carboplatin).
 
 ```{r read-processed-data}
 data <- read.csv("./processedData.csv")
 dataNoMissing <- data %>% drop_na()
 
 ```
-
-Using Multivariate Imputation by Chained Equations (MICE).
 
 ```{r mice, cache=T, results='hide', message=F, warning=F}
 # Impute the missing data (m=5 creates 5 versions of the data)
@@ -169,7 +182,6 @@ imputed_data <- mice(data_for_imputation,
 
 ```
 
-logistic regression on clinical variables.
 
 ```{r logistic-regression-clinical}
 # Run your logistic regression on all 5 datasets and pool the results
@@ -201,8 +213,6 @@ reg_table_data %>%
 
 ```
 
-Now for including demographics (age and ethnicity).
-
 ```{r logistic-regression-demographic}
 # Run your logistic regression on all 5 datasets and pool the results
 fit2 <- with(imputed_data, 
@@ -232,8 +242,6 @@ reg_table_data %>%
   column_spec(1, italic = TRUE)
 
 ```
-
-Now for including treatment agents.
 
 ```{r logistic-regression-agent}
 # 1. Identify agent columns
@@ -613,7 +621,8 @@ ggplot(plot_data, aes(x = reorder(term, OR), y = OR)) +
 
 ## Conclusion
 
-...
+The comparative analysis of these three models reveals a critical distinction between statistical optimization and clinical utility. While the inclusion of neoadjuvant treatment agents in Model 3 provides the highest predictive precision and the most parsimonious fit according to AIC metrics, this performance gain must be weighed against practical application in a pre-treatment setting. The treatment-augmented model is inherently retrospective; it confirms that specific drugs drive the pathologic response, effectively mediating the biological signals of subtypes like Triple Negative.  
+However, for the practicing clinician, the baseline and demographic models (Models 1 and 2) hold greater clinical importance. By relying solely on information available before a treatment plan is finalized, these models provide the necessary foresight to evaluate whether a patient is likely to benefit from neoadjuvant chemotherapy at all. In cases where baseline models predict a negligible probability of pCR, clinicians may consider bypassing systemic therapy in favor of immediate surgical intervention. This approach prioritizes patient quality of life by avoiding the significant toxicities and long-term side effects of chemotherapy when the likelihood of a complete pathologic response is statistically minimal. Ultimately, while treatment variables slightly increase the predictive "ceiling," the true value of predictive modeling in this cohort lies in its ability to support the early de-escalation of care. 
 
 \newpage
 \onecolumn
