@@ -1,0 +1,1507 @@
+"patient_id","pcr","dataset","bilateral_breast_cancer","multifocal_cancer","her2","tumor_subtype","age","bmi_group","menopause","ethnicity","agent_paclitaxel","agent_ganitumab","agent_ganetespib","agent_mk_2206","agent_pembrolizumab","agent_amg_386","agent_trastuzumab","agent_neratinib","agent_abt_888","agent_carboplatin","agent_t_dm1","agent_pertuzumab","agent_anthracycline","agent_taxane","agent_taxane__incomplete_","agent_fec100"
+"DUKE_001",0,"DUKE",0,0,1,"her2_enriched",41,"obesity_class_2","pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_002",0,"DUKE",0,0,0,"triple_negative",38,NA,"pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_005",1,"DUKE",0,1,1,"her2_enriched",38,"normal","pre","hispanic",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_009",1,"DUKE",0,1,0,"triple_negative",56,NA,"post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_010",0,"DUKE",0,1,0,"triple_negative",67,NA,"post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_012",0,"DUKE",0,1,0,"triple_negative",43,NA,"pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_019",0,"DUKE",0,1,0,"luminal",35,"overweight","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_021",0,"DUKE",0,1,0,"luminal",43,"obesity_class_2","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_022",0,"DUKE",0,1,1,"her2_enriched",53,"overweight","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_028",0,"DUKE",0,0,0,"triple_negative",41,NA,"pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_032",0,"DUKE",0,1,0,"luminal",48,"normal","pre","asian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_034",0,"DUKE",0,0,0,"luminal",48,"obesity_class_1","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_040",0,"DUKE",0,1,0,"luminal",48,"obesity_class_2","pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_041",0,"DUKE",0,0,0,"luminal",67,"normal","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_043",0,"DUKE",1,0,0,"triple_negative",46,NA,"pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_044",1,"DUKE",0,0,1,"her2_enriched",34,"normal","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_045",1,"DUKE",0,1,1,NA,45,"overweight","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_046",0,"DUKE",1,0,0,"luminal",53,"overweight","post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_048",0,"DUKE",0,0,0,"triple_negative",40,NA,"pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_051",0,"DUKE",0,0,1,"her2_enriched",38,"overweight","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_055",1,"DUKE",0,0,0,"triple_negative",73,"normal","post","hawaiian/pacific islander",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_057",0,"DUKE",0,0,1,"her2_enriched",70,"overweight","post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_059",1,"DUKE",0,1,0,"triple_negative",51,NA,"pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_060",0,"DUKE",0,0,0,"triple_negative",47,"overweight","pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_061",1,"DUKE",0,1,0,"triple_negative",59,"overweight","post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_064",0,"DUKE",0,0,0,"triple_negative",55,NA,"post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_069",0,"DUKE",0,0,0,"luminal",46,"normal","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_071",0,"DUKE",0,1,0,"luminal",35,"normal","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_077",0,"DUKE",0,0,0,"triple_negative",38,"normal","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_082",0,"DUKE",0,1,0,"luminal",29,"normal","pre","asian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_086",0,"DUKE",0,1,1,"her2_enriched",36,"overweight","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_090",0,"DUKE",0,0,1,"her2_enriched",60,"normal","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_091",0,"DUKE",0,0,0,"luminal",65,"overweight","post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_097",0,"DUKE",0,0,0,"triple_negative",56,NA,"pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_099",1,"DUKE",0,1,0,"triple_negative",69,"overweight","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_101",0,"DUKE",0,1,0,"luminal",45,"overweight","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_103",0,"DUKE",0,1,1,"her2_enriched",51,"normal","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_104",0,"DUKE",0,0,0,"luminal",71,"overweight","post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_105",1,"DUKE",0,0,1,"her2_enriched",29,"normal","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_107",0,"DUKE",0,1,0,"triple_negative",65,"obesity_class_2","post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_114",0,"DUKE",0,1,0,"luminal",49,"overweight","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_115",1,"DUKE",0,0,1,"her2_enriched",36,"normal","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_116",1,"DUKE",0,1,1,"her2_enriched",45,"overweight","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_117",0,"DUKE",0,0,0,"triple_negative",32,NA,"pre","asian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_119",0,"DUKE",0,1,1,"her2_enriched",56,"normal","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_120",0,"DUKE",0,0,0,"luminal",46,"obesity_class_1",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_123",0,"DUKE",0,1,0,"luminal",41,"overweight","pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_129",0,"DUKE",0,1,0,"triple_negative",51,"obesity_class_2","post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_132",0,"DUKE",0,0,0,"triple_negative",52,NA,"pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_134",1,"DUKE",0,1,1,"her2_enriched",36,"underweight","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_136",0,"DUKE",0,0,0,"luminal",42,"normal","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_137",0,"DUKE",0,0,0,"luminal",54,"normal","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_141",0,"DUKE",1,1,1,"her2_enriched",64,"overweight","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_142",1,"DUKE",0,0,0,"luminal",49,"underweight","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_144",1,"DUKE",0,0,1,"her2_enriched",58,"obesity_class_1","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_148",0,"DUKE",0,1,0,"triple_negative",42,"obesity_class_1","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_150",0,"DUKE",0,1,0,"luminal",64,"obesity_class_3","post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_156",0,"DUKE",0,0,1,"her2_enriched",37,"normal","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_157",1,"DUKE",0,0,0,"luminal",46,"overweight","pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_160",0,"DUKE",0,0,0,"triple_negative",44,"overweight","pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_163",0,"DUKE",0,0,0,"luminal",32,"overweight","pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_167",0,"DUKE",0,1,0,"luminal",51,"obesity_class_3","post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_168",0,"DUKE",0,0,0,"luminal",43,"normal","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_176",0,"DUKE",0,1,0,"luminal",45,"obesity_class_2","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_177",0,"DUKE",0,0,1,"her2_enriched",55,"normal","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_178",0,"DUKE",0,0,0,"triple_negative",33,NA,"pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_180",0,"DUKE",0,1,0,"luminal",76,"obesity_class_1","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_183",1,"DUKE",0,1,1,"her2_enriched",63,"overweight","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_185",0,"DUKE",0,1,0,"luminal",48,"overweight","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_189",0,"DUKE",0,1,1,"her2_enriched",47,"obesity_class_3","post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_192",0,"DUKE",0,1,0,"luminal",50,"obesity_class_1","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_198",0,"DUKE",0,1,0,"luminal",43,"overweight","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_202",1,"DUKE",0,0,1,"her2_enriched",43,"overweight","pre",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_205",0,"DUKE",0,0,0,"luminal",46,"normal","post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_211",0,"DUKE",0,1,0,"triple_negative",53,"overweight","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_217",1,"DUKE",0,0,0,"triple_negative",50,"underweight","pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_218",0,"DUKE",0,0,0,"triple_negative",53,"overweight","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_225",0,"DUKE",0,0,0,"triple_negative",44,NA,"pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_228",0,"DUKE",0,1,0,"luminal",66,"obesity_class_1","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_233",0,"DUKE",0,0,0,"triple_negative",45,NA,"pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_234",0,"DUKE",0,1,1,"her2_enriched",43,"normal","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_236",0,"DUKE",0,0,0,"luminal",52,"obesity_class_3","post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_237",0,"DUKE",0,0,0,"luminal",35,"normal","pre","hispanic",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_239",0,"DUKE",0,0,1,"her2_enriched",59,"overweight","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_240",0,"DUKE",0,0,0,"luminal",37,"normal","pre",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_244",0,"DUKE",0,0,1,"her2_enriched",45,"underweight","pre","asian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_250",0,"DUKE",0,0,1,"her2_enriched",62,"overweight","post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_253",1,"DUKE",0,0,1,"her2_enriched",43,"normal","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_255",1,"DUKE",0,0,1,"her2_enriched",47,"overweight","pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_256",0,"DUKE",0,0,1,"her2_enriched",44,"overweight","pre","hispanic",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_258",1,"DUKE",0,1,0,"triple_negative",57,NA,"post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_260",0,"DUKE",0,1,1,"her2_enriched",45,"normal","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_265",0,"DUKE",0,0,0,"triple_negative",42,"obesity_class_3","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_268",0,"DUKE",0,1,0,"luminal",42,"normal","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_269",0,"DUKE",0,1,0,"luminal",54,"overweight","post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_271",0,"DUKE",0,0,0,"triple_negative",46,"obesity_class_1","pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_275",0,"DUKE",0,0,0,"triple_negative",63,NA,"post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_282",0,"DUKE",0,1,0,"triple_negative",43,NA,"pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_283",0,"DUKE",0,0,0,"triple_negative",51,NA,"post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_285",0,"DUKE",0,1,0,"luminal",46,"obesity_class_2","pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_287",0,"DUKE",0,1,0,"luminal",46,"normal","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_290",0,"DUKE",1,1,0,"luminal",40,"normal","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_293",0,"DUKE",0,1,0,"triple_negative",50,NA,"pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_298",0,"DUKE",0,1,0,"luminal",42,"obesity_class_3","pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_301",1,"DUKE",0,1,0,"luminal",60,"normal","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_303",0,"DUKE",0,0,0,"luminal",52,"obesity_class_1","pre","american indian/alaska native",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_304",0,"DUKE",0,1,0,"luminal",60,"overweight","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_306",0,"DUKE",0,1,1,"her2_enriched",59,"normal","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_307",0,"DUKE",0,0,0,"triple_negative",64,NA,"post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_313",0,"DUKE",0,1,0,"luminal",54,NA,"post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_317",1,"DUKE",0,0,0,"luminal",63,"overweight","post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_321",0,"DUKE",0,0,1,"her2_enriched",45,"obesity_class_1","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_323",0,"DUKE",0,1,0,"luminal",42,"overweight","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_328",1,"DUKE",0,0,1,"her2_enriched",47,"overweight","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_333",0,"DUKE",0,0,0,"luminal",44,"normal","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_335",0,"DUKE",0,0,0,"luminal",41,"obesity_class_1","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_338",1,"DUKE",0,1,0,"luminal",54,"overweight","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_345",0,"DUKE",0,0,1,"her2_enriched",68,"normal","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_346",0,"DUKE",0,1,0,"luminal",46,"obesity_class_1","post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_350",1,"DUKE",0,1,0,"luminal",51,"obesity_class_2","pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_353",0,"DUKE",0,0,1,"her2_enriched",39,"obesity_class_1","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_356",0,"DUKE",0,1,0,"luminal",38,"normal","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_360",0,"DUKE",0,0,0,"triple_negative",55,"obesity_class_2","post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_363",0,"DUKE",0,1,0,"triple_negative",36,NA,"post","hispanic",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_368",0,"DUKE",0,0,1,"her2_enriched",39,"normal","pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_377",1,"DUKE",0,1,0,"triple_negative",46,NA,"pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_378",0,"DUKE",0,0,0,"luminal",72,"normal","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_383",0,"DUKE",0,0,0,"triple_negative",43,NA,"pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_385",0,"DUKE",0,1,0,"luminal",40,"obesity_class_3","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_386",0,"DUKE",0,1,1,"her2_enriched",51,"obesity_class_1","post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_387",0,"DUKE",0,1,0,"luminal",39,"overweight","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_395",0,"DUKE",0,0,1,"her2_enriched",48,"normal","pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_397",0,"DUKE",0,1,1,"her2_enriched",50,"normal","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_398",1,"DUKE",0,0,0,"triple_negative",26,NA,"pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_399",0,"DUKE",0,1,0,"luminal",54,"normal","post","hispanic",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_400",0,"DUKE",0,0,1,"her2_enriched",43,"obesity_class_2","post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_406",0,"DUKE",0,1,0,"luminal",54,"obesity_class_1","post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_407",0,"DUKE",0,0,0,"luminal",45,"obesity_class_1","pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_408",1,"DUKE",0,0,0,"luminal",34,"normal","pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_412",0,"DUKE",0,0,0,"luminal",60,"obesity_class_2","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_414",0,"DUKE",0,0,1,"her2_enriched",42,"obesity_class_2","pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_420",1,"DUKE",0,0,0,"triple_negative",23,"obesity_class_2","pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_424",1,"DUKE",0,0,1,"her2_enriched",36,"obesity_class_2","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_428",0,"DUKE",0,0,0,"luminal",42,"underweight","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_429",0,"DUKE",0,1,1,"her2_enriched",54,"normal","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_431",0,"DUKE",1,0,1,"her2_enriched",51,"obesity_class_3","post",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_435",0,"DUKE",0,0,1,NA,55,"obesity_class_1","post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_437",0,"DUKE",0,0,0,"triple_negative",47,NA,"post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_438",1,"DUKE",0,1,0,"triple_negative",51,NA,"post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_441",0,"DUKE",0,1,0,"luminal",37,"obesity_class_2","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_444",1,"DUKE",0,1,1,"her2_enriched",61,"obesity_class_1","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_454",0,"DUKE",0,0,0,"luminal",58,"overweight","post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_457",1,"DUKE",0,0,0,"luminal",35,"obesity_class_2","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_464",0,"DUKE",0,0,0,"luminal",52,"obesity_class_1","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_465",0,"DUKE",0,1,0,"luminal",34,"overweight","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_468",0,"DUKE",0,1,1,"her2_enriched",58,"underweight","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_470",1,"DUKE",0,0,1,"her2_enriched",38,"obesity_class_3","post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_474",0,"DUKE",0,1,0,"triple_negative",41,NA,"pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_480",0,"DUKE",0,0,0,"luminal",54,"overweight","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_482",1,"DUKE",0,0,0,"triple_negative",39,NA,"pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_486",0,"DUKE",0,1,0,"luminal",46,"overweight","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_489",1,"DUKE",0,1,0,"triple_negative",29,NA,"pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_491",0,"DUKE",0,0,1,"her2_enriched",65,"obesity_class_1","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_501",1,"DUKE",0,1,0,"luminal",54,"normal","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_506",0,"DUKE",0,0,0,"luminal",45,"obesity_class_1","post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_507",1,"DUKE",0,1,0,"luminal",59,"obesity_class_1","post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_508",0,"DUKE",0,1,1,"her2_enriched",40,"normal","pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_512",1,"DUKE",0,0,0,"luminal",43,"overweight","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_514",0,"DUKE",0,1,0,"triple_negative",49,NA,"pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_517",0,"DUKE",0,0,0,"luminal",72,"normal","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_521",0,"DUKE",0,1,0,"luminal",61,"normal","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_525",1,"DUKE",0,0,1,"her2_enriched",44,"overweight","pre","hispanic",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_527",0,"DUKE",0,1,0,"luminal",32,"obesity_class_1","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_530",0,"DUKE",0,1,0,"luminal",45,"overweight","post","asian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_534",0,"DUKE",0,1,0,"luminal",37,"obesity_class_1","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_535",0,"DUKE",0,1,0,"triple_negative",62,NA,"post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_539",1,"DUKE",0,0,1,"her2_enriched",64,"obesity_class_1","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_541",0,"DUKE",0,0,1,"her2_enriched",44,"normal","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_543",0,"DUKE",0,0,0,"triple_negative",38,NA,"pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_545",0,"DUKE",0,1,1,"her2_enriched",30,"obesity_class_2","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_546",0,"DUKE",0,1,1,"her2_enriched",68,"overweight","post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_552",0,"DUKE",0,1,1,"her2_enriched",36,"normal","pre","hispanic",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_558",0,"DUKE",0,0,1,"her2_enriched",69,"normal","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_559",1,"DUKE",0,1,1,"her2_enriched",42,"normal","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_560",0,"DUKE",0,0,0,"luminal",45,"normal","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_562",1,"DUKE",0,1,0,"triple_negative",51,NA,"pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_567",0,"DUKE",0,1,1,"her2_enriched",68,"obesity_class_1","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_568",0,"DUKE",0,0,0,"triple_negative",42,NA,"pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_573",0,"DUKE",0,0,0,"luminal",60,"obesity_class_1","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_577",1,"DUKE",0,0,1,"her2_enriched",42,"obesity_class_1","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_585",0,"DUKE",0,1,0,"luminal",50,"overweight","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_590",0,"DUKE",0,0,0,"luminal",30,"overweight","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_592",0,"DUKE",0,0,0,"luminal",50,"normal","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_595",0,"DUKE",0,0,0,"luminal",47,"overweight","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_597",0,"DUKE",0,1,0,"luminal",27,"obesity_class_1","pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_605",0,"DUKE",0,1,0,"luminal",43,"overweight","pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_607",0,"DUKE",0,0,0,"triple_negative",48,"obesity_class_1","pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_609",0,"DUKE",0,1,0,"luminal",68,"normal","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_610",0,"DUKE",0,1,1,"her2_enriched",53,"normal","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_612",0,"DUKE",0,0,0,"triple_negative",42,NA,"pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_614",1,"DUKE",0,0,0,"triple_negative",45,NA,"pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_615",1,"DUKE",0,1,0,"luminal",34,"overweight","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_616",0,"DUKE",0,1,0,"triple_negative",62,"obesity_class_1","post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_618",0,"DUKE",0,0,0,"luminal",51,"overweight","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_623",0,"DUKE",0,1,0,"luminal",56,"obesity_class_1","pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_633",1,"DUKE",0,1,0,"luminal",37,"underweight","pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_636",0,"DUKE",0,0,0,"triple_negative",61,"obesity_class_1","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_640",0,"DUKE",0,0,0,"luminal",61,"normal","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_641",0,"DUKE",0,1,0,"triple_negative",55,NA,"pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_642",0,"DUKE",0,0,1,"her2_enriched",64,"normal","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_645",1,"DUKE",0,0,0,"triple_negative",25,NA,"pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_650",0,"DUKE",0,0,0,"luminal",41,"obesity_class_1","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_651",0,"DUKE",0,0,0,"luminal",66,"overweight","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_652",1,"DUKE",0,1,1,"her2_enriched",43,"obesity_class_1","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_656",1,"DUKE",0,0,0,"triple_negative",65,NA,"post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_660",0,"DUKE",0,1,0,"triple_negative",25,NA,"pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_662",0,"DUKE",0,0,0,"triple_negative",66,NA,"post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_663",0,"DUKE",0,1,1,"her2_enriched",29,"overweight","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_666",0,"DUKE",0,0,1,NA,39,"obesity_class_1","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_670",0,"DUKE",0,1,0,"luminal",72,"normal","post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_672",0,"DUKE",0,1,0,"triple_negative",61,"obesity_class_1","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_677",0,"DUKE",1,0,0,"luminal",48,"normal","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_679",0,"DUKE",0,1,1,"her2_enriched",40,"normal","pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_681",0,"DUKE",0,0,1,"her2_enriched",41,"normal","pre",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_684",0,"DUKE",0,0,0,"luminal",60,"overweight","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_685",0,"DUKE",0,1,0,"luminal",50,"normal","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_686",0,"DUKE",0,1,0,"luminal",45,"overweight","pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_687",0,"DUKE",0,1,1,"her2_enriched",59,"normal","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_688",0,"DUKE",0,0,0,"triple_negative",43,NA,"pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_691",0,"DUKE",0,0,0,"luminal",47,"normal","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_693",0,"DUKE",0,1,1,"her2_enriched",54,"obesity_class_1","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_694",0,"DUKE",0,0,0,"luminal",44,"overweight","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_697",0,"DUKE",0,1,0,"luminal",57,"obesity_class_1","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_710",0,"DUKE",0,0,0,"triple_negative",21,"obesity_class_1","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_717",0,"DUKE",0,1,1,"her2_enriched",46,"obesity_class_1","pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_718",0,"DUKE",1,1,0,"luminal",36,"normal","pre","asian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_723",0,"DUKE",0,0,0,"triple_negative",60,"normal","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_724",0,"DUKE",0,0,0,"luminal",72,"obesity_class_2","post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_725",0,"DUKE",0,0,0,"luminal",49,"overweight","pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_735",1,"DUKE",0,0,1,"her2_enriched",33,"obesity_class_1","pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_746",0,"DUKE",0,1,0,"luminal",54,"overweight","post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_751",0,"DUKE",0,0,0,"luminal",51,"overweight","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_754",1,"DUKE",0,0,0,"triple_negative",58,NA,"post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_757",0,"DUKE",0,0,0,"triple_negative",42,NA,"pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_758",0,"DUKE",0,0,1,"her2_enriched",60,"overweight","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_762",0,"DUKE",0,0,0,"triple_negative",34,"normal","pre","asian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_765",0,"DUKE",0,1,0,"luminal",71,"normal","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_774",1,"DUKE",0,1,0,"triple_negative",42,NA,"pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_775",1,"DUKE",0,1,1,"her2_enriched",47,"overweight","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_776",0,"DUKE",0,0,0,"luminal",42,"obesity_class_3","pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_778",0,"DUKE",0,1,0,"triple_negative",52,NA,"post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_780",1,"DUKE",0,0,0,"triple_negative",52,NA,"pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_789",0,"DUKE",0,1,0,"luminal",45,"obesity_class_3","pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_790",0,"DUKE",0,1,0,"triple_negative",52,"overweight","pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_792",0,"DUKE",0,1,0,"triple_negative",48,NA,"pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_797",1,"DUKE",0,0,1,"her2_enriched",47,"obesity_class_1","post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_799",0,"DUKE",0,0,0,"luminal",39,"normal","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_804",0,"DUKE",0,1,0,"luminal",38,"obesity_class_1","post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_805",0,"DUKE",0,0,0,"luminal",49,"overweight","pre","american indian/alaska native",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_809",0,"DUKE",0,0,0,"luminal",51,"obesity_class_1","post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_812",1,"DUKE",0,1,1,"her2_enriched",59,"normal","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_816",0,"DUKE",0,1,0,"luminal",50,"overweight","post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_817",1,"DUKE",0,1,0,"triple_negative",29,NA,"pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_822",0,"DUKE",0,0,1,"her2_enriched",39,"overweight","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_830",1,"DUKE",0,1,0,"triple_negative",38,NA,"pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_831",0,"DUKE",0,1,0,"luminal",38,"overweight","pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_832",0,"DUKE",0,0,0,"triple_negative",57,"normal","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_833",0,"DUKE",0,1,0,"triple_negative",66,NA,"post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_834",1,"DUKE",0,1,1,"her2_enriched",53,"overweight","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_836",0,"DUKE",0,0,0,"luminal",52,"normal","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_839",0,"DUKE",0,0,0,"triple_negative",37,NA,"pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_847",0,"DUKE",0,0,1,"her2_enriched",29,"obesity_class_1","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_850",0,"DUKE",0,0,0,"triple_negative",25,NA,"pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_860",0,"DUKE",0,0,0,"luminal",48,"obesity_class_1","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_865",0,"DUKE",0,0,0,"luminal",46,"normal","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_869",0,"DUKE",0,0,0,"luminal",52,"obesity_class_2","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_873",0,"DUKE",0,0,1,"her2_enriched",56,"obesity_class_3","post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_874",0,"DUKE",0,1,0,"luminal",32,"obesity_class_3","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_879",0,"DUKE",0,1,0,"triple_negative",72,"normal","post","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_882",1,"DUKE",0,0,0,"triple_negative",48,"overweight","pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_883",1,"DUKE",0,1,1,"her2_enriched",45,"obesity_class_1","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_884",0,"DUKE",0,0,0,"triple_negative",55,"obesity_class_1","post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_885",0,"DUKE",0,0,1,"her2_enriched",34,"normal","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_886",0,"DUKE",0,1,0,"triple_negative",70,NA,"post","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_891",0,"DUKE",0,1,1,"her2_enriched",42,"overweight","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_899",0,"DUKE",0,1,0,"luminal",44,"overweight","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_907",0,"DUKE",0,1,1,"her2_enriched",50,"obesity_class_1","post","american indian/alaska native",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_914",0,"DUKE",0,1,0,"triple_negative",50,NA,"pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_915",1,"DUKE",0,0,0,"luminal",54,"overweight","pre","caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_916",0,"DUKE",0,1,0,"luminal",64,"normal","post",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DUKE_917",0,"DUKE",0,1,0,"triple_negative",41,NA,"pre","african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1001",0,"ISPY1",0,0,0,"luminal",38,"underweight",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1002",0,"ISPY1",0,NA,0,"luminal",37,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1003",0,"ISPY1",0,NA,0,"luminal",49,"underweight",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1004",0,"ISPY1",0,NA,0,"triple_negative",48,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1005",0,"ISPY1",0,NA,0,"luminal",45,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1007",0,"ISPY1",0,NA,0,"luminal",46,"obesity_class_3",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1008",0,"ISPY1",1,NA,0,"luminal",64,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1009",0,"ISPY1",0,NA,0,"triple_negative",40,"normal",NA,"asian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1010",1,"ISPY1",0,NA,0,"triple_negative",41,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1011",1,"ISPY1",0,NA,0,"triple_negative",40,"normal",NA,"asian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1012",0,"ISPY1",0,NA,0,"luminal",53,"obesity_class_1",NA,"african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1013",0,"ISPY1",0,NA,0,"luminal",49,"obesity_class_1",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1015",1,"ISPY1",0,NA,1,"her2_enriched",42,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1016",0,"ISPY1",0,NA,0,"luminal",35,"obesity_class_1",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1017",0,"ISPY1",0,NA,0,"triple_negative",68,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1021",1,"ISPY1",0,NA,1,"her2_enriched",48,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1025",0,"ISPY1",0,NA,0,"luminal",52,"obesity_class_1",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1027",0,"ISPY1",0,0,0,"triple_negative",38,"overweight",NA,"african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1029",0,"ISPY1",0,NA,1,"her2_enriched",63,"obesity_class_1",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1030",1,"ISPY1",0,NA,1,"her2_enriched",52,"normal",NA,"asian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1031",0,"ISPY1",0,NA,0,"luminal",54,"overweight",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1032",0,"ISPY1",0,NA,0,"luminal",37,"normal",NA,"asian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1034",0,"ISPY1",0,NA,0,"triple_negative",46,"overweight",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1035",0,"ISPY1",0,NA,1,"her2_enriched",40,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1036",0,"ISPY1",0,NA,1,"her2_enriched",38,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1037",0,"ISPY1",0,NA,0,"triple_negative",51,"overweight",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1038",0,"ISPY1",0,NA,0,"triple_negative",37,"obesity_class_1",NA,"african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1040",0,"ISPY1",0,1,0,"triple_negative",56,"obesity_class_3",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1041",0,"ISPY1",0,NA,1,"her2_enriched",46,"overweight",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1042",0,"ISPY1",0,NA,0,"luminal",58,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1049",0,"ISPY1",0,NA,0,"triple_negative",50,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1051",1,"ISPY1",0,NA,0,"luminal",48,"overweight",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1053",0,"ISPY1",0,NA,0,"luminal",62,"obesity_class_3",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1054",0,"ISPY1",0,0,0,"triple_negative",42,"obesity_class_3",NA,"african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1056",0,"ISPY1",0,NA,1,"her2_enriched",35,"overweight",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1058",1,"ISPY1",0,NA,0,"triple_negative",54,"overweight",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1060",0,"ISPY1",0,NA,0,"luminal",67,"obesity_class_1",NA,"african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1061",0,"ISPY1",0,NA,1,"her2_enriched",54,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1062",0,"ISPY1",0,NA,0,"luminal",34,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1064",0,"ISPY1",0,NA,0,"triple_negative",60,"obesity_class_1",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1065",0,"ISPY1",0,NA,1,"her2_enriched",55,"obesity_class_3",NA,"african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1066",0,"ISPY1",0,NA,0,"triple_negative",57,"overweight",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1067",0,"ISPY1",0,1,0,"triple_negative",58,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1069",0,"ISPY1",0,NA,0,"luminal",57,"overweight",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1070",1,"ISPY1",0,NA,0,"luminal",36,"obesity_class_1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1072",0,"ISPY1",0,NA,0,"triple_negative",55,"obesity_class_3",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1073",1,"ISPY1",0,NA,1,"her2_enriched",49,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1074",0,"ISPY1",0,NA,0,"luminal",36,"underweight",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1075",1,"ISPY1",0,NA,0,"triple_negative",33,"overweight",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1077",1,"ISPY1",0,NA,1,"her2_enriched",41,"obesity_class_1",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1078",1,"ISPY1",0,NA,0,"luminal",31,"normal",NA,"hawaiian/pacific islander",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1082",0,"ISPY1",0,NA,1,"her2_enriched",46,"obesity_class_1",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1083",0,"ISPY1",0,NA,1,"her2_enriched",51,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1084",0,"ISPY1",0,NA,1,"her2_enriched",34,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1087",1,"ISPY1",0,NA,1,"her2_enriched",43,"obesity_class_2",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1088",1,"ISPY1",0,NA,0,"luminal",53,"overweight",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1089",0,"ISPY1",0,NA,0,"luminal",60,"obesity_class_3",NA,"african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1090",1,"ISPY1",0,NA,1,"her2_enriched",51,"obesity_class_3",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1094",0,"ISPY1",0,NA,0,"luminal",49,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1096",0,"ISPY1",0,NA,1,"her2_enriched",42,"obesity_class_3",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1097",0,"ISPY1",0,NA,0,"triple_negative",44,"obesity_class_3",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1098",1,"ISPY1",0,NA,1,"her2_enriched",62,"overweight",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1099",1,"ISPY1",0,NA,0,"triple_negative",50,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1100",0,"ISPY1",0,NA,0,"luminal",63,"overweight",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1101",0,"ISPY1",0,NA,1,"her2_enriched",42,"overweight",NA,"african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1102",0,"ISPY1",0,NA,1,"her2_enriched",57,"obesity_class_2",NA,"african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1103",1,"ISPY1",0,1,1,"her2_enriched",50,"obesity_class_3",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1104",1,"ISPY1",0,NA,1,"her2_enriched",51,"obesity_class_1",NA,"african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1106",0,"ISPY1",0,NA,0,"luminal",50,"normal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1107",0,"ISPY1",0,NA,0,"luminal",58,"obesity_class_2",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1112",1,"ISPY1",0,NA,1,"her2_enriched",46,"overweight",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1114",0,"ISPY1",0,NA,0,"luminal",44,"obesity_class_3",NA,"african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1117",0,"ISPY1",0,NA,0,"luminal",49,"obesity_class_1",NA,"african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1122",0,"ISPY1",0,NA,1,"her2_enriched",59,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1123",0,"ISPY1",0,NA,0,"luminal",61,"obesity_class_1",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1124",0,"ISPY1",0,NA,1,"her2_enriched",47,"obesity_class_1",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1125",1,"ISPY1",0,NA,0,"luminal",44,"underweight",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1127",0,"ISPY1",0,NA,0,"luminal",47,"normal",NA,"asian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1128",0,"ISPY1",0,NA,1,"her2_enriched",33,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1129",1,"ISPY1",0,NA,1,"her2_enriched",52,"normal",NA,"african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1130",1,"ISPY1",0,NA,0,"luminal",39,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1132",0,"ISPY1",0,NA,0,"luminal",51,"obesity_class_1",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1134",0,"ISPY1",0,NA,0,"luminal",43,"overweight",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1135",0,"ISPY1",0,NA,0,"triple_negative",58,"overweight",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1136",0,"ISPY1",0,NA,0,"triple_negative",60,"normal",NA,"african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1137",0,"ISPY1",0,NA,1,"her2_enriched",29,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1139",1,"ISPY1",0,1,0,"triple_negative",46,"obesity_class_1",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1140",0,"ISPY1",0,NA,0,"luminal",35,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1141",0,"ISPY1",0,NA,1,"her2_enriched",49,"overweight",NA,"african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1142",0,"ISPY1",0,NA,NA,NA,28,"overweight",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1144",1,"ISPY1",0,NA,NA,NA,56,"obesity_class_2",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1145",1,"ISPY1",0,NA,1,"her2_enriched",39,"obesity_class_3",NA,"african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1146",0,"ISPY1",0,NA,0,"luminal",50,"overweight",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1147",0,"ISPY1",0,NA,0,"triple_negative",59,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1148",1,"ISPY1",0,NA,1,"her2_enriched",50,"overweight",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1149",0,"ISPY1",0,NA,0,"triple_negative",59,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1150",0,"ISPY1",0,NA,0,"luminal",51,"overweight",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1151",0,"ISPY1",1,NA,1,"her2_enriched",50,"overweight",NA,"african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1152",0,"ISPY1",0,NA,1,"her2_enriched",51,"overweight",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1155",1,"ISPY1",0,NA,0,"triple_negative",42,"overweight",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1156",1,"ISPY1",0,NA,1,"her2_enriched",65,"obesity_class_3",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1157",0,"ISPY1",0,NA,1,"her2_enriched",41,"obesity_class_1",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1158",0,"ISPY1",0,NA,0,"luminal",61,"obesity_class_1",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1159",0,"ISPY1",0,NA,NA,NA,55,"obesity_class_1",NA,"african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1160",0,"ISPY1",0,NA,0,"triple_negative",55,"obesity_class_2",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1161",0,"ISPY1",0,NA,1,"her2_enriched",56,"obesity_class_1",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1163",1,"ISPY1",0,NA,0,"triple_negative",38,"overweight",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1164",0,"ISPY1",0,NA,0,"luminal",60,"obesity_class_3",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1165",0,"ISPY1",0,NA,0,"triple_negative",39,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1166",0,"ISPY1",0,NA,0,"luminal",54,"obesity_class_2",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1167",0,"ISPY1",0,NA,1,"her2_enriched",50,"overweight",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1168",0,"ISPY1",0,NA,0,"triple_negative",44,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1169",0,"ISPY1",0,0,0,"triple_negative",44,"obesity_class_3",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1171",1,"ISPY1",0,NA,1,"her2_enriched",50,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1172",0,"ISPY1",0,NA,0,"triple_negative",44,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1173",0,"ISPY1",0,NA,NA,NA,43,"overweight",NA,"african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1174",0,"ISPY1",0,NA,0,"luminal",49,"overweight",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1175",0,"ISPY1",0,NA,0,"luminal",64,"obesity_class_1",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1176",1,"ISPY1",0,NA,1,"her2_enriched",47,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1177",1,"ISPY1",0,NA,1,"her2_enriched",40,"overweight",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1179",0,"ISPY1",0,NA,0,"triple_negative",49,"obesity_class_3",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1180",0,"ISPY1",0,NA,0,"luminal",31,"overweight",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1181",0,"ISPY1",0,NA,0,"luminal",34,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1182",1,"ISPY1",0,NA,1,"her2_enriched",42,"obesity_class_2",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1183",0,"ISPY1",0,NA,0,"luminal",53,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1184",1,"ISPY1",0,NA,0,"triple_negative",49,"overweight",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1185",0,"ISPY1",0,NA,0,"luminal",49,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1187",0,"ISPY1",0,NA,0,"triple_negative",47,"obesity_class_3",NA,"african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1188",0,"ISPY1",0,NA,0,"triple_negative",38,"obesity_class_2",NA,"african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1189",1,"ISPY1",0,NA,1,"her2_enriched",68,"underweight",NA,"asian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1191",0,"ISPY1",0,NA,0,"luminal",45,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1192",1,"ISPY1",0,NA,NA,NA,31,"normal",NA,"african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1193",0,"ISPY1",0,NA,0,"luminal",59,NA,NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1194",0,"ISPY1",0,0,0,"luminal",33,"overweight",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1196",0,"ISPY1",0,NA,1,"her2_enriched",35,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1197",0,"ISPY1",0,NA,0,"luminal",44,"obesity_class_2",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1198",0,"ISPY1",0,NA,0,"luminal",59,"obesity_class_2",NA,"african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1199",0,"ISPY1",0,NA,0,"triple_negative",37,NA,NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1201",0,"ISPY1",0,NA,0,"luminal",50,"obesity_class_3",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1202",1,"ISPY1",0,NA,0,"luminal",53,"obesity_class_3",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1203",0,"ISPY1",0,NA,0,"luminal",42,NA,NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1204",0,"ISPY1",0,NA,0,"triple_negative",39,"overweight",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1207",1,"ISPY1",0,NA,0,"triple_negative",36,"overweight",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1208",1,"ISPY1",0,NA,0,"triple_negative",42,NA,NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1209",0,"ISPY1",0,NA,0,"luminal",43,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1210",0,"ISPY1",0,NA,0,"luminal",40,NA,NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1212",1,"ISPY1",0,NA,1,"her2_enriched",52,"underweight",NA,"african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1215",1,"ISPY1",1,0,1,"her2_enriched",49,"overweight",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1216",1,"ISPY1",0,NA,0,"triple_negative",34,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1217",0,"ISPY1",0,NA,0,"luminal",50,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1218",0,"ISPY1",0,NA,0,"triple_negative",47,"obesity_class_3",NA,"african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1219",0,"ISPY1",0,NA,0,"luminal",45,NA,NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1220",1,"ISPY1",0,NA,0,"triple_negative",43,"overweight",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1221",0,"ISPY1",0,NA,1,"her2_enriched",52,NA,NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1222",0,"ISPY1",0,NA,1,"her2_enriched",55,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1223",0,"ISPY1",0,NA,0,"luminal",59,"overweight",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1224",0,"ISPY1",0,NA,1,"her2_enriched",61,"obesity_class_3",NA,"african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1225",0,"ISPY1",0,NA,0,"luminal",47,NA,NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1226",0,"ISPY1",0,NA,0,"luminal",42,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1227",1,"ISPY1",0,NA,0,"triple_negative",42,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1228",1,"ISPY1",0,0,1,"her2_enriched",53,"obesity_class_1",NA,"african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1229",1,"ISPY1",0,NA,0,"triple_negative",50,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1230",0,"ISPY1",0,NA,0,"luminal",53,"obesity_class_3",NA,"african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1231",0,"ISPY1",0,NA,0,"luminal",45,"overweight",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1233",0,"ISPY1",0,NA,0,"luminal",27,"obesity_class_3",NA,"african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1234",1,"ISPY1",0,NA,1,"her2_enriched",38,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1235",1,"ISPY1",0,NA,1,"her2_enriched",64,"obesity_class_3",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1236",0,"ISPY1",0,NA,0,"luminal",38,"obesity_class_3",NA,"african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1237",0,"ISPY1",0,NA,1,"her2_enriched",46,"normal",NA,"caucasian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1238",0,"ISPY1",0,NA,1,"her2_enriched",59,NA,NA,"african american",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY1_1239",0,"ISPY1",0,NA,0,"luminal",48,"normal",NA,"asian",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ISPY2_100899",0,"ISPY2",0,1,0,"triple_negative",53,NA,"post","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_102011",1,"ISPY2",0,0,0,"luminal",32,"obesity_class_3","pre","african american",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_102212",0,"ISPY2",0,0,0,"triple_negative",26,"normal","pre","caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_103693",0,"ISPY2",0,0,0,"luminal",59,"normal","post","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_103939",0,"ISPY2",0,1,0,"luminal",51,"underweight","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_104268",0,"ISPY2",0,0,0,"triple_negative",50,"normal",NA,"african american",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_104384",0,"ISPY2",0,0,0,"luminal",42,"overweight","pre","american indian/alaska native",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_105286",0,"ISPY2",0,0,0,"luminal",65,"obesity_class_1",NA,"caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_105513",1,"ISPY2",0,0,0,"luminal",48,NA,"pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_107700",0,"ISPY2",0,0,1,"luminal",68,"normal","post","asian",1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_108939",1,"ISPY2",0,0,1,"luminal",34,NA,"pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_108969",1,"ISPY2",0,1,1,"her2_enriched",64,"overweight","post","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_109623",0,"ISPY2",0,0,0,"luminal",44,"normal","pre","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_109874",1,"ISPY2",0,0,0,"triple_negative",43,NA,"pre","asian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_109980",1,"ISPY2",0,1,1,"luminal",53,NA,NA,"caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_111004",0,"ISPY2",0,1,0,"luminal",NA,"obesity_class_2","pre",NA,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_111038",0,"ISPY2",0,0,0,"triple_negative",28,"obesity_class_1","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_111344",0,"ISPY2",0,1,0,"luminal",55,"obesity_class_2","post","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_111646",0,"ISPY2",0,0,0,"luminal",66,"obesity_class_3",NA,"caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_111674",1,"ISPY2",0,0,0,"triple_negative",30,NA,"pre","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_111881",1,"ISPY2",0,1,1,"luminal",37,NA,"pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_112606",0,"ISPY2",0,0,1,"luminal",57,"obesity_class_1","post","caucasian",1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_114087",0,"ISPY2",0,1,0,"luminal",46,NA,"pre","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_115638",0,"ISPY2",0,1,0,"triple_negative",34,"obesity_class_1","pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_115987",0,"ISPY2",0,1,0,"triple_negative",42,"normal",NA,"caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_116165",0,"ISPY2",0,0,0,"luminal",55,"overweight",NA,"caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_116603",0,"ISPY2",0,1,0,"triple_negative",39,"obesity_class_1","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_117424",1,"ISPY2",0,0,0,"triple_negative",33,NA,"pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_117707",1,"ISPY2",0,0,0,"triple_negative",50,"obesity_class_1","pre","african american",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_118307",0,"ISPY2",0,1,0,"triple_negative",44,"overweight","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_119928",0,"ISPY2",0,0,0,"triple_negative",39,"normal","pre","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_120422",1,"ISPY2",0,0,0,"luminal",57,NA,"post","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_122287",1,"ISPY2",0,1,1,"luminal",54,"normal","post","caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_122579",0,"ISPY2",0,1,0,"luminal",57,"normal","post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_122795",0,"ISPY2",0,1,0,"triple_negative",45,"normal","pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_123660",0,"ISPY2",0,0,1,"her2_enriched",71,NA,"post","asian",1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_125130",1,"ISPY2",0,1,1,"her2_enriched",48,NA,"pre","caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_125418",0,"ISPY2",0,0,0,"luminal",49,"normal","pre","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_127675",0,"ISPY2",0,1,0,"triple_negative",59,NA,"post","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_127791",0,"ISPY2",0,1,1,"luminal",44,"normal","pre","caucasian",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_128051",0,"ISPY2",0,0,1,"luminal",56,"obesity_class_1","post","caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_128675",1,"ISPY2",0,0,0,"luminal",47,"overweight","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_129837",0,"ISPY2",0,1,0,"triple_negative",67,NA,"post","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_129973",1,"ISPY2",0,0,0,"triple_negative",35,"overweight","pre","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_130580",1,"ISPY2",0,1,0,"triple_negative",56,"obesity_class_2",NA,"caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_130892",1,"ISPY2",0,1,0,"luminal",50,"obesity_class_1","pre","caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_131595",0,"ISPY2",0,1,0,"luminal",43,"normal","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_131961",1,"ISPY2",0,1,1,"luminal",44,"normal",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_132463",1,"ISPY2",0,1,1,"luminal",64,"normal","post","asian",1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_133650",0,"ISPY2",0,1,0,"luminal",54,"normal","post","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_134526",1,"ISPY2",0,0,0,"triple_negative",36,NA,"pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_136536",1,"ISPY2",0,0,0,"triple_negative",42,"overweight","pre","asian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_138027",0,"ISPY2",0,1,0,"triple_negative",64,"overweight","post","asian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_138425",1,"ISPY2",0,1,1,"her2_enriched",62,NA,"post","caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_139137",0,"ISPY2",0,0,0,"luminal",54,NA,"post","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_139771",1,"ISPY2",0,0,0,"triple_negative",55,"underweight","post","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_139973",0,"ISPY2",0,0,0,"luminal",41,"normal",NA,"caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_141782",0,"ISPY2",0,0,1,"luminal",54,"normal","pre","caucasian",1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_142688",0,"ISPY2",0,1,0,"triple_negative",45,"normal","pre","asian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_144302",0,"ISPY2",0,1,1,"luminal",52,"normal","post","caucasian",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_145513",0,"ISPY2",0,0,1,"luminal",32,"normal","pre","caucasian",1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_145777",0,"ISPY2",0,1,0,"luminal",30,"normal",NA,"asian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_146033",1,"ISPY2",0,1,1,"luminal",53,NA,"pre","caucasian",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_146987",0,"ISPY2",0,0,0,"luminal",53,"overweight","post","asian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_147139",1,"ISPY2",0,1,0,"triple_negative",52,"obesity_class_3","pre","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_148357",0,"ISPY2",0,0,0,"luminal",55,NA,NA,"african american",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_149654",0,"ISPY2",0,1,0,"luminal",NA,"normal","pre",NA,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_150547",0,"ISPY2",0,1,0,"luminal",51,"overweight","pre","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_151230",0,"ISPY2",0,1,1,"luminal",45,"obesity_class_2","pre","african american",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_151481",0,"ISPY2",0,0,0,"triple_negative",54,"overweight","post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_151980",1,"ISPY2",0,0,0,"luminal",46,NA,NA,"caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_152090",1,"ISPY2",0,0,0,"luminal",30,"normal","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_152197",1,"ISPY2",0,1,0,"triple_negative",59,"overweight","post","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_153327",1,"ISPY2",0,1,0,"triple_negative",56,"obesity_class_1","post","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_153880",0,"ISPY2",0,1,1,"luminal",39,"obesity_class_1","pre","caucasian",1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_154293",0,"ISPY2",0,0,1,"luminal",52,NA,"pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_155171",0,"ISPY2",0,1,0,"luminal",50,NA,"pre","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_156163",0,"ISPY2",0,1,0,"luminal",47,"normal","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_157270",0,"ISPY2",0,1,1,"luminal",43,NA,"pre","caucasian",1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+"ISPY2_157463",0,"ISPY2",0,1,0,"luminal",44,"normal","pre","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_159284",0,"ISPY2",0,1,0,"triple_negative",35,"overweight","post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_159352",0,"ISPY2",0,0,1,"luminal",57,"overweight","post","caucasian",1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_160120",0,"ISPY2",0,1,0,"luminal",55,"obesity_class_1","post","african american",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_162562",1,"ISPY2",0,0,1,"her2_enriched",61,"overweight","post","caucasian",1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_164468",0,"ISPY2",0,1,0,"triple_negative",45,"obesity_class_1","pre","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_165925",0,"ISPY2",0,0,0,"triple_negative",50,NA,NA,"african american",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_166412",0,"ISPY2",0,0,1,"luminal",37,NA,"pre","caucasian",1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_166782",0,"ISPY2",0,0,1,"luminal",52,"obesity_class_2","post","african american",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_167271",0,"ISPY2",0,0,1,"luminal",33,"normal","pre","african american",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_168044",0,"ISPY2",0,1,0,"luminal",64,NA,"post","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_169536",0,"ISPY2",1,0,1,"luminal",25,NA,"pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_169918",0,"ISPY2",0,0,0,"luminal",50,"overweight","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_172168",0,"ISPY2",1,0,0,"triple_negative",40,NA,"pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_172283",0,"ISPY2",0,1,0,"triple_negative",48,"overweight","pre","african american",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_172366",1,"ISPY2",0,1,0,"triple_negative",51,"obesity_class_1","pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_174903",0,"ISPY2",0,1,0,"luminal",56,NA,"post","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_174904",0,"ISPY2",0,0,0,"luminal",48,NA,"pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_177795",1,"ISPY2",0,0,0,"triple_negative",58,"normal","post","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_178649",1,"ISPY2",0,0,0,"triple_negative",58,"overweight","post","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_178815",0,"ISPY2",0,1,0,"luminal",39,"normal","pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_179369",0,"ISPY2",0,1,0,"luminal",36,"normal","pre","caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_179568",0,"ISPY2",0,0,0,"luminal",52,"overweight","post","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_180027",1,"ISPY2",0,0,0,"triple_negative",40,NA,"pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_180663",0,"ISPY2",1,1,0,"luminal",39,"overweight","pre","caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_181442",0,"ISPY2",0,0,0,"triple_negative",63,"overweight","post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_181819",1,"ISPY2",0,0,0,"luminal",32,"overweight",NA,"african american",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_182346",0,"ISPY2",0,0,0,"luminal",58,"underweight","post","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_183831",1,"ISPY2",0,1,0,"luminal",49,NA,NA,"asian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_188091",1,"ISPY2",0,0,1,"her2_enriched",50,"normal","pre","african american",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_188511",0,"ISPY2",1,0,0,"luminal",60,"overweight","post","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_188700",1,"ISPY2",0,0,0,"triple_negative",58,"normal","post","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_190224",0,"ISPY2",0,0,0,"luminal",63,NA,"post","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_192548",0,"ISPY2",0,0,0,"luminal",51,"overweight","pre","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_194024",1,"ISPY2",0,0,0,"luminal",41,"normal","pre","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_196024",0,"ISPY2",0,0,0,"triple_negative",67,"obesity_class_2",NA,"caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_196064",1,"ISPY2",0,0,0,"luminal",50,NA,"post","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_197942",0,"ISPY2",1,0,0,"triple_negative",34,"overweight","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_198891",0,"ISPY2",0,0,0,"luminal",61,"overweight","post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_199115",0,"ISPY2",0,0,0,"luminal",61,NA,"post","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_199960",0,"ISPY2",1,0,0,"triple_negative",33,"obesity_class_1","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_200222",0,"ISPY2",0,0,0,"luminal",70,"obesity_class_2",NA,"caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_201831",1,"ISPY2",0,0,0,"triple_negative",44,"obesity_class_2",NA,"caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_201873",1,"ISPY2",0,0,1,"luminal",49,NA,"pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_202535",0,"ISPY2",0,1,1,"luminal",32,"obesity_class_2","pre","caucasian",1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+"ISPY2_202539",1,"ISPY2",0,0,0,"luminal",57,NA,"post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_202956",1,"ISPY2",0,0,0,"triple_negative",49,"overweight",NA,"caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_203060",0,"ISPY2",0,0,1,"luminal",57,"normal","post","caucasian",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_203254",0,"ISPY2",0,0,0,"triple_negative",25,NA,"pre","asian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_204939",1,"ISPY2",0,0,1,"luminal",49,"normal","pre","african american",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_208265",1,"ISPY2",1,0,0,"triple_negative",41,"normal","pre","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_208303",1,"ISPY2",0,0,0,"triple_negative",64,"overweight",NA,"caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_208650",0,"ISPY2",0,0,1,"luminal",39,"normal",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_209397",0,"ISPY2",0,0,0,"luminal",45,"overweight","pre","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_209967",0,"ISPY2",0,0,0,"luminal",45,"normal","pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_211408",1,"ISPY2",0,0,1,"her2_enriched",58,NA,"post","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_212307",0,"ISPY2",1,1,0,"luminal",34,NA,"pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_213328",1,"ISPY2",0,0,0,"triple_negative",32,"obesity_class_1","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_213672",0,"ISPY2",0,0,0,"luminal",39,"normal","pre","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_213913",1,"ISPY2",0,0,1,"her2_enriched",69,"normal","post","asian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_215932",0,"ISPY2",0,0,1,"her2_enriched",43,"normal","pre","asian",1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+"ISPY2_218249",0,"ISPY2",0,0,0,"luminal",59,"overweight","post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_218503",0,"ISPY2",0,0,0,"luminal",52,NA,"post","caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_219545",0,"ISPY2",0,0,0,"triple_negative",56,"obesity_class_1","post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_220471",0,"ISPY2",1,1,1,"her2_enriched",50,"overweight","post","caucasian",1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_220664",1,"ISPY2",0,0,0,"triple_negative",47,"normal","pre","asian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_220925",0,"ISPY2",0,0,1,"her2_enriched",37,"overweight","pre","caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_221375",0,"ISPY2",0,1,0,"luminal",46,"overweight","pre","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_221686",1,"ISPY2",0,0,0,"triple_negative",47,"obesity_class_2","post","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_222135",0,"ISPY2",0,0,0,"luminal",53,"obesity_class_1",NA,"african american",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_223030",0,"ISPY2",0,1,0,"luminal",56,"normal","post","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_223526",0,"ISPY2",0,1,0,"luminal",57,NA,"post","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_225836",0,"ISPY2",0,0,0,"triple_negative",70,"normal","post","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_227055",0,"ISPY2",0,1,1,"luminal",40,"overweight","pre","african american",1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+"ISPY2_227832",0,"ISPY2",0,1,1,"luminal",53,NA,"pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_227881",1,"ISPY2",0,1,1,"luminal",49,"overweight",NA,"caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_228192",0,"ISPY2",0,0,0,"triple_negative",56,"normal",NA,"caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_228340",0,"ISPY2",0,0,1,"her2_enriched",66,"normal","post","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_229144",0,"ISPY2",0,1,0,"luminal",54,"obesity_class_1","post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_229328",0,"ISPY2",0,1,0,"luminal",39,NA,"pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_229824",0,"ISPY2",1,1,0,"luminal",60,"overweight","post","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_231633",1,"ISPY2",0,0,0,"triple_negative",53,"obesity_class_1","post","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_233191",0,"ISPY2",0,1,0,"triple_negative",42,"normal","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_233832",0,"ISPY2",0,0,0,"triple_negative",42,"normal","pre","african american",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_233962",1,"ISPY2",0,0,0,"triple_negative",33,"overweight","pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_234272",0,"ISPY2",0,1,1,"luminal",41,NA,"pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_234723",0,"ISPY2",0,0,0,"triple_negative",37,"normal","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_235995",1,"ISPY2",0,0,1,"luminal",50,"overweight","pre","caucasian",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_236470",1,"ISPY2",0,1,0,"triple_negative",54,"obesity_class_1","pre","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_237158",1,"ISPY2",0,0,0,"luminal",56,"obesity_class_1","post","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_238790",0,"ISPY2",0,0,0,"triple_negative",44,"obesity_class_1","pre","african american",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_239061",0,"ISPY2",0,0,0,"triple_negative",70,"overweight","post","african american",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_239910",0,"ISPY2",0,1,0,"triple_negative",42,"normal","pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_240035",0,"ISPY2",0,1,0,"luminal",68,"obesity_class_1","post","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_240432",0,"ISPY2",0,0,0,"luminal",48,"obesity_class_1","post","african american",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_240957",0,"ISPY2",0,1,0,"luminal",46,"normal","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_241705",0,"ISPY2",0,0,0,"luminal",49,"obesity_class_1","pre","african american",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_241998",0,"ISPY2",0,1,0,"luminal",54,"normal","post","african american",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_242370",1,"ISPY2",0,0,0,"luminal",38,"obesity_class_1","pre","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_243836",1,"ISPY2",0,0,0,"luminal",31,"underweight","pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_245655",0,"ISPY2",0,0,0,"triple_negative",43,NA,"pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_246134",0,"ISPY2",0,1,1,"luminal",68,"obesity_class_2",NA,"caucasian",1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_247641",0,"ISPY2",0,1,0,"triple_negative",63,"obesity_class_1","post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_248255",0,"ISPY2",0,0,0,"luminal",31,NA,"pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_250274",0,"ISPY2",0,1,1,"luminal",43,"overweight",NA,"asian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_252748",1,"ISPY2",0,1,0,"triple_negative",41,NA,"pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_253531",1,"ISPY2",0,1,1,"luminal",59,"normal",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_254060",1,"ISPY2",0,0,0,"triple_negative",38,"normal","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_254273",0,"ISPY2",0,0,1,"luminal",51,"obesity_class_2","pre","caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_255078",0,"ISPY2",0,1,0,"triple_negative",57,"obesity_class_3",NA,"caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_255388",1,"ISPY2",0,0,1,"her2_enriched",57,"normal",NA,"caucasian",1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_255535",0,"ISPY2",0,0,1,"luminal",44,"obesity_class_2","pre","african american",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_255577",0,"ISPY2",0,1,0,"triple_negative",50,"normal","pre","asian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_257735",0,"ISPY2",0,0,0,"triple_negative",48,"normal","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_259206",0,"ISPY2",0,0,0,"triple_negative",64,"obesity_class_1",NA,"caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_259899",0,"ISPY2",0,1,0,"triple_negative",41,"normal","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_261304",0,"ISPY2",0,1,0,"luminal",49,NA,"pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_262131",0,"ISPY2",0,0,0,"triple_negative",41,NA,"pre","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_263143",0,"ISPY2",0,0,1,"her2_enriched",54,NA,"pre","caucasian",1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_264305",1,"ISPY2",0,0,0,"triple_negative",42,"overweight","pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_264678",0,"ISPY2",0,1,0,"luminal",46,NA,"pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_266509",1,"ISPY2",0,0,0,"triple_negative",59,"obesity_class_2","post","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_266840",0,"ISPY2",0,1,1,"luminal",37,"normal","pre","caucasian",1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_267306",1,"ISPY2",0,1,0,"triple_negative",56,"obesity_class_2","post","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_268937",1,"ISPY2",0,0,1,"luminal",50,"overweight","post","asian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_269899",1,"ISPY2",0,0,0,"luminal",58,"obesity_class_2",NA,"caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_273691",1,"ISPY2",0,1,1,"luminal",46,"normal",NA,"caucasian",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_273745",0,"ISPY2",0,0,0,"luminal",48,"obesity_class_1","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_275034",1,"ISPY2",0,0,1,"luminal",27,"normal","pre","caucasian",1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+"ISPY2_275626",1,"ISPY2",0,0,0,"triple_negative",42,"normal","pre",NA,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_277848",0,"ISPY2",0,1,1,"luminal",66,"normal","post","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_277888",1,"ISPY2",0,0,0,"luminal",48,"obesity_class_1","pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_279902",1,"ISPY2",0,0,0,"luminal",42,"overweight","pre","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_280375",0,"ISPY2",0,0,0,"triple_negative",57,NA,NA,"caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_282082",1,"ISPY2",0,0,0,"triple_negative",NA,"normal","pre",NA,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_282644",0,"ISPY2",0,0,1,"luminal",62,NA,"post","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_282777",0,"ISPY2",0,1,0,"luminal",48,"overweight","pre","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_283070",0,"ISPY2",0,0,0,"triple_negative",68,"normal","post","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_284355",0,"ISPY2",0,0,0,"triple_negative",41,"overweight","pre","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_284443",0,"ISPY2",0,0,1,"luminal",46,"normal","pre","caucasian",1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+"ISPY2_284593",0,"ISPY2",0,0,0,"triple_negative",32,"normal","pre","caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_285339",1,"ISPY2",0,1,1,"her2_enriched",56,"normal","post","caucasian",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_286984",0,"ISPY2",0,1,0,"luminal",50,NA,"pre","caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_287300",1,"ISPY2",0,0,1,"luminal",45,"normal","pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_287961",1,"ISPY2",0,1,1,"luminal",53,"normal","post","caucasian",1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_289107",1,"ISPY2",0,0,0,"triple_negative",50,"normal","post","american indian/alaska native",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_289420",0,"ISPY2",0,1,0,"luminal",64,"normal","post","asian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_290413",0,"ISPY2",0,0,1,"luminal",59,"overweight","post","caucasian",1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+"ISPY2_291515",0,"ISPY2",0,0,0,"triple_negative",44,"normal","pre","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_293142",0,"ISPY2",0,1,0,"luminal",56,"obesity_class_1","post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_294176",1,"ISPY2",0,0,0,"triple_negative",56,"overweight",NA,"caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_294265",1,"ISPY2",0,0,0,"triple_negative",52,"normal","post","asian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_294739",0,"ISPY2",0,0,0,"luminal",42,"obesity_class_3","pre","african american",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_296123",1,"ISPY2",0,0,0,"triple_negative",62,"normal","post","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_296841",1,"ISPY2",0,0,1,"luminal",65,"overweight","post","caucasian",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_298101",0,"ISPY2",0,0,1,"luminal",71,"normal","post","caucasian",1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_299364",0,"ISPY2",0,0,0,"triple_negative",40,"normal","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_299840",0,"ISPY2",0,1,0,"triple_negative",36,"obesity_class_1","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_299962",0,"ISPY2",0,1,0,"triple_negative",41,"overweight","pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_300724",0,"ISPY2",0,1,0,"luminal",59,"normal","post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_301289",0,"ISPY2",0,1,0,"luminal",42,"normal","pre","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_301665",0,"ISPY2",0,1,1,"luminal",52,"obesity_class_1","pre","caucasian",1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+"ISPY2_301968",0,"ISPY2",0,0,0,"luminal",45,"obesity_class_3","pre","african american",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_303685",1,"ISPY2",0,1,0,"luminal",71,"overweight","post","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_303947",1,"ISPY2",0,0,1,"her2_enriched",61,"overweight","post","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_306127",0,"ISPY2",0,0,0,"luminal",55,NA,NA,"african american",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_306401",1,"ISPY2",0,0,0,"luminal",58,"obesity_class_1",NA,"caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_307659",0,"ISPY2",0,0,1,"luminal",56,"obesity_class_2",NA,"caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_309830",0,"ISPY2",0,0,0,"triple_negative",32,NA,"pre","caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_311316",0,"ISPY2",0,1,1,"luminal",48,"overweight","pre","caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_311455",0,"ISPY2",0,0,0,"luminal",58,"normal","post","asian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_313243",1,"ISPY2",0,0,0,"luminal",36,"obesity_class_1",NA,"caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_313672",0,"ISPY2",0,1,0,"luminal",73,"obesity_class_1",NA,"caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_316996",0,"ISPY2",0,1,1,"her2_enriched",51,"normal","pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_317131",0,"ISPY2",0,1,0,"luminal",46,"overweight","pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_317402",0,"ISPY2",0,0,0,"luminal",53,NA,NA,"caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_317641",1,"ISPY2",0,0,0,"triple_negative",28,"normal","pre","caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_318293",0,"ISPY2",0,0,0,"luminal",47,"overweight","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_318407",0,"ISPY2",0,0,0,"triple_negative",58,NA,NA,"caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_318438",0,"ISPY2",0,0,0,"triple_negative",60,"normal","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_318569",0,"ISPY2",0,1,1,"luminal",39,NA,"pre","asian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_319324",0,"ISPY2",0,0,1,"luminal",48,"obesity_class_1","pre","caucasian",1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_320538",0,"ISPY2",0,0,0,"triple_negative",57,"underweight","post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_323721",0,"ISPY2",0,0,0,"luminal",65,NA,NA,"caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_324021",0,"ISPY2",0,1,1,"luminal",44,"overweight",NA,"african american",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_326202",0,"ISPY2",0,0,0,"luminal",45,"normal","pre","asian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_326433",1,"ISPY2",0,0,0,"triple_negative",39,"normal","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_327133",0,"ISPY2",0,0,0,"triple_negative",38,"obesity_class_2","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_327142",0,"ISPY2",0,0,0,"luminal",59,"overweight",NA,"african american",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_327917",0,"ISPY2",0,0,0,"triple_negative",56,"obesity_class_1",NA,"african american",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_328160",0,"ISPY2",0,0,0,"luminal",55,"overweight","post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_329076",0,"ISPY2",0,0,0,"luminal",43,"normal","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_329941",1,"ISPY2",0,0,1,"luminal",47,"obesity_class_1","pre","caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_330134",0,"ISPY2",0,0,0,"luminal",60,"obesity_class_3","post","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_331192",1,"ISPY2",0,0,0,"luminal",42,"overweight","pre","african american",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_332655",1,"ISPY2",0,0,0,"triple_negative",56,"normal","post","caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_333145",1,"ISPY2",0,0,0,"luminal",49,NA,"pre","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_335091",1,"ISPY2",0,0,1,"luminal",39,"normal","pre","caucasian",1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_335536",0,"ISPY2",0,0,0,"luminal",67,NA,NA,"african american",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_340186",0,"ISPY2",0,0,0,"triple_negative",54,NA,"post","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_341238",0,"ISPY2",0,0,0,"luminal",27,"normal","pre",NA,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_342142",1,"ISPY2",0,1,0,"triple_negative",54,"normal","post","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_342959",1,"ISPY2",0,0,0,"triple_negative",60,"normal","post","caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_342996",0,"ISPY2",0,0,0,"luminal",42,"normal","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_343898",0,"ISPY2",0,1,0,"triple_negative",45,"normal","pre","caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_345460",0,"ISPY2",0,0,0,"luminal",45,"normal","pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_345483",0,"ISPY2",0,0,0,"triple_negative",50,"obesity_class_3",NA,"caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_345574",1,"ISPY2",0,0,0,"triple_negative",39,"overweight","pre","asian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_345907",0,"ISPY2",0,0,0,"triple_negative",61,"overweight","post","asian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_347516",0,"ISPY2",0,1,0,"triple_negative",39,NA,NA,"caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_348009",0,"ISPY2",0,0,0,"triple_negative",37,"normal","pre","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_349225",0,"ISPY2",0,1,0,"triple_negative",40,NA,"pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_349330",1,"ISPY2",0,1,0,"triple_negative",50,NA,NA,"caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_349639",1,"ISPY2",1,0,1,"luminal",43,"obesity_class_2","post","african american",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_350331",0,"ISPY2",0,0,1,"her2_enriched",54,"normal","post","asian",1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_353318",0,"ISPY2",0,0,0,"triple_negative",53,"normal","post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_355292",0,"ISPY2",0,0,0,"luminal",36,"normal","pre","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_355942",0,"ISPY2",0,0,0,"luminal",52,"obesity_class_1",NA,"caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_356399",0,"ISPY2",0,0,0,"luminal",30,"obesity_class_2","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_356431",1,"ISPY2",0,1,1,"her2_enriched",48,"obesity_class_2","pre","caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_356684",0,"ISPY2",0,0,1,"luminal",51,"obesity_class_1","post","hawaiian/pacific islander",1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+"ISPY2_357017",0,"ISPY2",0,0,0,"luminal",45,"overweight","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_357034",0,"ISPY2",0,1,0,"luminal",63,"overweight",NA,"caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_360937",0,"ISPY2",0,1,0,"luminal",50,NA,"pre","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_361701",0,"ISPY2",0,0,0,"luminal",49,NA,"post","caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_362150",0,"ISPY2",0,0,0,"luminal",44,NA,NA,"caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_362993",0,"ISPY2",0,0,0,"triple_negative",35,NA,"pre","african american",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_363669",0,"ISPY2",0,0,0,"luminal",60,"overweight","post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_366120",0,"ISPY2",0,0,1,"luminal",46,"obesity_class_1","pre","caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_367682",0,"ISPY2",0,0,0,"triple_negative",55,"obesity_class_1",NA,"caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_369040",0,"ISPY2",0,0,0,"luminal",46,"obesity_class_1","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_371528",0,"ISPY2",0,0,0,"luminal",70,"overweight",NA,"caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_373346",0,"ISPY2",0,0,0,"luminal",59,NA,"post","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_373672",0,"ISPY2",0,0,0,"triple_negative",67,NA,NA,"african american",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_374106",0,"ISPY2",0,0,0,"triple_negative",36,NA,"pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_374121",0,"ISPY2",0,1,0,"triple_negative",57,"normal","post","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_375342",0,"ISPY2",0,0,0,"triple_negative",38,"overweight",NA,"caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_375455",0,"ISPY2",0,0,1,"luminal",56,"normal","post","caucasian",1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_376676",0,"ISPY2",0,0,0,"triple_negative",48,"obesity_class_1","pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_377460",1,"ISPY2",0,1,1,"her2_enriched",53,"overweight","post","asian",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_378401",1,"ISPY2",0,0,0,"triple_negative",61,"overweight","post","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_378885",0,"ISPY2",0,0,0,"luminal",36,"overweight","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_380239",0,"ISPY2",0,0,0,"triple_negative",55,NA,"post","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_380769",1,"ISPY2",0,0,0,"triple_negative",40,"obesity_class_1","pre","african american",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_380972",0,"ISPY2",0,0,0,"luminal",28,"normal","pre","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_382853",1,"ISPY2",0,0,1,"her2_enriched",32,NA,"pre","african american",1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_383456",1,"ISPY2",0,0,0,"luminal",50,NA,"post","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_384830",0,"ISPY2",0,0,1,"luminal",37,"obesity_class_1","pre","caucasian",1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_386664",0,"ISPY2",0,0,0,"luminal",63,"overweight","post","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_388581",1,"ISPY2",0,0,1,"luminal",48,NA,"pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_391942",1,"ISPY2",0,0,0,"triple_negative",54,"obesity_class_1","post","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_395076",1,"ISPY2",0,0,0,"triple_negative",53,NA,"pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_395249",0,"ISPY2",0,0,0,"triple_negative",68,"overweight","post","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_395379",0,"ISPY2",0,1,0,"luminal",36,"obesity_class_2",NA,"caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_396723",0,"ISPY2",0,0,1,"luminal",72,"obesity_class_2","post","caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_397505",1,"ISPY2",0,0,1,"luminal",41,"overweight",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_399478",1,"ISPY2",0,0,0,"triple_negative",54,"obesity_class_1","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_401215",0,"ISPY2",0,0,0,"luminal",46,"normal","pre","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_402265",0,"ISPY2",0,1,1,"luminal",56,NA,"post","caucasian",1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_402384",0,"ISPY2",0,0,0,"triple_negative",59,"overweight","post","caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_405717",0,"ISPY2",0,0,0,"triple_negative",44,NA,"pre","asian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_406190",0,"ISPY2",0,0,0,"triple_negative",54,"obesity_class_1","post","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_407539",0,"ISPY2",0,1,0,"luminal",35,"obesity_class_3","pre","african american",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_408692",1,"ISPY2",0,0,0,"triple_negative",25,"normal","pre",NA,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_409288",0,"ISPY2",0,0,0,"triple_negative",77,"normal",NA,"african american",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_410083",1,"ISPY2",0,0,1,"her2_enriched",55,"obesity_class_2","post","african american",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_411008",0,"ISPY2",1,0,0,"triple_negative",49,"normal",NA,"caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_411684",0,"ISPY2",0,0,0,"triple_negative",39,NA,"pre","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_411806",0,"ISPY2",0,0,0,"luminal",45,"overweight","pre","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_411950",0,"ISPY2",0,1,0,"luminal",61,"overweight",NA,"caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_412772",0,"ISPY2",0,0,0,"triple_negative",62,"obesity_class_1",NA,"caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_413211",0,"ISPY2",0,0,1,"luminal",66,"overweight","post","caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_413961",0,"ISPY2",0,0,0,"triple_negative",49,"obesity_class_3","pre","caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_414256",0,"ISPY2",0,0,0,"luminal",38,"overweight","pre","asian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_414286",0,"ISPY2",0,0,0,"luminal",62,"obesity_class_1","post","caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_414844",0,"ISPY2",0,0,0,"luminal",51,"normal","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_414971",1,"ISPY2",0,1,0,"triple_negative",73,"obesity_class_1","post","african american",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_415039",0,"ISPY2",0,0,1,"luminal",50,NA,"pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_416434",1,"ISPY2",0,1,1,"her2_enriched",65,"overweight","post","caucasian",1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_417474",1,"ISPY2",0,0,0,"triple_negative",63,"normal","post","asian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_417654",0,"ISPY2",0,1,0,"luminal",68,"normal","post","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_418593",0,"ISPY2",0,0,0,"luminal",32,NA,"pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_419590",0,"ISPY2",0,0,0,"triple_negative",63,"normal","post","african american",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_420523",0,"ISPY2",0,1,1,"luminal",39,"overweight","pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_421829",0,"ISPY2",0,1,0,"triple_negative",46,"obesity_class_2","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_421917",0,"ISPY2",0,1,0,"triple_negative",41,NA,"pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_422013",0,"ISPY2",0,1,1,"luminal",32,"normal","pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_422450",1,"ISPY2",0,1,0,"luminal",51,"normal","pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_422454",0,"ISPY2",0,1,0,"luminal",45,"normal","pre","asian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_423619",1,"ISPY2",0,0,0,"triple_negative",53,NA,"pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_423979",0,"ISPY2",0,0,0,"luminal",54,"underweight","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_424541",0,"ISPY2",0,1,0,"luminal",58,"overweight","post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_425173",1,"ISPY2",0,0,0,"luminal",55,"normal",NA,"caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_426106",0,"ISPY2",0,1,0,"luminal",56,NA,"post","caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_427321",1,"ISPY2",0,0,0,"luminal",51,"obesity_class_3",NA,"african american",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_429220",0,"ISPY2",0,0,0,"triple_negative",52,"obesity_class_1",NA,"caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_430441",0,"ISPY2",0,1,0,"luminal",30,"normal","pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_431061",0,"ISPY2",0,0,0,"luminal",57,"obesity_class_1","post","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_432114",1,"ISPY2",0,1,1,"luminal",50,"obesity_class_1",NA,"caucasian",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_433144",1,"ISPY2",0,1,0,"triple_negative",59,NA,"post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_435279",0,"ISPY2",0,1,0,"luminal",47,"normal","pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_435313",0,"ISPY2",0,0,0,"triple_negative",52,"obesity_class_2","pre","african american",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_436371",0,"ISPY2",0,0,0,"luminal",60,"obesity_class_1","post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_437162",0,"ISPY2",0,1,1,"luminal",45,"normal","pre","caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_437968",0,"ISPY2",0,0,1,"luminal",60,"normal",NA,"caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_439489",0,"ISPY2",0,1,0,"luminal",41,"obesity_class_1","pre","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_442637",0,"ISPY2",0,1,1,"her2_enriched",56,"normal","pre","asian",1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_442669",0,"ISPY2",0,0,0,"triple_negative",53,"obesity_class_3",NA,"caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_442981",1,"ISPY2",0,1,0,"luminal",35,"normal","pre","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_443444",0,"ISPY2",0,1,1,"her2_enriched",61,NA,"post","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_443708",0,"ISPY2",0,0,0,"triple_negative",55,"obesity_class_2",NA,"caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_446263",1,"ISPY2",0,0,0,"luminal",53,"overweight","pre","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_451482",0,"ISPY2",1,1,0,"luminal",47,"normal","pre","african american",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_451816",0,"ISPY2",0,1,0,"luminal",43,"normal","pre","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_452703",0,"ISPY2",0,0,0,"luminal",45,NA,"pre","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_453596",1,"ISPY2",0,0,1,"luminal",57,"overweight",NA,"caucasian",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_454808",0,"ISPY2",0,1,0,"triple_negative",56,"normal","post","african american",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_455828",1,"ISPY2",0,1,0,"luminal",50,"overweight","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_456432",0,"ISPY2",0,0,0,"triple_negative",45,"normal","pre","asian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_456506",0,"ISPY2",0,1,0,"luminal",47,"obesity_class_1","pre","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_458196",0,"ISPY2",0,1,0,"luminal",46,"normal",NA,"asian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_459311",0,"ISPY2",0,0,0,"luminal",54,"obesity_class_1",NA,"caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_460642",0,"ISPY2",0,1,0,"luminal",45,"obesity_class_1",NA,"caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_460776",1,"ISPY2",0,0,0,"luminal",61,"obesity_class_1","post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_460812",0,"ISPY2",0,1,0,"luminal",50,"overweight",NA,"african american",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_461824",0,"ISPY2",0,0,0,"triple_negative",36,"overweight","pre","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_462581",0,"ISPY2",0,0,0,"triple_negative",69,"normal","post","african american",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_462582",0,"ISPY2",0,1,0,"luminal",55,"overweight","post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_462605",1,"ISPY2",0,0,1,"her2_enriched",46,"obesity_class_3","pre","caucasian",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_464547",1,"ISPY2",0,1,1,"luminal",41,"normal","pre","caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_465008",0,"ISPY2",0,0,0,"luminal",62,"obesity_class_1",NA,"caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_466267",1,"ISPY2",0,0,0,"triple_negative",51,NA,"post","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_467622",0,"ISPY2",0,1,0,"luminal",42,"overweight","pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_467686",1,"ISPY2",0,1,0,"luminal",37,"underweight","pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_472799",1,"ISPY2",0,1,1,"her2_enriched",63,"obesity_class_2","post",NA,1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_473365",0,"ISPY2",0,0,0,"luminal",63,"normal","post","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_473468",0,"ISPY2",0,0,0,"triple_negative",54,"underweight","post","african american",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_473505",0,"ISPY2",0,0,0,"luminal",56,"obesity_class_1","post","african american",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_474874",1,"ISPY2",0,1,1,"her2_enriched",41,"overweight",NA,"caucasian",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_477816",0,"ISPY2",0,0,0,"luminal",39,"obesity_class_1","pre","african american",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_477994",1,"ISPY2",0,0,1,"luminal",54,"normal","pre","caucasian",1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_478055",0,"ISPY2",0,1,0,"luminal",31,NA,"pre","african american",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_478484",0,"ISPY2",0,0,0,"triple_negative",64,"underweight","post","asian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_478655",1,"ISPY2",0,0,0,"triple_negative",52,"normal","post","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_479417",1,"ISPY2",0,1,0,"triple_negative",49,NA,"post","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_483667",0,"ISPY2",0,1,1,"luminal",46,"overweight","pre","caucasian",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_483910",0,"ISPY2",0,0,0,"triple_negative",50,"normal","pre","asian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_484867",0,"ISPY2",0,1,1,"luminal",51,"obesity_class_1",NA,"caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_484894",0,"ISPY2",0,0,0,"luminal",31,"overweight","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_485637",0,"ISPY2",0,0,0,"triple_negative",54,"obesity_class_1","pre","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_489194",1,"ISPY2",0,1,0,"luminal",33,"overweight","pre","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_489504",1,"ISPY2",0,1,0,"triple_negative",47,"overweight","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_489973",0,"ISPY2",0,0,0,"triple_negative",39,"obesity_class_1",NA,"african american",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_490023",1,"ISPY2",0,1,1,"her2_enriched",34,"overweight","pre","caucasian",1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_490805",1,"ISPY2",0,1,1,"luminal",42,"underweight","pre","caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_491526",0,"ISPY2",0,1,0,"luminal",71,NA,"post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_491779",1,"ISPY2",0,1,1,"luminal",70,NA,"post","caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_492612",0,"ISPY2",0,0,0,"triple_negative",37,"obesity_class_2","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_493472",0,"ISPY2",0,1,0,"luminal",66,"normal","post","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_493519",0,"ISPY2",0,1,0,"luminal",40,NA,"pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_493775",1,"ISPY2",0,1,0,"triple_negative",41,"obesity_class_3","pre","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_494022",0,"ISPY2",0,1,1,"her2_enriched",58,NA,"post","asian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_494296",0,"ISPY2",0,1,0,"luminal",50,"normal","pre","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_494946",1,"ISPY2",0,0,0,"triple_negative",51,"normal","post","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_495440",0,"ISPY2",0,1,0,"luminal",49,"overweight","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_496205",1,"ISPY2",0,1,0,"luminal",68,"overweight","post","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_497010",1,"ISPY2",0,1,0,"triple_negative",31,"obesity_class_1","pre","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_498024",0,"ISPY2",0,0,0,"triple_negative",57,"normal","post","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_498985",0,"ISPY2",0,1,1,"luminal",25,"normal","pre","caucasian",1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+"ISPY2_500826",0,"ISPY2",0,1,0,"luminal",69,"obesity_class_1","post","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_501303",1,"ISPY2",0,1,1,"her2_enriched",47,"normal","pre","asian",1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_502486",0,"ISPY2",0,0,0,"triple_negative",28,"overweight","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_503034",0,"ISPY2",0,1,1,"her2_enriched",42,"obesity_class_2","pre","caucasian",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_504838",0,"ISPY2",0,1,0,"triple_negative",69,NA,NA,"caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_506623",0,"ISPY2",0,1,0,"triple_negative",69,"overweight","post","caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_507198",0,"ISPY2",0,0,0,"triple_negative",44,"normal","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_507249",0,"ISPY2",0,0,1,"luminal",37,NA,"pre","caucasian",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_509012",1,"ISPY2",0,0,0,"triple_negative",52,"normal","post","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_510543",0,"ISPY2",0,0,0,"luminal",62,"normal",NA,"caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_511851",0,"ISPY2",0,1,0,"luminal",48,"overweight","post","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_515105",0,"ISPY2",0,1,1,"luminal",38,NA,"pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_515141",1,"ISPY2",0,0,0,"triple_negative",43,"normal","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_515281",0,"ISPY2",0,1,0,"luminal",46,"obesity_class_1","pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_515284",0,"ISPY2",0,0,0,"triple_negative",36,NA,NA,"caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_515565",0,"ISPY2",0,0,0,"triple_negative",59,"obesity_class_1","post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_516763",1,"ISPY2",0,1,1,"her2_enriched",50,"obesity_class_1",NA,"african american",1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+"ISPY2_516834",0,"ISPY2",0,0,0,"luminal",46,"normal","pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_517446",0,"ISPY2",0,1,0,"luminal",63,NA,"post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_517870",0,"ISPY2",0,0,0,"triple_negative",52,"normal","post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_518000",0,"ISPY2",0,1,0,"triple_negative",34,"obesity_class_3","pre","caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_518576",1,"ISPY2",0,1,0,"triple_negative",50,"obesity_class_2","pre","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_519738",1,"ISPY2",0,0,1,"her2_enriched",58,NA,"post","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_520258",0,"ISPY2",0,1,0,"luminal",37,"normal","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_520471",1,"ISPY2",0,0,0,"luminal",35,"obesity_class_1","pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_520986",1,"ISPY2",0,0,0,"luminal",53,"obesity_class_1","post","hawaiian/pacific islander",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_521860",0,"ISPY2",0,1,0,"triple_negative",35,"overweight","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_522140",0,"ISPY2",0,1,0,"luminal",55,"obesity_class_2",NA,"african american",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_524170",0,"ISPY2",0,0,0,"luminal",38,"overweight","pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_527320",0,"ISPY2",0,1,0,"triple_negative",45,NA,"pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_527581",0,"ISPY2",0,1,1,"luminal",35,"normal","pre","caucasian",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_528479",0,"ISPY2",0,0,0,"triple_negative",63,"normal",NA,"caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_528833",1,"ISPY2",0,0,1,"luminal",61,"underweight",NA,"caucasian",1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+"ISPY2_530095",0,"ISPY2",0,0,0,"luminal",45,"overweight","pre","african american",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_531672",0,"ISPY2",0,0,0,"luminal",28,"obesity_class_1","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_531988",1,"ISPY2",0,1,0,"triple_negative",36,NA,"pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_532183",0,"ISPY2",0,1,0,"triple_negative",47,"overweight",NA,"caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_535415",1,"ISPY2",0,0,1,"her2_enriched",56,"normal",NA,"caucasian",1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_535569",0,"ISPY2",0,0,1,"her2_enriched",50,"obesity_class_2","post","caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_535779",0,"ISPY2",0,1,0,"triple_negative",39,"obesity_class_1","pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_536253",1,"ISPY2",0,0,1,"luminal",51,"overweight","post","caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_539291",1,"ISPY2",0,0,1,"her2_enriched",47,"normal","post","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_539876",0,"ISPY2",0,0,0,"luminal",59,"obesity_class_1","post","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_539904",0,"ISPY2",0,0,1,"luminal",45,NA,"post","caucasian",1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_540539",1,"ISPY2",0,0,0,"triple_negative",35,"obesity_class_1","pre","african american",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_541165",0,"ISPY2",0,0,0,"triple_negative",49,NA,"pre","asian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_542392",0,"ISPY2",0,1,0,"triple_negative",56,"obesity_class_1","post","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_543795",0,"ISPY2",0,1,0,"luminal",47,NA,"pre","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_547892",0,"ISPY2",0,1,0,"luminal",48,NA,"pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_549172",0,"ISPY2",0,0,0,"triple_negative",45,"overweight","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_550157",1,"ISPY2",0,0,0,"triple_negative",63,"overweight","post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_550421",0,"ISPY2",0,0,0,"triple_negative",49,"obesity_class_1","post","african american",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_551795",1,"ISPY2",0,1,1,"her2_enriched",40,"normal","pre","caucasian",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_552313",1,"ISPY2",0,0,1,"her2_enriched",61,"normal","post","asian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_552549",0,"ISPY2",0,1,0,"luminal",57,"normal","post","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_553012",0,"ISPY2",0,0,0,"luminal",63,"obesity_class_1",NA,"caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_553141",1,"ISPY2",0,1,0,"luminal",70,"normal","post","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_554577",0,"ISPY2",0,0,0,"luminal",52,"overweight",NA,"caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_555214",1,"ISPY2",0,1,1,"her2_enriched",49,NA,"pre","caucasian",1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+"ISPY2_559021",1,"ISPY2",0,1,0,"luminal",34,"obesity_class_2","pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_559263",0,"ISPY2",0,0,0,"triple_negative",64,"normal","post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_563681",0,"ISPY2",0,1,0,"luminal",23,"normal","pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_563856",1,"ISPY2",0,1,0,"triple_negative",40,"obesity_class_1","pre","african american",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_564234",1,"ISPY2",0,0,0,"triple_negative",33,NA,"pre","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_564701",0,"ISPY2",0,0,0,"triple_negative",31,"overweight","pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_566011",0,"ISPY2",0,1,0,"triple_negative",59,"overweight","post","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_567201",1,"ISPY2",0,1,0,"triple_negative",47,"normal","pre","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_567907",0,"ISPY2",0,0,0,"luminal",52,"obesity_class_2","pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_568331",0,"ISPY2",0,1,0,"triple_negative",51,NA,"post","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_568953",0,"ISPY2",0,1,0,"luminal",59,"obesity_class_1","post","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_570148",0,"ISPY2",0,0,1,"luminal",44,"overweight","pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_570380",0,"ISPY2",0,1,0,"triple_negative",44,NA,"pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_570685",0,"ISPY2",0,1,1,"luminal",70,"overweight",NA,"african american",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_570966",0,"ISPY2",0,1,1,"luminal",51,"normal",NA,"caucasian",1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+"ISPY2_571276",0,"ISPY2",0,1,0,"triple_negative",48,"obesity_class_1","pre","african american",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_571995",0,"ISPY2",0,1,0,"triple_negative",57,"normal","post","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_572016",1,"ISPY2",0,0,0,"triple_negative",42,NA,"pre","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_572235",0,"ISPY2",0,1,1,"luminal",54,"overweight","post","asian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_572444",0,"ISPY2",0,1,0,"luminal",54,"obesity_class_2","post","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_572731",1,"ISPY2",0,1,0,"luminal",34,"normal","pre","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_572793",0,"ISPY2",0,1,0,"triple_negative",49,"overweight",NA,"caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_573586",0,"ISPY2",0,1,1,"luminal",57,NA,"post","caucasian",1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_573605",0,"ISPY2",0,0,0,"triple_negative",38,"normal","pre","caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_573881",0,"ISPY2",0,1,0,"luminal",49,"overweight","pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_573919",0,"ISPY2",0,1,1,"her2_enriched",65,"normal",NA,"caucasian",1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_574091",1,"ISPY2",0,0,0,"triple_negative",57,"overweight","post","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_575372",1,"ISPY2",0,0,0,"triple_negative",66,"normal","post","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_575457",1,"ISPY2",0,1,1,"her2_enriched",46,"normal","pre","caucasian",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_578975",1,"ISPY2",0,1,0,"triple_negative",43,"obesity_class_1","pre","african american",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_579881",0,"ISPY2",0,1,0,"luminal",32,"normal","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_580541",0,"ISPY2",0,1,0,"luminal",61,NA,NA,"caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_580632",0,"ISPY2",0,1,0,"luminal",64,"overweight","post","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_581648",0,"ISPY2",0,0,0,"triple_negative",42,"overweight","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_584561",1,"ISPY2",0,1,1,"her2_enriched",39,"normal","pre","caucasian",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_586091",1,"ISPY2",0,1,0,"luminal",44,"normal","pre","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_586207",1,"ISPY2",0,0,0,"triple_negative",45,"overweight","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_587388",0,"ISPY2",0,0,0,"luminal",52,"normal","post","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_587604",0,"ISPY2",0,0,0,"triple_negative",45,"underweight","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_587691",1,"ISPY2",0,0,1,"luminal",63,"overweight","post","caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_589502",1,"ISPY2",0,1,0,"luminal",67,"obesity_class_2","post","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_590220",1,"ISPY2",0,0,0,"triple_negative",41,"obesity_class_2","pre","caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_590299",0,"ISPY2",0,0,0,"triple_negative",44,"overweight","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_591079",1,"ISPY2",0,0,0,"triple_negative",43,"overweight",NA,"caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_591180",0,"ISPY2",0,1,0,"triple_negative",57,"obesity_class_2",NA,"caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_591810",1,"ISPY2",0,1,0,"luminal",35,"normal","pre","asian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_592535",0,"ISPY2",0,0,0,"luminal",44,"obesity_class_1","pre","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_596079",1,"ISPY2",0,0,1,"her2_enriched",65,"obesity_class_3","post","caucasian",1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_596458",1,"ISPY2",1,1,1,"luminal",58,"obesity_class_1","post","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_597253",0,"ISPY2",0,0,0,"luminal",59,"overweight","post","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_597873",0,"ISPY2",0,1,0,"triple_negative",36,NA,"pre","african american",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_597907",0,"ISPY2",0,1,0,"luminal",52,"obesity_class_3","pre","african american",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_598798",0,"ISPY2",0,1,0,"luminal",46,NA,"pre","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_598835",0,"ISPY2",0,0,1,"her2_enriched",41,"obesity_class_1","pre","american indian/alaska native",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_600536",0,"ISPY2",0,0,0,"triple_negative",37,"normal","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_601489",0,"ISPY2",0,1,1,"her2_enriched",54,"obesity_class_3","pre","african american",1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_602451",0,"ISPY2",0,1,0,"luminal",47,"normal","pre","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_602943",1,"ISPY2",0,1,0,"triple_negative",38,"normal","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_604199",0,"ISPY2",0,0,0,"luminal",60,"overweight","post","asian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_604326",0,"ISPY2",0,0,1,"luminal",60,"overweight","post","caucasian",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_604380",1,"ISPY2",0,1,0,"triple_negative",52,"obesity_class_2","pre","african american",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_605713",0,"ISPY2",0,1,0,"luminal",38,"normal","pre","african american",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_607047",1,"ISPY2",0,1,0,"luminal",41,"overweight","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_607843",0,"ISPY2",0,0,0,"luminal",57,"normal","post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_609151",1,"ISPY2",0,1,1,"her2_enriched",40,"normal","pre","caucasian",1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_609642",1,"ISPY2",0,0,1,"her2_enriched",58,"overweight","post","caucasian",1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_609897",0,"ISPY2",0,1,0,"luminal",47,"obesity_class_1","pre","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_611662",0,"ISPY2",0,1,1,"her2_enriched",55,"obesity_class_1","post","african american",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_613188",0,"ISPY2",0,0,0,"triple_negative",53,"obesity_class_1","post","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_613961",1,"ISPY2",0,0,0,"triple_negative",45,"normal","pre","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_614044",0,"ISPY2",0,1,0,"triple_negative",52,"normal",NA,"african american",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_614434",1,"ISPY2",0,0,1,"luminal",56,"normal",NA,"caucasian",1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_615873",1,"ISPY2",0,0,0,"triple_negative",48,NA,"pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_616994",0,"ISPY2",0,1,0,"luminal",43,"obesity_class_1",NA,"african american",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_618240",0,"ISPY2",0,0,0,"triple_negative",35,"obesity_class_1","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_618717",0,"ISPY2",0,1,1,"luminal",29,"normal","pre","caucasian",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_618860",0,"ISPY2",0,1,0,"luminal",48,"normal","pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_621179",0,"ISPY2",0,1,0,"luminal",53,"obesity_class_1",NA,"caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_622078",0,"ISPY2",0,0,1,"her2_enriched",46,"overweight","pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_622315",0,"ISPY2",0,0,0,"triple_negative",48,"overweight",NA,"caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_622688",1,"ISPY2",0,0,0,"triple_negative",29,"obesity_class_1","pre","african american",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_623086",0,"ISPY2",0,0,0,"luminal",34,NA,"pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_623569",1,"ISPY2",0,1,0,"triple_negative",40,"overweight","pre","african american",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_624777",0,"ISPY2",0,0,1,"luminal",52,"obesity_class_2","pre","caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_625800",0,"ISPY2",0,1,1,"luminal",50,NA,"pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_625854",1,"ISPY2",0,0,0,"triple_negative",51,"obesity_class_1","post","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_627118",0,"ISPY2",0,1,1,"her2_enriched",44,"normal","pre","caucasian",1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_627981",1,"ISPY2",0,0,0,"triple_negative",64,"obesity_class_2","post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_628692",0,"ISPY2",0,1,0,"luminal",58,"obesity_class_1","post","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_628788",0,"ISPY2",0,0,0,"triple_negative",32,"overweight","pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_628823",0,"ISPY2",0,1,0,"triple_negative",42,"obesity_class_3","pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_629210",0,"ISPY2",0,1,0,"luminal",40,"overweight","pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_629371",1,"ISPY2",0,1,1,"her2_enriched",58,"overweight","post","caucasian",1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_629606",0,"ISPY2",0,1,0,"triple_negative",42,"normal",NA,"caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_630758",0,"ISPY2",0,0,0,"triple_negative",57,"overweight","post","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_631299",0,"ISPY2",0,0,0,"triple_negative",53,"normal","post","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_631337",0,"ISPY2",0,1,0,"luminal",28,"normal","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_632408",0,"ISPY2",0,1,0,"luminal",65,NA,"post","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_635632",1,"ISPY2",0,0,1,"her2_enriched",46,"overweight","pre","asian",1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_635862",0,"ISPY2",0,0,0,"triple_negative",37,"normal","pre",NA,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_636424",0,"ISPY2",0,0,0,"triple_negative",33,"normal","pre","asian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_637051",0,"ISPY2",0,0,0,"triple_negative",52,"obesity_class_3",NA,"caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_637566",0,"ISPY2",0,1,0,"triple_negative",68,"obesity_class_1","post","caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_637752",1,"ISPY2",0,1,0,"triple_negative",48,NA,"pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_638126",0,"ISPY2",0,1,0,"luminal",58,"obesity_class_1",NA,"caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_639663",0,"ISPY2",0,0,0,"triple_negative",30,"normal","pre","caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_640043",0,"ISPY2",0,0,0,"luminal",33,"overweight","pre","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_640463",1,"ISPY2",0,0,0,"luminal",31,"obesity_class_1","pre","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_640927",0,"ISPY2",0,1,0,"triple_negative",62,"normal","post","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_641246",1,"ISPY2",0,1,1,"luminal",58,"obesity_class_1","post","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_641697",0,"ISPY2",0,0,0,"luminal",26,"overweight","pre","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_641977",0,"ISPY2",0,1,0,"luminal",57,"overweight","post","hawaiian/pacific islander",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_644186",0,"ISPY2",0,1,0,"luminal",46,"overweight","pre","asian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_644609",1,"ISPY2",0,1,1,"her2_enriched",67,"overweight","post","caucasian",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_646233",0,"ISPY2",0,0,0,"luminal",58,"overweight","post","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_646600",0,"ISPY2",0,0,0,"luminal",35,"obesity_class_1",NA,"caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_649198",0,"ISPY2",0,1,1,"her2_enriched",50,"obesity_class_1","pre","caucasian",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_650589",0,"ISPY2",1,1,0,"triple_negative",52,NA,"post","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_651145",0,"ISPY2",0,1,0,"luminal",63,"overweight","post","caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_651401",0,"ISPY2",0,0,0,"triple_negative",37,"overweight","pre","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_651541",1,"ISPY2",0,1,0,"triple_negative",65,"overweight","post","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_652480",0,"ISPY2",0,1,0,"triple_negative",36,"normal","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_653325",0,"ISPY2",0,1,0,"luminal",35,"obesity_class_3","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_653927",1,"ISPY2",0,0,0,"triple_negative",38,"normal","pre","asian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_654021",0,"ISPY2",0,0,0,"luminal",46,"normal","pre","asian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_654064",0,"ISPY2",0,0,0,"luminal",34,"overweight","pre","caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_654956",0,"ISPY2",0,0,1,"her2_enriched",46,NA,"pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_655128",0,"ISPY2",0,0,0,"luminal",49,"normal","pre","asian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_655703",0,"ISPY2",0,0,0,"luminal",64,NA,"post","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_655795",1,"ISPY2",0,0,0,"luminal",57,"underweight","post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_658541",0,"ISPY2",0,1,0,"luminal",64,"obesity_class_1","post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_660534",1,"ISPY2",0,0,0,"triple_negative",50,"normal","pre","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_660915",0,"ISPY2",0,0,0,"luminal",54,"overweight","post","african american",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_661730",1,"ISPY2",0,0,0,"triple_negative",39,NA,"pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_663144",0,"ISPY2",0,0,0,"luminal",48,"obesity_class_1","pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_663197",0,"ISPY2",0,1,0,"triple_negative",43,"normal","pre","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_663467",0,"ISPY2",0,1,0,"luminal",45,"obesity_class_1",NA,"african american",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_664111",1,"ISPY2",0,1,0,"triple_negative",49,NA,"pre","caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_664658",1,"ISPY2",0,0,0,"luminal",39,"overweight","pre","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_666147",0,"ISPY2",0,0,0,"luminal",27,"normal","pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_666450",0,"ISPY2",0,0,1,"luminal",45,"underweight","pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_666715",0,"ISPY2",0,0,0,"luminal",32,"overweight","pre","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_668752",0,"ISPY2",0,0,0,"triple_negative",58,"normal","pre","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_672734",0,"ISPY2",0,0,0,"luminal",39,"normal","pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_674897",0,"ISPY2",0,0,0,"triple_negative",50,"obesity_class_1","pre","african american",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_676048",0,"ISPY2",0,0,0,"triple_negative",52,"normal","pre","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_676365",0,"ISPY2",0,1,0,"triple_negative",31,"normal","pre","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_676630",1,"ISPY2",0,0,0,"triple_negative",42,"obesity_class_1",NA,"caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_677910",0,"ISPY2",0,0,0,"triple_negative",45,"obesity_class_2","post","african american",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_677915",0,"ISPY2",0,0,0,"luminal",43,"obesity_class_2","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_679787",0,"ISPY2",0,0,0,"triple_negative",33,"normal","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_680881",0,"ISPY2",0,1,0,"luminal",33,"overweight","pre","caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_683173",1,"ISPY2",0,0,0,"luminal",51,"normal","pre","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_683374",0,"ISPY2",0,0,1,"luminal",58,NA,"post","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_683457",0,"ISPY2",0,0,0,"triple_negative",50,"overweight",NA,"african american",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_683896",0,"ISPY2",0,0,0,"luminal",61,"normal","post","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_685182",1,"ISPY2",0,1,1,"luminal",37,"normal","pre","caucasian",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_685753",0,"ISPY2",0,0,0,"luminal",46,"overweight","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_685795",0,"ISPY2",0,0,1,"luminal",64,"obesity_class_1","post","caucasian",1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+"ISPY2_687288",1,"ISPY2",0,1,1,"her2_enriched",57,"overweight",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_687733",0,"ISPY2",0,1,0,"luminal",43,"obesity_class_1","pre","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_688291",0,"ISPY2",0,0,0,"luminal",56,"overweight","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_688955",0,"ISPY2",0,0,0,"luminal",40,NA,"pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_689076",0,"ISPY2",0,1,0,"luminal",32,"normal",NA,"caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_689188",1,"ISPY2",0,0,0,"luminal",72,"obesity_class_1",NA,"african american",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_689452",0,"ISPY2",0,0,0,"triple_negative",63,"overweight",NA,"caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_689480",0,"ISPY2",0,0,0,"luminal",54,"normal","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_690089",0,"ISPY2",0,0,0,"triple_negative",43,NA,"pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_690410",0,"ISPY2",0,0,0,"luminal",69,NA,"post","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_691753",0,"ISPY2",0,0,0,"luminal",49,"normal","pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_692885",0,"ISPY2",0,0,0,"triple_negative",40,"normal","pre","african american",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_695521",0,"ISPY2",0,0,0,"luminal",57,"normal",NA,"caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_697098",1,"ISPY2",0,0,0,"triple_negative",37,NA,"pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_697871",1,"ISPY2",0,1,0,"triple_negative",39,"obesity_class_3","pre","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_698094",0,"ISPY2",0,1,0,"luminal",53,"obesity_class_2","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_700549",0,"ISPY2",0,0,0,"luminal",34,"overweight","pre","caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_701790",0,"ISPY2",0,0,0,"luminal",65,"overweight","post","american indian/alaska native",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_703401",0,"ISPY2",0,0,0,"luminal",46,"normal","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_703455",0,"ISPY2",0,0,0,"triple_negative",44,"obesity_class_1","pre","african american",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_705381",1,"ISPY2",0,1,1,"luminal",46,"overweight","pre","caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_706169",0,"ISPY2",0,0,0,"triple_negative",70,"overweight","post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_706418",1,"ISPY2",0,0,1,"her2_enriched",59,"overweight","post","caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_706639",0,"ISPY2",0,0,0,"triple_negative",50,"obesity_class_1","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_706943",0,"ISPY2",0,1,1,"her2_enriched",52,NA,NA,"african american",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_708387",1,"ISPY2",0,0,0,"triple_negative",29,NA,"pre","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_709559",0,"ISPY2",0,0,0,"luminal",48,"normal","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_711476",1,"ISPY2",0,0,0,"luminal",47,NA,NA,"caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_712276",1,"ISPY2",0,0,0,"luminal",56,"obesity_class_1","post","caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_712785",0,"ISPY2",0,1,0,"triple_negative",50,"overweight","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_712917",1,"ISPY2",0,0,0,"triple_negative",45,"overweight","pre","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_714205",1,"ISPY2",0,0,0,"triple_negative",68,"obesity_class_1","post","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_719713",0,"ISPY2",0,0,0,"luminal",38,"normal",NA,"caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_720065",0,"ISPY2",0,0,1,"luminal",55,"normal","post","caucasian",1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_721099",0,"ISPY2",0,0,1,"luminal",47,"normal",NA,"caucasian",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_723918",1,"ISPY2",0,0,1,"luminal",35,"overweight","pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_724293",1,"ISPY2",0,0,1,"luminal",41,"normal",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_724384",0,"ISPY2",0,0,0,"luminal",43,"normal","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_725455",0,"ISPY2",0,0,1,"her2_enriched",49,"normal","pre","caucasian",1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_726091",1,"ISPY2",0,0,0,"triple_negative",43,"normal","pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_726381",0,"ISPY2",0,0,1,"luminal",63,NA,"post","caucasian",1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_726940",0,"ISPY2",0,0,0,"triple_negative",51,NA,"pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_727255",0,"ISPY2",0,1,1,"her2_enriched",53,"obesity_class_1",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_727804",1,"ISPY2",0,0,0,"triple_negative",43,"obesity_class_3","post","african american",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_728149",0,"ISPY2",0,0,1,"luminal",46,"obesity_class_1",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_728182",0,"ISPY2",0,1,0,"luminal",41,"overweight","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_728287",1,"ISPY2",0,0,1,"luminal",66,"normal",NA,"caucasian",1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+"ISPY2_728714",0,"ISPY2",0,0,0,"luminal",50,"underweight","pre","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_729270",1,"ISPY2",0,1,1,"her2_enriched",50,"overweight","pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_729732",0,"ISPY2",0,0,0,"luminal",36,NA,"pre","caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_732137",0,"ISPY2",0,0,0,"triple_negative",54,"overweight","post","caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_733276",0,"ISPY2",0,0,0,"triple_negative",54,"obesity_class_3",NA,"african american",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_734997",0,"ISPY2",0,1,0,"luminal",38,"overweight",NA,"caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_735673",0,"ISPY2",0,1,0,"luminal",44,"obesity_class_2","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_736721",0,"ISPY2",0,1,0,"luminal",41,"overweight","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_738041",1,"ISPY2",0,0,1,"luminal",37,"normal","pre","caucasian",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_741535",0,"ISPY2",0,0,0,"luminal",33,NA,"pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_742477",0,"ISPY2",0,0,1,"luminal",44,"overweight","pre","caucasian",1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_745633",0,"ISPY2",0,0,0,"luminal",56,"obesity_class_1","post","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_746265",0,"ISPY2",0,0,0,"luminal",35,"normal","pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_746731",1,"ISPY2",0,0,0,"triple_negative",46,"normal","pre","african american",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_748583",0,"ISPY2",0,0,0,"luminal",67,NA,NA,"caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_748611",1,"ISPY2",0,0,0,"luminal",59,"obesity_class_2","post","african american",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_749097",0,"ISPY2",0,0,0,"luminal",46,NA,NA,"african american",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_752372",0,"ISPY2",0,0,0,"luminal",59,"normal",NA,"caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_752469",0,"ISPY2",0,0,0,"triple_negative",55,"normal","post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_753109",1,"ISPY2",0,0,0,"triple_negative",65,"overweight","post","caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_755914",1,"ISPY2",0,0,0,"triple_negative",47,"normal","pre","caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_756412",0,"ISPY2",0,1,0,"luminal",46,"overweight","pre","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_759015",0,"ISPY2",0,0,0,"luminal",36,"normal","pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_759418",0,"ISPY2",0,0,0,"luminal",42,"obesity_class_2","pre","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_760011",1,"ISPY2",0,0,1,"luminal",49,"normal","pre","caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_760901",1,"ISPY2",0,0,0,"triple_negative",44,"normal","pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_765671",1,"ISPY2",0,0,0,"triple_negative",41,"obesity_class_1","pre","african american",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_765773",1,"ISPY2",0,0,0,"triple_negative",49,"obesity_class_1",NA,"caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_766301",0,"ISPY2",0,0,0,"luminal",49,"normal","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_766967",1,"ISPY2",0,0,0,"luminal",44,NA,"pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_767081",1,"ISPY2",0,0,1,"her2_enriched",61,"obesity_class_1","post","caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_767934",1,"ISPY2",0,0,0,"triple_negative",68,"obesity_class_2",NA,"caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_768214",0,"ISPY2",0,0,0,"triple_negative",51,"normal",NA,"caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_769972",0,"ISPY2",0,0,0,"luminal",45,"obesity_class_2","pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_771151",1,"ISPY2",0,0,0,"triple_negative",45,"normal","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_771443",0,"ISPY2",0,0,1,"luminal",51,"normal","pre","caucasian",1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_771813",0,"ISPY2",0,0,0,"triple_negative",49,"overweight",NA,"caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_774840",1,"ISPY2",0,0,0,"triple_negative",56,NA,NA,"caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_775346",0,"ISPY2",0,1,0,"luminal",35,"normal","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_778020",0,"ISPY2",0,0,0,"luminal",54,"normal","post","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_778527",1,"ISPY2",0,0,0,"triple_negative",44,NA,"pre","african american",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_779739",1,"ISPY2",0,0,1,"luminal",47,"normal","pre","asian",1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_780272",0,"ISPY2",0,0,0,"triple_negative",54,"normal","post","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_781335",0,"ISPY2",0,0,0,"triple_negative",57,"obesity_class_3","post","african american",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_781642",0,"ISPY2",0,0,0,"triple_negative",61,"normal","post","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_782334",0,"ISPY2",0,0,0,"luminal",46,"obesity_class_1","pre","african american",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_783427",1,"ISPY2",0,0,0,"luminal",34,"overweight","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_783578",1,"ISPY2",0,0,0,"triple_negative",48,"overweight","post","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_783764",0,"ISPY2",0,0,0,"luminal",54,NA,NA,"caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_783771",0,"ISPY2",0,0,0,"luminal",31,"obesity_class_3","pre","african american",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_786003",1,"ISPY2",0,0,1,"luminal",57,"normal","post","caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_786480",0,"ISPY2",0,0,0,"luminal",41,"normal",NA,"caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_786753",0,"ISPY2",0,1,1,"her2_enriched",59,"obesity_class_1","post","asian",1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_787415",0,"ISPY2",0,0,0,"triple_negative",56,NA,"post","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_788149",1,"ISPY2",0,0,1,"luminal",57,"obesity_class_3",NA,"caucasian",1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+"ISPY2_789497",0,"ISPY2",0,1,0,"luminal",54,"obesity_class_1",NA,"caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_790070",0,"ISPY2",0,0,1,"luminal",44,"overweight","pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_790397",1,"ISPY2",0,1,1,"luminal",33,"overweight","pre","caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_790722",0,"ISPY2",0,1,0,"triple_negative",64,"normal","post","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_791321",0,"ISPY2",0,0,0,"triple_negative",31,"normal","pre","caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_791944",0,"ISPY2",0,0,1,"luminal",65,"obesity_class_1","post","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_792181",1,"ISPY2",0,0,0,"triple_negative",60,"overweight","post","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_792412",0,"ISPY2",0,1,0,"triple_negative",32,"obesity_class_1","pre","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_793155",0,"ISPY2",0,0,0,"luminal",58,"normal","post","caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_793684",0,"ISPY2",0,0,0,"triple_negative",48,"obesity_class_1","post","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_794128",0,"ISPY2",0,0,0,"triple_negative",44,"normal","pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_794428",0,"ISPY2",0,0,0,"triple_negative",56,NA,"post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_795996",1,"ISPY2",0,1,1,"luminal",47,"obesity_class_1","pre","caucasian",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_796558",0,"ISPY2",0,1,0,"triple_negative",38,"obesity_class_3","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_797427",0,"ISPY2",0,0,1,"luminal",52,"normal","post","caucasian",1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_797499",1,"ISPY2",0,0,1,"her2_enriched",52,"normal",NA,"african american",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_797639",0,"ISPY2",0,1,0,"luminal",57,NA,"post","caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_798604",1,"ISPY2",0,0,0,"triple_negative",55,"obesity_class_3","post","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_799149",1,"ISPY2",0,0,1,"luminal",35,"overweight","pre","caucasian",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_800447",1,"ISPY2",0,0,0,"triple_negative",56,"normal","post","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_800710",0,"ISPY2",0,0,0,"triple_negative",29,"normal","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_801641",0,"ISPY2",0,1,0,"triple_negative",53,"overweight",NA,"caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_802105",0,"ISPY2",0,1,0,"luminal",44,"normal","pre","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_802308",0,"ISPY2",0,0,0,"triple_negative",52,"obesity_class_2","pre","african american",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_802778",0,"ISPY2",0,0,0,"luminal",64,"overweight","post","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_803514",0,"ISPY2",0,0,0,"luminal",55,NA,"post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_803677",0,"ISPY2",0,1,0,"triple_negative",53,"overweight","post","caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_804233",1,"ISPY2",0,0,0,"triple_negative",46,"obesity_class_1","pre","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_804979",0,"ISPY2",0,0,0,"luminal",47,"normal",NA,"asian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_805136",0,"ISPY2",0,1,1,"her2_enriched",52,"obesity_class_2",NA,"african american",1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+"ISPY2_808714",0,"ISPY2",0,0,0,"triple_negative",69,"normal","post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_809037",0,"ISPY2",0,0,0,"luminal",52,"overweight","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_809649",1,"ISPY2",0,0,1,"her2_enriched",44,"normal",NA,"african american",1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_810965",1,"ISPY2",0,0,0,"triple_negative",66,"overweight","post","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_812089",0,"ISPY2",0,0,0,"triple_negative",58,"obesity_class_3","post","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_814299",1,"ISPY2",0,0,1,"her2_enriched",40,"overweight","pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_815421",0,"ISPY2",0,1,1,"luminal",68,"overweight","post","african american",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_815493",1,"ISPY2",0,0,0,"triple_negative",37,"normal",NA,"caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_819622",0,"ISPY2",0,0,0,"luminal",53,"normal","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_820348",0,"ISPY2",0,0,0,"luminal",33,NA,"pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_820807",1,"ISPY2",0,0,0,"luminal",50,"normal",NA,"african american",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_823618",0,"ISPY2",0,0,0,"luminal",37,"overweight","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_824234",1,"ISPY2",0,1,1,"luminal",30,NA,"pre","caucasian",1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_824350",1,"ISPY2",0,0,1,"her2_enriched",58,"overweight","post","caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_824512",0,"ISPY2",1,1,0,"luminal",68,NA,NA,"caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_825363",1,"ISPY2",0,0,1,"her2_enriched",29,"overweight","pre","caucasian",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_828199",0,"ISPY2",0,1,0,"luminal",43,"normal","pre","african american",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_829491",0,"ISPY2",0,1,0,"triple_negative",57,"obesity_class_1",NA,"caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_830486",0,"ISPY2",0,0,0,"triple_negative",36,"normal","post","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_830958",0,"ISPY2",0,1,0,"luminal",55,"obesity_class_1",NA,"african american",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_831702",0,"ISPY2",0,0,1,"luminal",42,"overweight","pre","asian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_831848",1,"ISPY2",0,1,1,"her2_enriched",38,NA,"pre","caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_832056",0,"ISPY2",0,1,0,"triple_negative",41,"obesity_class_1","pre","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_833536",1,"ISPY2",0,0,0,"triple_negative",50,"overweight","pre","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_834418",0,"ISPY2",0,0,0,"luminal",59,NA,"post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_835658",1,"ISPY2",0,1,0,"luminal",50,"obesity_class_1","pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_836114",0,"ISPY2",0,0,0,"luminal",48,"overweight","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_836983",1,"ISPY2",0,1,1,"luminal",54,"normal","post","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_839274",0,"ISPY2",0,0,1,"luminal",68,"obesity_class_2","post","caucasian",1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_840501",1,"ISPY2",0,0,0,"triple_negative",33,"overweight","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_841336",0,"ISPY2",0,1,0,"luminal",47,"obesity_class_3",NA,"african american",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_843554",0,"ISPY2",0,0,0,"triple_negative",31,"obesity_class_1","pre","african american",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_845079",1,"ISPY2",0,0,1,"luminal",43,"overweight","pre","caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_845147",0,"ISPY2",0,0,0,"luminal",46,"overweight",NA,"caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_845663",0,"ISPY2",0,0,0,"luminal",32,"normal","pre","asian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_845783",1,"ISPY2",0,0,0,"luminal",34,NA,"pre","african american",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_846156",0,"ISPY2",0,0,0,"triple_negative",44,NA,"pre","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_847272",0,"ISPY2",0,0,0,"triple_negative",51,"normal","pre","african american",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_847753",1,"ISPY2",0,0,0,"luminal",54,"obesity_class_1","post","african american",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_848003",0,"ISPY2",0,1,0,"triple_negative",57,"obesity_class_2","post","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_848371",1,"ISPY2",0,0,0,"triple_negative",32,"normal","pre","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_849605",0,"ISPY2",0,0,0,"triple_negative",33,"obesity_class_3","pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_851180",0,"ISPY2",0,1,1,"luminal",50,"obesity_class_1",NA,"caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_851223",0,"ISPY2",0,0,0,"luminal",36,"overweight","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_851488",0,"ISPY2",0,0,0,"luminal",63,"obesity_class_1",NA,"caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_856159",0,"ISPY2",0,0,1,"luminal",46,"normal",NA,"caucasian",1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_857165",0,"ISPY2",0,1,0,"luminal",47,"obesity_class_1","pre","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_859699",1,"ISPY2",0,0,1,"luminal",53,"overweight","post","caucasian",1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_860243",0,"ISPY2",0,1,0,"luminal",47,"normal","pre","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_860901",1,"ISPY2",0,0,0,"triple_negative",49,"overweight","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_861745",0,"ISPY2",0,1,0,"luminal",31,"normal","pre","caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_862244",0,"ISPY2",0,0,1,"her2_enriched",60,"overweight","post","caucasian",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_863161",1,"ISPY2",0,0,1,"her2_enriched",55,"overweight",NA,"caucasian",1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_865416",0,"ISPY2",0,0,1,"luminal",41,NA,"pre","caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_866660",0,"ISPY2",0,1,0,"luminal",38,"normal","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_870077",0,"ISPY2",0,1,0,"luminal",60,NA,NA,"caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_872188",1,"ISPY2",0,0,1,"her2_enriched",60,"normal",NA,"caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_873686",0,"ISPY2",0,0,0,"luminal",60,"normal","post","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_875089",0,"ISPY2",0,0,0,"triple_negative",42,"normal","pre","asian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_876511",0,"ISPY2",1,1,0,"triple_negative",39,"obesity_class_2","pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_877463",0,"ISPY2",0,0,0,"triple_negative",45,"normal","pre","asian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_879224",0,"ISPY2",0,0,0,"triple_negative",33,"normal","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_882538",1,"ISPY2",0,0,0,"triple_negative",56,NA,NA,"caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_882553",0,"ISPY2",0,1,0,"luminal",47,"obesity_class_1","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_883696",0,"ISPY2",0,1,0,"luminal",27,"overweight","pre","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_883886",0,"ISPY2",0,0,0,"triple_negative",57,NA,"post","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_884011",0,"ISPY2",0,0,0,"luminal",66,"normal","post","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_884266",0,"ISPY2",0,1,0,"luminal",49,"obesity_class_2",NA,"caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_885590",0,"ISPY2",1,1,0,"luminal",47,"obesity_class_3","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_885871",0,"ISPY2",0,0,0,"triple_negative",41,NA,"pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_887594",1,"ISPY2",0,0,0,"triple_negative",39,"overweight",NA,"caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_889049",0,"ISPY2",0,0,1,"her2_enriched",36,NA,"pre","caucasian",1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_889225",0,"ISPY2",0,0,0,"luminal",46,NA,"pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_889721",1,"ISPY2",0,0,1,"her2_enriched",64,"normal","post","caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_890372",0,"ISPY2",0,0,0,"triple_negative",39,"obesity_class_3","pre","african american",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_890414",1,"ISPY2",0,1,0,"triple_negative",55,NA,"post","asian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_891645",0,"ISPY2",0,0,1,"her2_enriched",37,NA,"pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_892390",1,"ISPY2",0,1,0,"triple_negative",59,"overweight","post","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_893874",1,"ISPY2",0,0,0,"triple_negative",37,"normal","pre","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_894128",1,"ISPY2",0,0,0,"triple_negative",57,"obesity_class_1","post","african american",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_894491",0,"ISPY2",0,0,0,"luminal",49,"obesity_class_1","post","asian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_894673",0,"ISPY2",0,1,1,"luminal",59,"obesity_class_1",NA,"caucasian",1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_895653",1,"ISPY2",0,0,1,"luminal",43,"overweight","pre","caucasian",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_896621",0,"ISPY2",0,0,0,"luminal",48,NA,"pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_896852",0,"ISPY2",0,1,1,"luminal",41,"overweight","pre","caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_896939",0,"ISPY2",0,0,0,"luminal",63,"normal","post","asian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_898618",0,"ISPY2",0,1,0,"luminal",54,"overweight",NA,"caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_899381",1,"ISPY2",0,0,0,"luminal",45,"normal","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_899692",1,"ISPY2",0,0,0,"triple_negative",57,"normal",NA,"african american",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_900959",0,"ISPY2",0,1,1,"luminal",63,"obesity_class_2","post","caucasian",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_901705",0,"ISPY2",0,1,0,"luminal",42,"obesity_class_1","pre","asian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_903880",0,"ISPY2",0,1,1,"luminal",53,"normal","pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_904269",1,"ISPY2",0,0,0,"triple_negative",59,"overweight","post","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_905264",0,"ISPY2",0,0,1,"her2_enriched",69,"obesity_class_3",NA,"african american",1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_906042",0,"ISPY2",0,1,0,"luminal",55,"obesity_class_3",NA,"caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_906795",0,"ISPY2",0,0,1,"luminal",29,"obesity_class_1","pre","caucasian",1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_910188",0,"ISPY2",0,0,0,"luminal",64,"overweight","post","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_910706",1,"ISPY2",0,1,0,"triple_negative",37,"obesity_class_1","pre","african american",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_912836",0,"ISPY2",0,0,0,"triple_negative",57,"normal","post","asian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_913225",1,"ISPY2",0,0,1,"luminal",51,"underweight","post","asian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_913527",0,"ISPY2",0,1,0,"triple_negative",46,"overweight","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_914968",0,"ISPY2",0,0,0,"triple_negative",30,"overweight","pre","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_916586",0,"ISPY2",0,1,0,"luminal",46,"normal","pre","asian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_916645",1,"ISPY2",0,1,0,"luminal",50,"overweight","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_917762",0,"ISPY2",0,0,0,"luminal",35,NA,"pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_918979",0,"ISPY2",0,0,0,"triple_negative",60,"normal","post","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_920479",0,"ISPY2",0,1,1,"her2_enriched",45,"obesity_class_1","pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_922872",0,"ISPY2",0,0,0,"luminal",65,"obesity_class_1","post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_923968",1,"ISPY2",0,1,0,"luminal",40,"obesity_class_1","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_924071",0,"ISPY2",0,1,0,"luminal",57,NA,NA,"caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_924812",0,"ISPY2",0,1,0,"triple_negative",60,"normal",NA,"caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_924868",1,"ISPY2",0,1,0,"triple_negative",56,"overweight","post","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_924895",0,"ISPY2",1,1,0,"luminal",39,"overweight",NA,"caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_925691",0,"ISPY2",0,0,1,"her2_enriched",58,"obesity_class_2","post","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_928170",0,"ISPY2",0,1,0,"luminal",67,NA,NA,"caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_928446",0,"ISPY2",0,1,0,"luminal",39,"normal",NA,"caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_928815",0,"ISPY2",0,0,0,"triple_negative",38,"normal","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_929391",0,"ISPY2",0,0,0,"triple_negative",65,NA,"post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_929980",1,"ISPY2",0,1,1,"her2_enriched",55,NA,"post","caucasian",1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_930172",0,"ISPY2",0,0,1,"luminal",44,NA,"pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_930853",1,"ISPY2",0,1,0,"luminal",45,"normal","pre","hawaiian/pacific islander",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_930903",0,"ISPY2",0,1,0,"luminal",34,"normal","pre","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_932200",0,"ISPY2",0,0,0,"luminal",24,"obesity_class_1","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_934459",0,"ISPY2",0,1,0,"triple_negative",70,"overweight","post","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_934906",0,"ISPY2",0,1,0,"triple_negative",32,"overweight","pre",NA,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_935460",0,"ISPY2",0,1,0,"triple_negative",65,NA,"post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_938719",0,"ISPY2",0,1,0,"luminal",57,"overweight","post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_940186",1,"ISPY2",0,1,0,"luminal",44,"normal","pre","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_941191",0,"ISPY2",0,1,1,"luminal",52,NA,"pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_941926",0,"ISPY2",0,1,0,"luminal",51,"overweight","post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_942017",0,"ISPY2",0,1,0,"luminal",44,"normal","pre","african american",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_943633",0,"ISPY2",0,0,0,"triple_negative",50,NA,"pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_943879",1,"ISPY2",0,1,0,"triple_negative",40,"overweight","pre","asian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_944419",0,"ISPY2",0,1,0,"luminal",38,"overweight",NA,"caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_944536",1,"ISPY2",0,1,1,"her2_enriched",58,"overweight","post","african american",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_946927",1,"ISPY2",0,1,1,"her2_enriched",63,"normal","post","caucasian",1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_947398",1,"ISPY2",0,1,1,"luminal",44,"overweight","pre","caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_949444",0,"ISPY2",0,1,0,"triple_negative",34,"normal","pre","asian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_950131",1,"ISPY2",0,1,0,"luminal",42,"underweight","pre","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_950742",0,"ISPY2",0,0,0,"luminal",40,"normal","pre","african american",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_953262",0,"ISPY2",1,0,0,"luminal",36,"obesity_class_2","pre","caucasian",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"ISPY2_953885",0,"ISPY2",0,1,1,"luminal",42,"normal","pre","caucasian",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_955035",0,"ISPY2",0,1,0,"triple_negative",46,"normal","pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_955953",1,"ISPY2",0,1,1,"her2_enriched",36,"obesity_class_1","pre","caucasian",1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_957408",0,"ISPY2",0,1,0,"luminal",29,"normal","pre","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_959366",1,"ISPY2",0,0,0,"triple_negative",65,"overweight",NA,"caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_960029",0,"ISPY2",0,1,1,"luminal",43,"normal","pre","hawaiian/pacific islander",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_960490",1,"ISPY2",0,0,0,"triple_negative",36,NA,"pre","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_960963",0,"ISPY2",0,0,1,"luminal",56,"normal","post","caucasian",1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+"ISPY2_962153",0,"ISPY2",0,0,1,"luminal",55,"normal",NA,"caucasian",1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+"ISPY2_962472",0,"ISPY2",0,0,0,"luminal",29,"obesity_class_3","pre","african american",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_962664",1,"ISPY2",0,0,0,"triple_negative",30,"normal",NA,"caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_962827",0,"ISPY2",0,0,0,"luminal",37,NA,"pre","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_963303",0,"ISPY2",0,0,0,"luminal",37,"normal","pre",NA,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_963604",0,"ISPY2",0,1,0,"luminal",51,NA,"pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_965265",0,"ISPY2",0,1,0,"triple_negative",48,"obesity_class_1","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_966016",1,"ISPY2",0,1,0,"luminal",53,"obesity_class_2","post","caucasian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_970839",0,"ISPY2",0,0,0,"luminal",58,"normal","post","caucasian",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_971492",0,"ISPY2",0,1,0,"luminal",32,"normal","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_972307",0,"ISPY2",0,1,0,"luminal",47,NA,"pre","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_973837",0,"ISPY2",0,0,0,"luminal",47,"overweight","pre","asian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_974181",1,"ISPY2",0,0,0,"triple_negative",41,"overweight","pre","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_974618",1,"ISPY2",0,0,0,"triple_negative",67,"overweight","post","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_981461",0,"ISPY2",0,0,1,"luminal",44,"obesity_class_1","pre","african american",0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+"ISPY2_981664",1,"ISPY2",0,1,1,"luminal",50,"obesity_class_3",NA,"african american",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_982086",1,"ISPY2",0,1,1,"her2_enriched",56,"normal","post","caucasian",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_982505",0,"ISPY2",0,0,1,"luminal",51,"obesity_class_1","pre","caucasian",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_983841",1,"ISPY2",0,0,0,"triple_negative",52,"obesity_class_3","post","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_986734",0,"ISPY2",0,1,0,"luminal",33,"obesity_class_2","pre","african american",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_987728",1,"ISPY2",0,1,0,"triple_negative",56,"normal","pre","asian",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_987914",0,"ISPY2",0,1,0,"triple_negative",57,"obesity_class_2","post","african american",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_987995",0,"ISPY2",0,0,0,"luminal",56,"normal",NA,"caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_988443",0,"ISPY2",0,1,0,"luminal",49,NA,"pre","caucasian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_988665",0,"ISPY2",0,1,0,"luminal",49,"normal","pre","caucasian",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_990443",0,"ISPY2",0,1,0,"luminal",53,"overweight","pre","caucasian",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"ISPY2_991818",1,"ISPY2",0,1,1,"luminal",46,"overweight","pre","caucasian",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_992609",1,"ISPY2",0,0,0,"triple_negative",54,"overweight","post","caucasian",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"ISPY2_994987",0,"ISPY2",0,1,0,"luminal",62,"normal","post","african american",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_995480",0,"ISPY2",0,1,1,"luminal",46,"normal","pre","asian",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_997702",1,"ISPY2",0,1,0,"triple_negative",31,NA,"pre","asian",1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"ISPY2_999264",1,"ISPY2",0,0,1,"her2_enriched",44,"overweight","pre","caucasian",1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+"ISPY2_999733",0,"ISPY2",0,1,0,"luminal",47,"obesity_class_1","pre","caucasian",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+"NACT_01",0,"NACT",0,1,0,"luminal",44,"overweight",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_02",0,"NACT",0,0,0,"luminal",37,"overweight",NA,"african american",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_03",0,"NACT",0,0,0,"luminal",49,"normal",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_04",0,"NACT",0,0,0,"triple_negative",41,"obesity_class_1",NA,NA,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_06",0,"NACT",0,0,0,"luminal",71,"overweight",NA,NA,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_07",0,"NACT",0,0,1,"her2_enriched",38,"underweight",NA,NA,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_08",1,"NACT",0,0,1,"her2_enriched",47,"normal",NA,"asian",0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+"NACT_09",0,"NACT",0,0,0,"triple_negative",50,"normal",NA,NA,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_11",0,"NACT",0,0,1,"her2_enriched",46,"normal",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+"NACT_12",0,"NACT",0,0,NA,NA,48,"obesity_class_1",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+"NACT_13",1,"NACT",0,0,1,"her2_enriched",51,"obesity_class_1",NA,NA,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_14",0,"NACT",0,0,1,"her2_enriched",60,"normal",NA,"african american",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_15",0,"NACT",0,0,0,"luminal",44,"normal",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_17",0,"NACT",0,1,NA,NA,48,"normal",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_18",1,"NACT",0,1,0,"luminal",72,"underweight",NA,NA,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_19",0,"NACT",0,0,NA,NA,58,"normal",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+"NACT_20",0,"NACT",0,0,1,"her2_enriched",56,"normal",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_21",1,"NACT",0,0,1,NA,33,"normal",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+"NACT_22",0,"NACT",0,0,0,"luminal",60,"normal",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_23",1,"NACT",0,1,0,"luminal",33,"overweight",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_24",0,"NACT",0,0,NA,NA,54,"normal",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_25",0,"NACT",0,0,1,"her2_enriched",38,"overweight",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_26",0,"NACT",0,0,0,"luminal",48,"normal",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_27",0,"NACT",0,0,0,"luminal",45,"normal",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_28",0,"NACT",0,0,NA,NA,60,"normal",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_29",0,"NACT",0,1,0,"luminal",40,"normal",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_30",0,"NACT",0,0,1,"her2_enriched",56,"underweight",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0
+"NACT_31",0,"NACT",0,0,NA,NA,49,"normal",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+"NACT_32",0,"NACT",0,0,0,"luminal",56,"underweight",NA,"hispanic",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_33",0,"NACT",0,0,NA,NA,59,"overweight",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+"NACT_34",0,"NACT",0,1,0,"luminal",50,"overweight",NA,"asian",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_35",0,"NACT",0,0,NA,NA,59,"normal",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_36",1,"NACT",0,0,0,"triple_negative",35,"normal",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_37",1,"NACT",0,0,1,"her2_enriched",43,"overweight",NA,NA,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+"NACT_39",0,"NACT",0,0,0,"triple_negative",52,"overweight",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_40",1,"NACT",0,0,NA,NA,63,"normal",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+"NACT_41",0,"NACT",0,0,0,"luminal",44,"normal",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_42",0,"NACT",0,0,NA,NA,51,"normal",NA,"asian",0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+"NACT_43",1,"NACT",0,0,0,"triple_negative",40,"normal",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_44",0,"NACT",0,0,0,"triple_negative",62,"normal",NA,"asian",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_45",0,"NACT",0,0,0,"luminal",49,"overweight",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_46",0,"NACT",0,0,NA,NA,51,"normal",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_47",1,"NACT",0,0,0,"luminal",41,"normal",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_48",0,"NACT",0,0,0,"luminal",52,"overweight",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_49",0,"NACT",0,0,1,"her2_enriched",31,"obesity_class_1",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_50",0,"NACT",0,0,0,"triple_negative",41,"normal",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+"NACT_51",0,"NACT",0,0,1,"her2_enriched",50,"overweight",NA,"hispanic",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_52",0,"NACT",0,1,0,"luminal",36,"normal",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+"NACT_53",0,"NACT",0,0,NA,NA,40,"normal",NA,"african american",0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0
+"NACT_54",0,"NACT",0,0,0,"luminal",62,"overweight",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_55",0,"NACT",0,0,NA,NA,47,"overweight",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+"NACT_56",0,"NACT",0,0,NA,NA,58,"normal",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_57",0,"NACT",0,0,NA,NA,40,"normal",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+"NACT_58",0,"NACT",0,0,0,"triple_negative",50,"normal",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_59",0,"NACT",0,0,0,"luminal",45,"normal",NA,NA,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_60",0,"NACT",0,0,0,"triple_negative",29,"normal",NA,"hispanic",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_61",0,"NACT",0,0,NA,NA,47,"normal",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+"NACT_62",1,"NACT",0,0,0,"triple_negative",38,"underweight",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_63",0,"NACT",0,0,1,"her2_enriched",37,"normal",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+"NACT_64",0,"NACT",0,0,NA,NA,32,"overweight",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+"NACT_65",0,"NACT",0,0,0,"luminal",55,"normal",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_66",0,"NACT",0,0,1,"her2_enriched",48,"obesity_class_1",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_67",0,"NACT",0,0,0,"triple_negative",48,"normal",NA,NA,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+"NACT_68",0,"NACT",0,0,1,"her2_enriched",37,"normal",NA,"caucasian",0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0

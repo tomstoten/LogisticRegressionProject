@@ -6,17 +6,23 @@ output:
 documentclass: article
 geometry: margin=0.95in
 classoption:
-- twocolumn
-bibliography: Approximations.bib
+- onecolumn
+bibliography: mama-mia.bib
 csl: alex_vancouver.csl
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = F)
 
 library(tidyverse)
 library(dplyr)
-library(kableExtra) # load for tables
+library(recipes)
+library(kableExtra)
+library(gtsummary)
+library(ggplot2)
+library(pROC)
+library(precrec)
+library(mice)
 
 clinicalData <- read.csv("clinical_and_imaging_info.csv") %>% 
   mutate(
@@ -24,7 +30,8 @@ clinicalData <- read.csv("clinical_and_imaging_info.csv") %>%
   )
 relevantData <- clinicalData %>% 
   select(
-    pcr,
+    pcr, patient_id,
+    dataset, nac_agent,
     bilateral_breast_cancer,
     multifocal_cancer,
     hr, er, pr, her2,
@@ -33,9 +40,71 @@ relevantData <- clinicalData %>%
     age, weight, bmi_group,
     menopause, ethnicity
   )
-
-# Encode clinical variables using one-hot for categorical data
 ```
+
+```{r clean-data, cache=T}
+# clean missing data
+relevantData <- relevantData %>%
+  mutate(across(where(is.character), ~na_if(str_trim(.), "")))
+
+# clean up data
+relevantData <- relevantData %>% select(
+  patient_id, pcr, dataset, nac_agent,
+  bilateral_breast_cancer,
+  multifocal_cancer,
+  her2, tumor_subtype,
+  age, bmi_group,
+  menopause, ethnicity
+) %>% mutate(
+  menopause = case_when(
+    str_detect(menopause, "(?i)pre|peri") ~ "pre",
+    str_detect(menopause, "(?i)post")     ~ "post",
+    is.na(menopause)                      ~ NA_character_,
+  ),
+  tumor_subtype = case_when(
+    str_detect(tumor_subtype, "(?i)luminal") ~ "luminal",
+    str_detect(tumor_subtype, "(?i)her2")    ~ "her2_enriched",
+    is.na(tumor_subtype)                     ~ NA_character_,
+    TRUE                                     ~ tumor_subtype
+  ),
+  
+  ethnicity = case_when(
+    str_detect(ethnicity, "(?i)american indian|native") ~ "american indian/alaska native",
+    str_detect(ethnicity, "(?i)hawai|pacific islander") ~ "hawaiian/pacific islander",
+    str_detect(ethnicity, "(?i)multiple race")          ~ NA_character_,
+    is.na(ethnicity)                                    ~ NA_character_,
+    TRUE                                                ~ ethnicity
+  )
+)
+
+# Now one-hot encode treatment variables
+unique_agents <- relevantData %>%
+  filter(!is.na(nac_agent) & nac_agent != "") %>%
+  pull(nac_agent) %>%
+  str_split(" \\+ ") %>%  # Splits by " + "
+  unlist() %>%
+  str_trim() %>%
+  unique()
+
+for (agent in unique_agents) {
+  # Create a clean column name
+  col_name <- paste0("agent_", str_replace_all(tolower(agent), "[^a-z0-9]", "_"))
+  
+  relevantData <- relevantData %>%
+    mutate(!!col_name := case_when(
+      is.na(nac_agent) ~ NA_real_,
+      stringr::str_detect(as.character(nac_agent), stringr::fixed(agent)) ~ 1,
+      TRUE ~ 0
+    ))
+}
+
+relevantData <- relevantData %>% select(-nac_agent)
+```
+
+```{r cache=T}
+write.csv(relevantData, "./processedData.csv", row.names=F)
+```
+
 
 <!-- Title here: -->
 
@@ -55,7 +124,7 @@ Tom Stoughton, MS Candidate[^1]
 
 ## Introduction
 
-De Moivre (1738)[@de1738doctrine]
+This data set contains publicly available clinical and demographic information about 1,506 breast cancer patients from four different trials[@garrucho2025]
 
 ## Motivating Problem
 
@@ -63,17 +132,488 @@ De Moivre (1738)[@de1738doctrine]
 
 ## Methods
 
-... logistic regression yes...
+```{r read-processed-data}
+data <- read.csv("./processedData.csv")
+dataNoMissing <- data %>% drop_na()
+
+```
+
+Using Multivariate Imputation by Chained Equations (MICE).
+
+```{r mice, cache=T, results='hide', message=F, warning=F}
+# Impute the missing data (m=5 creates 5 versions of the data)
+data_for_imputation <- data %>%
+  mutate(across(where(is.character), as.factor)) %>%
+  select(-starts_with("agent_"))
+
+# 2. Initialize the setup without running the iterations yet
+ini <- mice(data_for_imputation, maxit = 0)
+
+# 3. Modify the Predictor Matrix
+# Setting a column to 0 in the predictorMatrix means it won't be used to predict anything else
+pred <- ini$predictorMatrix
+pred[, "patient_id"] <- 0  # patient_id will not be used as a predictor
+pred["patient_id", ] <- 0  # patient_id itself will not be imputed
+
+# 4. Modify the Method
+# Setting the method to "" tells mice to ignore this column during the math
+meth <- ini$method
+meth["patient_id"] <- ""
+
+# 5. Run the actual imputation with these settings
+imputed_data <- mice(data_for_imputation, 
+                     m = 10, 
+                     method = meth, 
+                     predictorMatrix = pred, 
+                     seed = 123)
+
+```
+
+logistic regression on clinical variables.
+
+```{r logistic-regression-clinical}
+# Run your logistic regression on all 5 datasets and pool the results
+fit1 <- with(imputed_data, 
+             glm(pcr ~ multifocal_cancer + bilateral_breast_cancer + 
+                 bmi_group + her2 + tumor_subtype + menopause, 
+                 family = binomial))
+pooled_results1 <- pool(fit1)
+
+```
+
+```{r clinical-results, include=T}
+reg_table_data <- summary(pooled_results1) %>%
+  mutate(across(where(is.numeric), ~ round(.x, 3))) %>%
+  rename(Variable = term, P_Value = p.value)
+
+# 2. Identify rows where p-value < 0.05
+sig_rows <- which(reg_table_data$P_Value < 0.05)
+
+# 3. Create the table
+reg_table_data %>%
+  kbl(caption = "Model 1: Pooled Logistic Regression",
+      booktabs = TRUE) %>%
+  kable_styling(bootstrap_options = c("striped", "hover"), 
+                full_width = FALSE, 
+                latex_options = "HOLD_position") %>%
+  row_spec(sig_rows, bold = TRUE) %>% # Bolds significant predictors like Pembrolizumab
+  column_spec(1, italic = TRUE)
+
+```
+
+Now for including demographics (age and ethnicity).
+
+```{r logistic-regression-demographic}
+# Run your logistic regression on all 5 datasets and pool the results
+fit2 <- with(imputed_data, 
+             glm(pcr ~ multifocal_cancer + bilateral_breast_cancer + 
+                  bmi_group + age + her2 + tumor_subtype + 
+                  menopause + ethnicity, family = binomial))
+pooled_results2 <- pool(fit2)
+
+```
+
+```{r demographic-results, include=T}
+reg_table_data <- summary(pooled_results2) %>%
+  mutate(across(where(is.numeric), ~ round(.x, 3))) %>%
+  rename(Variable = term, P_Value = p.value)
+
+# 2. Identify rows where p-value < 0.05
+sig_rows <- which(reg_table_data$P_Value < 0.05)
+
+# 3. Create the table
+reg_table_data %>%
+  kbl(caption = "Model 2: Pooled Logistic Regression (with Demographics)",
+      booktabs = TRUE) %>%
+  kable_styling(bootstrap_options = c("striped", "hover"), 
+                full_width = FALSE, 
+                latex_options = "HOLD_position") %>%
+  row_spec(sig_rows, bold = TRUE) %>% # Bolds significant predictors like Pembrolizumab
+  column_spec(1, italic = TRUE)
+
+```
+
+Now for including treatment agents.
+
+```{r logistic-regression-agent}
+# 1. Identify agent columns
+agents_to_join <- data %>% 
+  mutate(.id = as.integer(row_number())) %>% 
+  select(.id, starts_with("agent_"))
+
+subset_long_data <- complete(imputed_data, action = "long", include = TRUE) %>%
+  left_join(agents_to_join, by = ".id") %>%
+  filter(dataset %in% c("ISPY2", "NACT")) %>%
+  mutate(ethnicity = as.character(ethnicity),
+         # Group Hispanic into 'Other' or 'Caucasian' (or whatever your baseline is)
+         ethnicity = ifelse(ethnicity == "hispanic", "Other/Unknown", ethnicity),
+         ethnicity = as.factor(ethnicity)) %>%
+  select(pcr, .imp, .id, everything()) %>% # Bring pcr to the front to be sure
+  mutate(.imp = as.integer(.imp), # as.mids often prefers integer .imp for indexing
+         .id = as.integer(.id))
+
+agent_cols <- names(subset_long_data)[grep("agent_", names(subset_long_data))]
+
+# 2. Calculate Correlation Matrix
+cor_matrix <- cor(subset_long_data[, agent_cols], use = "pairwise.complete.obs")
+
+processed <- c()
+collapsed_data <- subset_long_data
+
+for (col in agent_cols) {
+  if (col %in% processed) next
+  
+  # A. Identify Positive Collinearity (r > 0.99)
+  identical_cols <- names(which(cor_matrix[col, ] > 0.99))
+  
+  # B. Identify Anti-Collinearity (r < -0.99)
+  anti_cols <- names(which(cor_matrix[col, ] < -0.99))
+  
+  if (length(identical_cols) > 1) {
+    # Combine Positive Collinearity
+    new_name <- paste(identical_cols[1], 
+                      paste(gsub("agent_", "", identical_cols[-1]), collapse = "_"), 
+                      sep = "_")
+    collapsed_data <- collapsed_data %>%
+      mutate(!!new_name := get(col)) %>%
+      select(-all_of(identical_cols))
+    processed <- c(processed, identical_cols)
+    
+  } else if (length(anti_cols) > 0) {
+    # Combine Anti-Collinearity (Mutually Exclusive)
+    # Name it: agent_DrugA_vs_DrugB
+    new_name <- paste0(col, "_vs_", gsub("agent_", "", anti_cols[1]))
+    
+    collapsed_data <- collapsed_data %>%
+      mutate(!!new_name := get(col)) %>% # 1 = DrugA, 0 = DrugB
+      select(-all_of(c(col, anti_cols)))
+    
+    processed <- c(processed, col, anti_cols)
+  }
+}
+
+# 3. Re-run MICE object creation
+imputed_collapsed <- as.mids(collapsed_data)
+
+# 4. Update your formula and fit
+new_agent_vars <- names(collapsed_data)[grep("agent_", names(collapsed_data))]
+final_agent_vars <- new_agent_vars[!new_agent_vars %in% c("agent_fec100")]
+formula_str <- paste("pcr ~ bilateral_breast_cancer + multifocal_cancer + her2 + 
+                     tumor_subtype + age + bmi_group + menopause + ethnicity +", 
+                     paste(final_agent_vars, collapse = " + "))
+
+fit3 <- with(imputed_collapsed, glm(as.formula(formula_str), family = binomial))
+pooled_results3 <- pool(fit3)
+
+```
+
+
+```{r agent-results, include=T}
+reg_table_data <- summary(pooled_results3) %>%
+  mutate(across(where(is.numeric), ~ round(.x, 3))) %>%
+  rename(Variable = term, P_Value = p.value)
+
+# 2. Identify rows where p-value < 0.05
+sig_rows <- which(reg_table_data$P_Value < 0.05)
+
+# 3. Create the table
+reg_table_data %>%
+  kbl(caption = "Model 3: Pooled Logistic Regression (Clinical + Treatment Agents)",
+      booktabs = TRUE) %>%
+  kable_styling(bootstrap_options = c("striped", "hover"), 
+                full_width = FALSE, 
+                latex_options = "HOLD_position") %>%
+  row_spec(sig_rows, bold = TRUE) %>% # Bolds significant predictors like Pembrolizumab
+  column_spec(1, italic = TRUE)
+
+```
 
 ## Results
 
-...
+```{r auroc-average-1, results=F, include=T, message=F, width=8, height=8}
+# 1. Get predicted probabilities from each of the 5 models
+# This creates a matrix of probabilities (one column per imputation)
+predictions <- list()
+for(i in 1:imputed_data$m) {
+  # Extract the i-th completed dataset
+  dat <- complete(imputed_data, i)
+  
+  # Fit the model on that specific dataset
+  m_fit <- glm(pcr ~ multifocal_cancer + bilateral_breast_cancer + 
+                 bmi_group + her2 + tumor_subtype + menopause, 
+               data = dat, family = binomial)
+  
+  # Store the predicted probabilities
+  predictions[[i]] <- predict(m_fit, type = "response")
+}
+
+# 2. Average the probabilities across the 5 imputations
+avg_probs_m1 <- rowMeans(as.data.frame(predictions))
+
+# 3. Calculate AUC using the actual 'pcr' values from any completed dataset 
+# (pcr is the same in all of them since it wasn't imputed)
+actual_pcr <- complete(imputed_data, 1)$pcr
+roc_curve <- roc(actual_pcr, avg_probs_m1)
+m1_auc <- pROC::auc(roc_curve)
+
+# 4. Results
+par(pty = "s") 
+
+# 2. Plot the ROC curve with your specific requirements
+plot(roc_curve, 
+     col = "brown1", 
+     lwd = 3,                       # Make the line thicker for readability
+     main = paste("Pooled AUC-ROC for Model 1:", round(m1_auc, 3)),
+     
+     # Axis Labels
+     xlab = "1-FPR",                # Your requested X-axis label
+     ylab = "TPR",                  # Your requested Y-axis label
+     
+     # Bounds and Scaling
+     xlim = c(1, 0),                # Standard ROC X-axis is 1 to 0 (FPR decreases)
+     ylim = c(0, 1),                # Y-axis bounds
+     
+     # Formatting
+     legacy.axes = TRUE,            # Ensures the X-axis goes from 0 to 1 if preferred
+     asp = 1,                       # Ensures an aspect ratio of 1 (strictly square)
+     grid = TRUE                    # Adds a grid for easier value reading
+)
+
+# 3. Reset the plot parameters to default for future plots
+par(pty = "m")
+
+```
+
+```{r auroc-average-2, results=F, include=T, message=F, width=8, height=8}
+# 1. Get predicted probabilities from each of the 5 models
+# This creates a matrix of probabilities (one column per imputation)
+predictions <- list()
+for(i in 1:imputed_data$m) {
+  # Extract the i-th completed dataset
+  dat <- complete(imputed_data, i)
+  
+  # Fit the model on that specific dataset
+  m_fit <- glm(pcr ~ multifocal_cancer + bilateral_breast_cancer + 
+                  bmi_group + age + her2 + tumor_subtype + 
+                  menopause + ethnicity, 
+               data = dat, family = binomial)
+  
+  # Store the predicted probabilities
+  predictions[[i]] <- predict(m_fit, type = "response")
+}
+
+# 2. Average the probabilities across the 5 imputations
+avg_probs_m2 <- rowMeans(as.data.frame(predictions))
+
+# 3. Calculate AUC using the actual 'pcr' values from any completed dataset 
+# (pcr is the same in all of them since it wasn't imputed)
+actual_pcr <- complete(imputed_data, 1)$pcr
+roc_curve <- roc(actual_pcr, avg_probs_m2)
+m2_auc <- pROC::auc(roc_curve)
+
+# 4. Results
+par(pty = "s") 
+
+plot(roc_curve, 
+     col = "royalblue", 
+     lwd = 3,                       # Make the line thicker for readability
+     main = paste("Pooled AUC-ROC for Model 2:", round(m2_auc, 3)),
+     
+     # Axis Labels
+     xlab = "1-FPR",                # Your requested X-axis label
+     ylab = "TPR",                  # Your requested Y-axis label
+     
+     # Bounds and Scaling
+     xlim = c(1, 0),                # Standard ROC X-axis is 1 to 0 (FPR decreases)
+     ylim = c(0, 1),                # Y-axis bounds
+     
+     # Formatting
+     legacy.axes = TRUE,            # Ensures the X-axis goes from 0 to 1 if preferred
+     asp = 1,                       # Ensures an aspect ratio of 1 (strictly square)
+     grid = TRUE                    # Adds a grid for easier value reading
+)
+
+par(pty = "m")
+
+```
+
+```{r auroc-average-3, results=F, include=T, message=F, width=8, height=8}
+predictions <- list()
+
+for(i in 1:imputed_collapsed$m) {
+  # Extract the i-th completed dataset (which already has agents and filtering)
+  dat <- complete(imputed_collapsed, i)
+  
+  # Fit the treatment model (Model 3)
+  # We use the explicit variable list to ensure it matches your pooled summary
+  m_fit <- glm(pcr ~ bilateral_breast_cancer + multifocal_cancer + 
+                 her2 + tumor_subtype + age + bmi_group + 
+                 menopause + ethnicity +
+                 agent_paclitaxel + agent_ganitumab + agent_ganetespib + 
+                 agent_mk_2206 + agent_pembrolizumab + agent_amg_386 + 
+                 agent_trastuzumab + agent_neratinib + agent_abt_888_carboplatin + 
+                 agent_pertuzumab + agent_taxane, 
+               data = dat, family = binomial)
+  
+  # Store the predicted probabilities
+  predictions[[i]] <- predict(m_fit, type = "response")
+}
+
+# 2. Average the probabilities across the 5 imputations
+avg_probs_m3 <- rowMeans(as.data.frame(predictions))
+
+# 3. Calculate AUC using the actual 'pcr' values from the subset
+# We pull pcr from the first imputation of the SUBSET
+actual_pcr <- complete(imputed_collapsed, 1)$pcr
+roc_curve_m3 <- roc(actual_pcr, avg_probs_m3)
+m3_auc <- pROC::auc(roc_curve_m3)
+
+# 4. Results
+par(pty = "s") 
+
+plot(roc_curve_m3, 
+     col = "darkgreen", 
+     lwd = 3,                       # Make the line thicker for readability
+     main = paste("Pooled AUC-ROC for Model 3:", round(m3_auc, 3)),
+     
+     # Axis Labels
+     xlab = "1-FPR",                # Your requested X-axis label
+     ylab = "TPR",                  # Your requested Y-axis label
+     
+     # Bounds and Scaling
+     xlim = c(1, 0),                # Standard ROC X-axis is 1 to 0 (FPR decreases)
+     ylim = c(0, 1),                # Y-axis bounds
+     
+     # Formatting
+     legacy.axes = TRUE,            # Ensures the X-axis goes from 0 to 1 if preferred
+     asp = 1,                       # Ensures an aspect ratio of 1 (strictly square)
+     grid = TRUE                    # Adds a grid for easier value reading
+)
+
+# 3. Reset the plot parameters to default for future plots
+par(pty = "m")
+
+```
+
+```{r aic-plots}
+# --- STAGE 1: Identify the clinical Subset IDs ---
+
+# Extract the unique patient IDs from the ISPY2/NACT treatment subset
+# We pull from the first imputation since patient_id is consistent across all
+target_patient_ids <- complete(imputed_collapsed, 1)$patient_id
+
+# --- STAGE 2: Refit Models 1 & 2 using the patient_id filter ---
+
+# We refit on the full imputed_data object, but restrict it to the treatment IDs.
+# Note: 'with' automatically handles the looping through all 10 imputations.
+fit1_refit <- with(imputed_data, 
+                   glm(pcr ~ multifocal_cancer + bilateral_breast_cancer + 
+                       bmi_group + her2 + tumor_subtype + menopause, 
+                       subset = patient_id %in% target_patient_ids, 
+                       family = binomial))
+
+fit2_refit <- with(imputed_data, 
+                   glm(pcr ~ multifocal_cancer + bilateral_breast_cancer + 
+                       bmi_group + her2 + tumor_subtype + menopause + age + 
+                       ethnicity, 
+                       subset = patient_id %in% target_patient_ids, 
+                       family = binomial))
+
+# --- STAGE 3: Calculate the Valid AIC Comparison ---
+
+# We compare these refitted models to your Model 3 (fit3)
+aic_comparison <- data.frame(
+  Model = c("Model 1 (Baseline)", "Model 2 (Demographic)", "Model 3 (Treatment)"),
+  AIC = c(
+    mean(sapply(fit1_refit$analyses, AIC)),
+    mean(sapply(fit2_refit$analyses, AIC)),
+    mean(sapply(fit3$analyses, AIC))
+  )
+)
+
+# --- STAGE 4: Plot the Standardized Comparison ---
+ggplot(aic_comparison, aes(x = Model, y = AIC, fill = Model)) +
+  geom_bar(stat = "identity", width = 0.5, show.legend = FALSE) +
+  geom_text(aes(label = round(AIC, 1)), vjust = -0.5, fontface = "bold") +
+  theme_minimal() +
+  labs(title = "Model Selection: Standardized AIC Comparison",
+       subtitle = paste0("N = ", length(target_patient_ids), " patients (ISPY2/NACT Subset)"),
+       y = "Mean AIC",
+       x = "") +
+  scale_color_manual(values = c("brown1", "royalblue", "darkgreen")) +
+  scale_fill_brewer(palette = "Set1")
+```
+
+```{r prec-recall, warning=F}
+# 1. Helper function to safely extract averaged probabilities from a 'mira' object
+get_avg_probs <- function(mira_fit) {
+  # Get the number of imputations (m)
+  m_count <- length(mira_fit$analyses)
+  
+  # Extract predictions from each of the m models
+  pred_list <- lapply(mira_fit$analyses, function(x) predict(x, type = "response"))
+  
+  # Average them across rows
+  rowMeans(as.data.frame(pred_list))
+}
+
+# 2. Calculate probabilities for the two baseline models (Refit on Subset)
+avg_probs_m1 <- get_avg_probs(fit1_refit)
+avg_probs_m2 <- get_avg_probs(fit2_refit)
+
+# 3. Get the actual pCR values from the subset
+actual_pcr <- complete(imputed_collapsed, 1)$pcr
+
+# 4. Create the PR multi-plot object
+precrec_obj <- evalmod(
+  scores = list(avg_probs_m1, avg_probs_m2, avg_probs_m3), 
+  labels = list(actual_pcr, actual_pcr, actual_pcr),
+  modnames = c("Model 1: Baseline", "Model 2: Demographic", "Model 3: Treatment")
+)
+
+# 5. Plot the Comparison
+autoplot(precrec_obj, curvetype = "PRC") +
+  theme_minimal() +
+  scale_color_manual(values = c("brown1", "royalblue", "darkgreen")) +
+  labs(title = "Precision-Recall Comparison: Clinical Impact",
+       subtitle = "Evaluation of added predictive value on standardized subset",
+       x = "Recall (Sensitivity)",
+       y = "Precision (PPV)")
+```
+
+```{r forest-plot, warning=F}
+# 1. Get the pooled results into a standard dataframe
+pooled_df <- as.data.frame(summary(pool(fit3), conf.int = TRUE))
+
+# 2. Rename columns manually if they aren't standard
+# Depending on your mice version, column names might be 'estimate' or 'est'
+names(pooled_df)[names(pooled_df) == "estimate"] <- "est"
+names(pooled_df)[names(pooled_df) == "2.5 %"] <- "low"
+names(pooled_df)[names(pooled_df) == "97.5 %"] <- "high"
+
+# 3. Exclude intercept and transform to Odds Ratios
+plot_data <- pooled_df[pooled_df$term != "(Intercept)", ]
+plot_data$OR <- exp(plot_data$est)
+plot_data$OR_low <- exp(plot_data$low)
+plot_data$OR_high <- exp(plot_data$high)
+
+# 4. Generate the Forest Plot using standard ggplot2
+ggplot(plot_data, aes(x = reorder(term, OR), y = OR)) +
+  geom_hline(yintercept = 1, linetype = "dashed", color = "steelblue") +
+  geom_pointrange(aes(ymin = OR_low, ymax = OR_high), color = "darkgreen") +
+  coord_flip() +
+  theme_bw() + # theme_bw is very stable in older ggplot2 versions
+  labs(title = "Model 3: Odds Ratios for pCR",
+       x = "Predictor", 
+       y = "Odds Ratio (95% CI)") +
+  scale_y_log10()
+
+```
+
 
 ## Conclusion
 
 ...
-
-<!-- The code below creates a new page with a single column for your references and code used in the manuscript -->
 
 \newpage
 \onecolumn
@@ -82,14 +622,10 @@ De Moivre (1738)[@de1738doctrine]
 
 \vspace{2mm}
 
-<!-- Remove the following line of code if not using a .bib file to generate references -->
-
 ::: {#refs}
 :::
 
 ## Code Appendix
-
-<!-- The following code pulls all your code chunks from the paper and puts them here at the end (so you can keep "echo=F" in the code chunks above but they still appear here) -->
 
 ```{r, ref.label=knitr::all_labels(), echo=TRUE, eval=FALSE}
 ```

@@ -1,0 +1,208 @@
+---
+output:
+  bookdown::pdf_document2:
+    toc: false
+    number_sections: false
+header-includes:
+  - \usepackage{longtable}
+  - \usepackage{float}
+documentclass: article
+geometry: margin=0.95in
+classoption:
+- onecolumn
+bibliography: mama-mia.bib
+csl: alex_vancouver.csl
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=F, cache=T)
+
+library(tidyverse)
+library(dplyr)
+library(kableExtra)
+library(gtsummary)
+library(ggplot2)
+
+clinicalData <- read.csv("clinical_and_imaging_info.csv") %>% 
+  mutate(
+    pcr = replace_na(pcr, replace=0)
+  )
+relevantData <- clinicalData %>% 
+  select(
+    pcr,
+    dataset,
+    bilateral_breast_cancer,
+    multifocal_cancer,
+    hr, er, pr, her2,
+    nottingham_grade,
+    tumor_subtype,
+    age, weight, bmi_group,
+    menopause, ethnicity
+  )
+
+# clean missing data
+relevantData <- relevantData %>%
+  mutate(across(where(is.character), ~na_if(str_trim(.), "")))
+
+```
+
+# \textit{Predicting Pathologic Complete Response from Clinical Variables}
+
+Tom Stoughton, MS Candidate[^1]
+
+[^1]: Department of Biostatistics and Informatics, Colorado School of Public Health, University of Colorado Anschutz Medical Campus, Aurora, CO
+
+## Data Description
+
+This data set contains publicly available clinical and demographic information about 1,506 breast cancer patients from four different trials[@garrucho2025]. This data sheet includes various outcomes of interest such as pathologic complete response (pCR), days to metastasis, and days to death, but for the purposes of this project, I will be focusing on pCR, whether the patient saw complete remission of the cancer after neoadjuvant chemotherapy (NAC), chemotherapy without any surgical intervention. Some of the predictor variables of interest include the patients' age, weight, body mass index (bmi) group, ethnicity, and menopausal status, as well as some information about the cancer itself; whether the tumor had hormone receptor proteins (hr), specifically estrogen receptors (er) or progesterone receptors (pr), whether the cancer exhibited the human epidermal growth factor receptor 2 (her2), whether the cancer was bilateral (i.e. in both breasts) or multifocal (i.e. multiple tumors), the Nottingham grade which assesses how abnormal/aggressive the tumor is, and the tumor subtype which classifies the tumor based on the proteins and other molecules present. Based on the variables of interest, Table \ref{tab:tab1} summarizes incidence of pCR and provides a p-value for the significance of said variable. Because this data set contains data from four different trials, there is a fair amount of missingness in the data, which is indicated under each variable.
+
+```{r tab1}
+# print out raw data summary table
+relevantData %>%
+  tbl_summary(
+    by = pcr,
+    type = all_dichotomous() ~ "categorical",
+    missing = "ifany",
+    missing_text = "(Missing Data)"
+  ) %>%
+  add_p() %>%
+  add_n() %>%
+  modify_header(all_stat_cols() ~ "**pCR = {level}**") %>%
+  as_kable_extra(longtable=T, caption = "Clinical Variables by pCR Status - Raw") %>% 
+  column_spec(1, width = "3in") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+
+```
+
+Based on this initial table and some domain knowledge, I have elected to remove several of the predictor variables. Firstly, I have removed the weight variable because bmi-group is more descriptive as it includes things like height which are left out of this dataset. I removed the Nottingham grade because it was missing for nearly 90% of the patients. I have also removed indicators for estrogen receptors and progesterone receptors because they have over 50% missingness, and the hormone receptor (hr) variable captures these variables with a much lower missingness. Consequently, I also removed the hr indicator because the tumor-subtype variable is explicitly defined by the combination of this variable with her2: her-enriched is her2 with no hr, triple negative is no her2 or hr, and luminal is hr and either her2 present or not (thus we must retain the her2 variable). Finally, I updated the menopause status and ethnicity variables to make classifications more consistent. Table \ref{tab:tab2} below shows the updated, clean data with irrelevant predictor variables removed.
+
+
+```{r tab2}
+# clean up data and print summary table again
+relevantData <- relevantData %>% select(
+  pcr, dataset,
+  bilateral_breast_cancer,
+  multifocal_cancer,
+  her2, tumor_subtype,
+  age, bmi_group,
+  menopause, ethnicity
+) %>% mutate(
+  menopause = case_when(
+    str_detect(menopause, "(?i)pre|peri") ~ "pre",
+    str_detect(menopause, "(?i)post")     ~ "post",
+    is.na(menopause)                      ~ NA_character_,
+  ),
+  tumor_subtype = case_when(
+    str_detect(tumor_subtype, "(?i)luminal") ~ "luminal",
+    str_detect(tumor_subtype, "(?i)her2")    ~ "her2_enriched",
+    is.na(tumor_subtype)                     ~ NA_character_,
+    TRUE                                     ~ tumor_subtype
+  ),
+  
+  ethnicity = case_when(
+    str_detect(ethnicity, "(?i)american indian|native") ~ "american indian/alaska native",
+    str_detect(ethnicity, "(?i)hawai|pacific islander") ~ "hawaiian/pacific islander",
+    str_detect(ethnicity, "(?i)multiple race")          ~ NA_character_,
+    is.na(ethnicity)                                    ~ NA_character_,
+    TRUE                                                ~ ethnicity
+  )
+)
+
+relevantData %>%
+  tbl_summary(
+    by = pcr,
+    type = all_dichotomous() ~ "categorical",
+    missing = "ifany",
+    missing_text = "(Missing Data)"
+  ) %>%
+  add_p() %>%
+  add_n() %>%
+  modify_header(all_stat_cols() ~ "**pCR = {level}**") %>%
+  as_kable_extra(longtable=T, caption = "Clinical Variables by pCR Status - Clean") %>% 
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+
+```
+
+## Research Questions
+
+Based on the refined dataset, my research could investigate the complex interplay between systemic metabolic health and tumor biology by examining whether BMI group acts as a significant predictor of pCR across different tumor subtypes. This analysis would clarify if a high BMI creates a physiological environment that diminishes the efficacy of chemotherapy specifically in high-response groups like Triple Negative patients. Furthermore, by isolating the Luminal cohort, I can quantify the independent "HER2-boost," determining if the presence of HER2 in hormone-receptor-positive cases significantly elevates the probability of a complete response compared to HER2-negative Luminal cases. Finally, the study could address clinical disparities by evaluating whether ethnicity remains an independent predictor of treatment success once the model is adjusted for the primary biological drivers of subtype and BMI, thereby identifying if demographic factors influence outcomes beyond known differences in tumor prevalence and baseline health.
+
+\newpage
+
+## Plots
+
+Below, Figure \ref{fig:subtype-plot} shows the rate of pCR for each tumor subtype, demonstrating a significant difference in response to NAC based on the hormone receptors present in the tumor.
+
+
+```{r subtype-plot, fig.cap="pCR Rate across Molecular Subtypes", fig.width=6, fig.height=5, fig.pos='H'}
+# display subtype plot
+ggplot(relevantData, aes(x = tumor_subtype, fill = factor(pcr))) +
+  geom_bar(position = "fill") +
+  geom_text(stat = 'count', 
+            aes(label = after_stat(count)), 
+            position = position_fill(vjust = 0.5), 
+            size = 4,
+            color = "white",
+            fontface = "bold") +
+  scale_y_continuous(labels = scales::percent) +
+  scale_fill_brewer(palette = "Set1", 
+                    labels = c("No pCR", "pCR"), 
+                    name = "Outcome") +
+  labs(title = "pCR Rate across Molecular Subtypes",
+       subtitle = "Labels inside bars represent raw patient counts",
+       x = "Subtype",
+       y = "Percentage of Patients") +
+  theme_light() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+```
+
+Here, Figure \ref{fig:bmi-plot} shows (crudely) how BMI modifies the rate of pCR based on tumor subtype. This type of analysis could be useful in determining how different variables interact with the tumor subtype, which is a known to be one of the most important determinants of pCR.
+
+```{r bmi-plot, fig.cap="pCR Distribution by BMI and Subtype", fig.width=8, fig.height=7, fig.pos='H'}
+# update ordering of bmi_group
+relevantData <- relevantData %>% mutate(
+  bmi_group = factor(bmi_group, levels = 
+                     c("underweight", "normal", "overweight", 
+                       "obesity_class_1", "obesity_class_2", "obesity_class_3")
+                     )
+  )
+
+# display bmi/subtype plot
+ggplot(relevantData, aes(x = bmi_group, fill = factor(pcr))) +
+  geom_bar(position = "fill") +
+  geom_text(stat = 'count', 
+            aes(label = after_stat(count)), 
+            position = position_fill(vjust = 0.5), # Centers the text in the segment
+            size = 3,
+            color = "white",
+            fontface = "bold") +
+  facet_wrap(~tumor_subtype) +
+  # Format y-axis as percentage
+  scale_y_continuous(labels = scales::percent) +
+  scale_fill_brewer(palette = "Set1", 
+                    labels = c("No pCR", "pCR"), 
+                    name = "Outcome") +
+  labs(title = "pCR Rate by BMI Category and Subtype",
+       subtitle = "Labels inside bars represent raw patient counts",
+       x = "BMI Category",
+       y = "Percentage of Patients") +
+  theme_light() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+```
+
+
+\newpage
+
+## References
+
+\vspace{2mm}
+
+::: {#refs}
+:::
+
+## Code Appendix
+
+```{r, ref.label=knitr::all_labels(), echo=TRUE, eval=FALSE}
+```
