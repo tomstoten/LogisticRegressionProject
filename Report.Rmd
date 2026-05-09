@@ -9,6 +9,11 @@ classoption:
 - twocolumn
 bibliography: mama-mia.bib
 csl: alex_vancouver.csl
+header-includes:
+  - \usepackage{fancyhdr}
+  - \pagestyle{fancy}
+  - \fancyfoot[C]{Gemini 3 was used to generate some plots and correct grammar.}
+  - \fancyhead{}
 ---
 
 ```{r setup, include=FALSE}
@@ -41,6 +46,7 @@ relevantData <- clinicalData %>%
     age, weight, bmi_group,
     menopause, ethnicity
   )
+
 ```
 
 ```{r clean-data, cache=T}
@@ -100,16 +106,18 @@ for (agent in unique_agents) {
 }
 
 relevantData <- relevantData %>% select(-nac_agent)
+
 ```
 
 ```{r cache=T}
 write.csv(relevantData, "./processedData.csv", row.names=F)
+
 ```
 
 
 <!-- Title here: -->
 
-# \textit{Predicting Pathologic Complete Response from Clinical Variables}
+# \textit{Predicting pCR to NAC in Breast Cancer Patients with Logistic Regression}
 
 <!-- Name here: -->
 
@@ -389,6 +397,7 @@ legend("bottomright",
        lwd = 3, 
        bty = "n",       # No border around legend
        cex = 0.9)       # Slightly smaller font for the legend
+
 ```
 
 As shown in Figure \ref{fig:roc-curves}, the predictive performance of the models improved incrementally with the addition of more granular data. Model 1 achieved an AUC of 0.70, which increased slightly to 0.71 in Model 2 upon the inclusion of demographic adjustments. Model 3 demonstrated the highest overall performance with an AUC of 0.74, suggesting that while treatment variables provide the most precise fit, the baseline clinical and demographic features capture the majority of the predictive signal for pathologic complete response.
@@ -446,6 +455,7 @@ ggplot(aic_comparison, aes(x = Model, y = AIC, fill = Model)) +
   scale_x_discrete(expand = expansion(mult = c(0.2, 0.2))) +
   scale_y_continuous(expand = expansion(mult = c(0, 0.15))) + 
   scale_fill_manual(values = c("brown1", "royalblue", "darkgreen"))
+
 ```
 
 
@@ -487,6 +497,7 @@ autoplot(precrec_obj, curvetype = "PRC", size = 1.2) +
     x = "Recall (Sensitivity)",
     y = "Precision (PPV)"
   )
+
 ```
 
 ### Clinical Significance of the Baseline Model
@@ -494,6 +505,7 @@ autoplot(precrec_obj, curvetype = "PRC", size = 1.2) +
 Despite the slight performance advantages of Model 3, the results underscore the vital importance of the baseline and demographic models. While the treatment-inclusive model provides a refined retrospective view of response, the baseline model offers the highest utility for pre-treatment decision-making. By identifying patients with a low baseline probability of pCR before any agents are administered, clinicians can more accurately weigh the risks of chemotherapy toxicity against the likelihood of successful response.
 
 ```{r OR-plot, fig.cap="OR Comparison", fig.height=14, fig.width=7}
+# Plot OR forest plot with all three models together
 # Helper function to extract and transform pooled results
 get_plot_data <- function(fit, model_name) {
   df <- as.data.frame(summary(pool(fit), conf.int = TRUE))
@@ -514,10 +526,12 @@ plot_data_combined <- rbind(
   get_plot_data(fit3, "Model 3")
 )
 
+# remove variables with high sparsity/extreme estimates
 plot_data_filtered <- plot_data_combined[
   plot_data_combined$high < 50 & plot_data_combined$low > 0.02, 
 ]
 
+# rename variables to make the plot fit better
 plot_data_filtered <- plot_data_filtered %>%
   mutate(term = recode(term,
     "multifocal_cancer" = "Multif.",
@@ -558,7 +572,8 @@ plot_data_filtered <- plot_data_filtered %>%
   mutate(Type = case_when(
     term %in% c("Multif.", "Bilat.", "HER2+", "Luminal", "TNBC", "Pre-meno", 
                 "Ob. I", "Ob. II", "Ob. III", "Overw.", "Underw.") ~ "Clinical",
-    term %in% c("Age", "White", "Asian", "Hisp.", "Pac. Isl.", "Na. Am./AK", "Eth. Unk.") ~ "Demographic",
+    term %in% c("Age", "White", "Asian", "Hisp.", 
+                "Pac. Isl.", "Na. Am./AK", "Eth. Unk.") ~ "Demographic",
     TRUE ~ "Treatment"
   )) %>%
   mutate(color_term = case_when(
@@ -567,7 +582,7 @@ plot_data_filtered <- plot_data_filtered %>%
     Type == "Treatment" ~ paste0("<span style='color:darkgreen;'>", term, "</span>")
   ))
 
-# 2. Create the plot
+# Plot it
 ggplot(plot_data_filtered, aes(x = reorder(color_term, OR), y = OR, color = Model)) +
   geom_hline(yintercept = 1, linetype = "dashed", color = "grey60", linewidth = 0.8) +
   geom_pointrange(aes(ymin = low, ymax = high), 
@@ -606,6 +621,7 @@ ggplot(plot_data_filtered, aes(x = reorder(color_term, OR), y = OR, color = Mode
     x = "Predictor Variable", 
     y = "Odds Ratio (95% CI, Log Scale)"
   )
+
 ```
 
 
@@ -641,7 +657,7 @@ reg_table_data %>%
   kable_styling(bootstrap_options = c("striped", "hover"), 
                 full_width = FALSE, 
                 latex_options = "HOLD_position") %>%
-  row_spec(sig_rows, bold = TRUE) %>% # Bolds significant predictors like Pembrolizumab
+  row_spec(sig_rows, bold = TRUE) %>% # Bolds significant predictors
   column_spec(1, italic = TRUE)
 
 ```
@@ -661,7 +677,7 @@ reg_table_data %>%
   kable_styling(bootstrap_options = c("striped", "hover"), 
                 full_width = FALSE, 
                 latex_options = "HOLD_position") %>%
-  row_spec(sig_rows, bold = TRUE) %>% # Bolds significant predictors like Pembrolizumab
+  row_spec(sig_rows, bold = TRUE) %>% # Bolds significant predictors
   column_spec(1, italic = TRUE)
 
 ```
@@ -681,7 +697,7 @@ reg_table_data %>%
   kable_styling(bootstrap_options = c("striped", "hover"), 
                 full_width = FALSE, 
                 latex_options = "HOLD_position") %>%
-  row_spec(sig_rows, bold = TRUE) %>% # Bolds significant predictors like Pembrolizumab
+  row_spec(sig_rows, bold = TRUE) %>% # Bolds significant predictors
   column_spec(1, italic = TRUE)
 
 ```
