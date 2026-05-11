@@ -12,7 +12,7 @@ csl: alex_vancouver.csl
 header-includes:
   - \usepackage{fancyhdr}
   - \pagestyle{fancy}
-  - \fancyfoot[C]{Gemini 3 was used to generate some plots and correct grammar.}
+  - \fancyfoot[C]{Gemini 3 was used to generate code for some plots and correct grammar.}
   - \fancyhead{}
 ---
 
@@ -127,40 +127,43 @@ Tom Stoughton, MS Candidate[^1]
 
 ## Abstract
 
-Pathologic Complete Response (pCR) is a critical surrogate endpoint in neoadjuvant breast cancer treatment, traditionally used to evaluate the efficacy of systemic therapies. This study utilizes clinical, demographic, and treatment data from 1,506 patients to develop and compare predictive logistic regression models, specifically examining the trade-off between statistical performance and clinical utility. Using Multivariate Imputation by Chained Equations (MICE) to address missingness, we demonstrate that while the inclusion of specific treatment agents in Model 3 provides superior model parsimony and a slight increase in precision, baseline models focused on molecular subtypes (HER2 and Triple Negative) remain the most clinically significant. Model selection based on AIC and Precision-Recall curves indicates that treatment-augmented models refine predictions only after a therapeutic path has been chosen. In contrast, baseline models that exclude treatment variables are of higher clinical importance as they can be utilized at the point of diagnosis to inform the fundamental decision of whether neoadjuvant chemotherapy (NAC) is required at all. By identifying patients with a low probability of pCR regardless of agent, these models provide a framework for prioritizing surgical intervention and avoiding the debilitating side effects of chemotherapy when benefit is statistically minimal.
+Pathologic Complete Response (pCR) is a critical surrogate endpoint in breast cancer treatment, traditionally used to evaluate the efficacy of neoadjuvant chemotherapies (NAC) prior to surgical intervention. This study utilizes clinical, demographic, and treatment data from 1,506 patients to develop and compare predictive logistic regression models, specifically examining the trade-off between statistical performance and clinical utility. Using Multivariate Imputation by Chained Equations (MICE) to address missingness, we demonstrate that while the inclusion of specific treatment agents in Model 3 provides superior model parsimony and a slight increase in precision, baseline models focused on molecular subtypes (HER2 and Triple Negative) remain the most clinically significant. Model selection based on AIC and Precision-Recall curves indicates that treatment-augmented models refine predictions only after a therapeutic path has been chosen. In contrast, baseline models that exclude treatment variables are of higher clinical importance as they can be utilized at the point of diagnosis to inform the fundamental decision of whether NAC is required at all. By identifying patients with a low probability of pCR regardless of agent, these models provide a framework for prioritizing surgical intervention and avoiding the debilitating side effects of chemotherapy when benefit is statistically minimal.
 
-*Keywords: Pathologic Complete Response, Breast Cancer, Logistic Regression, *
+*Keywords: Pathologic Complete Response, Breast Cancer, Logistic Regression, Data Imputation*
 
 ## Introduction
 
-Neoadjuvant chemotherapy (NAC) is standard of care for many breast cancer patients, aiming to shrink tumors prior to surgery. The achievement of Pathologic Complete Response (pCR)—defined as the absence of invasive cancer in the breast and lymph nodes at the time of surgery—is highly correlated with long-term survival. However, response rates vary significantly based on tumor biology and treatment regimen.
-Predicting which patients will achieve pCR remains a challenge due to the complex interplay between patient demographics, tumor molecular profiles, and varied chemotherapy agents. This project aims to determine the incremental predictive value of adding demographic and treatment-specific data to a baseline clinical model.
+Neoadjuvant chemotherapy (NAC) is standard of care for many breast cancer patients, aiming to shrink tumors prior to surgery. The achievement of pathologic complete response (pCR)—defined as the absence of invasive cancer in the breast and lymph nodes at the time of surgery—is highly correlated with long-term survival. However, response rates vary significantly based on tumor biology and treatment regimen. Predicting which patients will achieve pCR remains a challenge due to the complex interplay between patient demographics, tumor molecular profiles, and varied chemotherapy agents. This project aims to determine the incremental predictive value of adding demographic and treatment-specific information to a baseline clinical model.
 
 ## Dataset
 
-This data set contains publicly available clinical and demographic information about 1,506 breast cancer patients sourced from four different clinical trials[@garrucho2025]. This dataset includes a robust array of diagnostic indicators essential for assessing treatment efficacy, such as HER2 status, Nottingham grade, and tumor subtype classifications including Triple Negative, Luminal, and HER2-enriched profiles. Clinical assessments also accounted for the presence of multifocal or bilateral disease to capture disease extent. Patient-level demographic variables integrated into the analysis include age, ethnicity, weight, BMI category, and menopausal status. For a significant subset of 1,100 patients, granular neoadjuvant chemotherapy (NAC) data were available, identifying the administration of specific therapeutic agents such as Pembrolizumab, Paclitaxel, Carboplatin, and Trastuzumab. 
+This data set contains publicly available clinical and demographic information about breast cancer patients ($N = 1,506$) sourced from four different clinical trials[@garrucho2025]. It includes a robust array of diagnostic indicators essential for assessing treatment efficacy, such as HER2 status and tumor subtype classifications including Triple Negative, Luminal, and HER2-enriched profiles. Clinical assessments also accounted for the presence of multifocal or bilateral disease to capture disease extent. Patient-level demographic variables integrated into the analysis include age, ethnicity, weight, BMI category, and menopausal status. For a significant subset of 1,044 patients, granular NAC data were available, identifying the administration of specific therapeutic agents such as Pembrolizumab, Paclitaxel, Carboplatin, and Trastuzumab. 
 
-To maintain the integrity and statistical power of the 1,506-patient sample, Multivariate Imputation by Chained Equations (MICE) (m=10 imputations) was utilized to address missingness, which was most prevalent in the menopause (~33%) and ethnicity variables. A Random Forest method was employed to capture non-linear relationships. Predictors included tumor subtype, HER2 status, BMI, age, and ethnicity.
+To maintain the integrity and statistical power of the 1,506-patient sample, Multivariate Imputation by Chained Equations (MICE) ($m=10$ imputations) was utilized to address missingness, which was most prevalent in the menopause (~33%) and body-mass index (BMI) variables. A Random Forest method was employed to capture non-linear relationships, with predictor variables across including all data except for treatment agents. Those variables being imputed were multifocal cancer status, tumor subtype, HER2 status, BMI group, age, menopausal status, and ethnicity.
 
 ## Methods
 
-The statistical analysis was conducted using a series of nested logistic regression models designed to evaluate the incremental predictive value of clinical, demographic, and therapeutic variables on the probability of achieving pathologic complete response (pCR). Missing data were addressed using Multivariate Imputation by Chained Equations (MICE) with $m=10$ imputations. This approach was selected to preserve the statistical power of the 1,506-patient cohort, particularly for the menopause variable which was missing approximately 33% of its labels. The quality of the imputation was optimized by utilizing the biological correlation between age and menopausal status within the chained equations.  The modeling strategy was divided into three distinct stages:
+The statistical analysis was conducted using a series of nested logistic regression models designed to evaluate the incremental predictive value of clinical, demographic, and therapeutic variables on the probability of achieving pathologic complete response (pCR). The modeling strategy was divided into three distinct stages:
 
 ### Model 1: Baseline Clinical Features
 
-The initial model focused exclusively on the biological and structural characteristics of the tumor observed at the time of diagnosis. Variables included tumor subtype, HER2 status, multifocality, and bilateral disease. These were selected as the primary predictors because they define the inherent aggressiveness and molecular landscape of the cancer, which traditionally dictate chemotherapy sensitivity. Inclusion of multifocal and bilateral status allowed the model to account for the physical extent of disease, which often complicates the attainment of a complete pathologic response.
+The initial model focused exclusively on the biological and structural characteristics of the tumor observed at the time of diagnosis. Variables included BMI group, menopausal status, tumor subtype, HER2 status, multifocal cancer, and bilateral cancer. These were selected as the primary predictors because they define the inherent anatomical features along with the advancement and molecular landscape of the cancer, which traditionally dictate chemotherapy sensitivity.
 
 ### Model 2: Demographic Integration
 
-The second model expanded upon the baseline by incorporating age, ethnicity, and BMI categories. The inclusion of age and ethnicity was critical for adjusting for potential confounding; for instance, the significance of the Luminal subtype only emerged after adjusting for age, suggesting that age-related trends previously masked the independent impact of hormone-receptor-positive biology. BMI was included to account for the "U-curve" significance observed in clinical outcomes, where both underweight and overweight statuses were significant predictors compared to normal-weight counterparts, potentially reflecting differences in drug metabolism or underlying systemic inflammation.
+The second model expanded upon the baseline by incorporating age and ethnicity. The inclusion of age and ethnicity was critical for adjusting for potential confounding; for instance, the significance of the Luminal subtype only emerged after adjusting for age, suggesting that age-related trends previously masked the independent impact of hormone-receptor-positive biology (see Supplemental Materials for individual variable estimates and significance).
 
 ### Model 3: Therapeutic Agents
 
-The final model added granularity by including specific neoadjuvant chemotherapy (NAC) agents, such as Pembrolizumab, Carboplatin, and Trastuzumab. These variables were included to determine if the predictive signal of molecular subtypes, particularly Triple Negative (TNBC), was independent of the treatments administered. This model served a mechanistic purpose: to demonstrate how specific high-impact interventions mediate the biological advantages of certain subtypes. While this model provides the highest statistical performance, it was compared against the preceding models to highlight the clinical importance of making diagnostic decisions before a treatment regimen is initiated.  The general form of the logistic regression used for each stage is:
+The final model added granularity by including the specific NAC agents prescribed to each patient, such as Pembrolizumab, Carboplatin, and Trastuzumab, pooling agents into a single variable only when they were consistently prescribed together as a treatment regime. These variables were included to determine if the predictive signal of molecular subtypes, particularly Triple Negative (TNBC), was independent of the treatments administered. This model served a mechanistic purpose: to demonstrate how specific high-impact interventions mediate the biological advantages of certain subtypes. While this model has the most predictors, it also constrained the data; only two of the four clinical trials recorded NAC agent prescriptions, meaning a subset ($N^* = 1,044$) of the original population was used for this model. 
 
-$$ \text{logit}(P(\text{pCR} = 1)) = \beta_0 + \beta_1X_1 + \beta_2X_2 + \dots + \beta_kX_k $$
+### Logistic Regression Model
 
-where the intercept $\beta_0$ represents the baseline log-odds of response for a reference patient, and the coefficients $\beta_k$ represent the change in log-odds associated with each predictor. Model selection and comparison were performed using Akaike Information Criterion (AIC) and Precision-Recall (PR) curves to evaluate the clinical trade-off between model complexity and predictive utility. 
+The general form of the logistic regression used for each stage is:
+
+$$ \text{logit}(P(\text{pCR} = 1)) = \beta^T\bf{X} $$
+
+where the coefficients $\beta$ represent the change in log-odds associated with each predictor, and $\bf{X}$ represents the feature encoding for each predictor. Model selection and comparison were performed using Akaike Information Criterion (AIC) and Precision-Recall (PR) curves to evaluate the clinical trade-off between model complexity and predictive utility. 
 
 ```{r read-processed-data}
 data <- read.csv("./processedData.csv")
@@ -292,7 +295,7 @@ pooled_results3 <- pool(fit3)
 
 ## Results
 
-```{r auroc-average-1, results=F, include=T, message=F, width=8, height=8}
+```{r auroc-average-1, results=F, message=F}
 
 predictions <- list()
 for(i in 1:imputed_data$m) {
@@ -315,7 +318,7 @@ m1_auc <- pROC::auc(roc_curve1)
 
 ```
 
-```{r auroc-average-2, results=F, include=T, message=F, width=8, height=8}
+```{r auroc-average-2, results=F, message=F}
 
 predictions <- list()
 for(i in 1:imputed_data$m) {
@@ -338,7 +341,7 @@ m2_auc <- pROC::auc(roc_curve2)
 
 ```
 
-```{r auroc-average-3, results=F, include=T, message=F, width=8, height=8}
+```{r auroc-average-3, results=F, message=F}
 
 predictions <- list()
 for(i in 1:imputed_collapsed$m) {
@@ -368,11 +371,15 @@ The following sections detail the findings from our nested logistic regression a
 
 ### Baseline and Demographic Predictors (Models 1 and 2)
 
-Initial analysis of the baseline clinical model revealed that HER2 status and Triple Negative (TNBC) subtype were the strongest positive predictors of pathologic complete response (pCR). Interestingly, BMI demonstrated a non-linear relationship; both underweight and overweight statuses were significant predictors of pCR compared to the normal-weight reference group, whereas the three obesity classes did not reach statistical significance.  Upon the inclusion of age and ethnicity in Model 2, the Luminal subtype emerged as a significant negative predictor ($p < 0.05$). This shift indicates that the baseline probability of response in hormone-receptor-positive patients was previously confounded by age-related demographic trends.  
+Initial analysis of the baseline clinical model revealed that HER2 status, Triple Negative (TNBC) subtype, and BMI underweight were the strongest positive predictors of pCR. Interestingly, BMI demonstrated a non-linear relationship; both underweight and overweight statuses were significant predictors of pCR compared to the normal-weight reference group, whereas the three obesity classes did not reach statistical significance. Upon the inclusion of age and ethnicity in Model 2, the Luminal subtype emerged as a significant negative predictor ($p = 0.03$). This shift indicates that the baseline probability of response in hormone-receptor-positive patients was previously confounded by age-related demographic trends.
 
 ### Impact of Therapeutic Agents (Model 3)
 
-The inclusion of specific neoadjuvant chemotherapy (NAC) agents in Model 3 fundamentally shifted the model's behavior. Specifically, Triple Negative status lost its statistical significance once high-impact agents such as Pembrolizumab and Carboplatin were added. This "statistical attenuation" indicates that the predictive signal originally attributed to TNBC biology is largely mediated by the specific therapeutic interventions these patients receive.
+The inclusion of specific NAC agents in Model 3 fundamentally shifted the model's behavior. Specifically, Triple Negative status lost its statistical significance once high-impact agents such as Pembrolizumab and Carboplatin were added. This "statistical attenuation" indicates that the predictive signal originally attributed to TNBC biology is largely mediated by the specific therapeutic interventions these patients receive. A similar pattern occured for HER2 status, which is used to define tumor subtype in addition to the presence of hormone receptors in the tumor. This again indicates that the predictive power of HER2 status is increasingly captured by the specific anti-HER2 therapies—such as Trastuzumab, Pertuzumab, and T-DM1—included in the expanded model. Similar to the shift seen in TNBC patients, the statistical significance of the biological subtype diminishes when the model accounts for the high-impact therapeutic agents that these patients are specifically targeted to receive. Ultimately, this suggests that in contemporary neoadjuvant settings, the achievement of pCR is less a function of inherent tumor biology alone and more a reflection of the specific interaction between that biology and modern targeted NAC agents.
+
+### Comparative Results
+
+Here, we highlight the differences and similarities in performance and significance of predictors in each of the three models. As shown in Figure \ref{fig:roc-curves}, the predictive performance of the models improved incrementally with the addition of more granular data. Model 1 achieved an AUC of 0.70, which increased slightly to 0.71 in Model 2 upon the inclusion of demographic adjustments. Model 3 demonstrated the highest overall performance with an AUC of 0.74, suggesting that while treatment variables provide the most precise fit, the baseline clinical and demographic features capture the majority of the predictive signal for pathologic complete response. It is important to note that in Figure \ref{fig:roc-curves}, the ROC curves are generated from the largest data set applicable to each model; Models 1 and 2 were fit on the full population ($N = 1,506$) while Model 3 was fit on the subset ($N^* = 1,044$).
 
 ```{r roc-curves, fig.cap="ROC Curves Comparison", fig.width=5, fig.height=6}
 par(pty = "s") # Square plot area
@@ -400,13 +407,10 @@ legend("bottomright",
 
 ```
 
-As shown in Figure \ref{fig:roc-curves}, the predictive performance of the models improved incrementally with the addition of more granular data. Model 1 achieved an AUC of 0.70, which increased slightly to 0.71 in Model 2 upon the inclusion of demographic adjustments. Model 3 demonstrated the highest overall performance with an AUC of 0.74, suggesting that while treatment variables provide the most precise fit, the baseline clinical and demographic features capture the majority of the predictive signal for pathologic complete response.
+The comparative forest plot in Figure \ref{fig:OR-plot} reveals that clinical and treatment factors are the primary drivers of pathologic complete response, with underweight status notably emerging as one of the top three strongest predictors. While luminal subtype persists as the only significant negative predictor across all models, the superior performance of Model 3 is underscored by the fact that neoadjuvant agents constitute seven of the top nine significant positive predictors across models (with seven out the top eight for Model 3 in particular), whereas ethnicity remains non-significant throughout the analysis.
 
-### Model Selection and Predictive Utility
 
-To evaluate the clinical trade-offs between these models, we compared their performance using Akaike Information Criterion (AIC) and Precision-Recall (PR) curves on a standardized patient subset ($N=1,044$). As show in \ref{fig:aic-plots}, Model 3 demonstrated the lowest mean AIC, confirming it as the most parsimonious model for explaining the variance in pCR outcomes. Furthermore, the PR curve analysis in \ref{fig:prec-recall} showed that the treatment-augmented model provided a distinct "lift" in precision, maintaining higher positive predictive values across various recall thresholds compared to the clinical-only models. However, as the baseline models maintained a competitive Area Under the ROC Curve (AUROC), they remain robust tools for initial screening.
-
-```{r aic-plots, fig.cap="Akaike Information Coefficient (AIC) Comparison", fig.height=8}
+```{r model-refit}
 # Refit models 1 and 2 on the subset of data to get fair AIC comparisons
 target_patient_ids <- complete(imputed_collapsed, 1)$patient_id
 
@@ -422,89 +426,10 @@ fit2_refit <- with(imputed_data,
                        ethnicity, 
                        subset = patient_id %in% target_patient_ids, 
                        family = binomial))
-
-aic_comparison <- data.frame(
-  Model = c("Model 1 (Baseline)", "Model 2 (Demographic)", "Model 3 (Treatment)"),
-  AIC = c(
-    mean(sapply(fit1_refit$analyses, AIC)),
-    mean(sapply(fit2_refit$analyses, AIC)),
-    mean(sapply(fit3$analyses, AIC))
-  )
-)
-
-# Now plot the AICs on a bar chart
-ggplot(aic_comparison, aes(x = Model, y = AIC, fill = Model)) +
-  geom_bar(stat = "identity", width = 0.7, show.legend = FALSE) +
-  geom_text(aes(label = round(AIC, 1)), 
-            vjust = -0.5, 
-            fontface = "bold", 
-            size = 5.5) + 
-  theme_minimal(base_size = 15) + 
-  theme(
-    plot.title = element_text(face = "bold", size = 18, hjust = 0.5),
-    plot.subtitle = element_text(size = 13, hjust = 0.5, color = "grey30"),
-    axis.title.y = element_text(face = "bold", size = 14),
-    axis.text.x = element_text(face = "bold", size = 12),
-    panel.grid.major.x = element_blank(),
-    plot.margin = margin(10, 20, 10, 20)
-  ) +
-  labs(title = "Model Selection: Standardized AIC Comparison",
-       subtitle = paste0("N = ", length(target_patient_ids), " patients (ISPY2/NACT Subset)"),
-       y = "Mean AIC",
-       x = "") +
-  scale_x_discrete(expand = expansion(mult = c(0.2, 0.2))) +
-  scale_y_continuous(expand = expansion(mult = c(0, 0.15))) + 
-  scale_fill_manual(values = c("brown1", "royalblue", "darkgreen"))
-
 ```
 
 
-```{r prec-recall, warning=F, message=F, echo=F, fig.cap="Precision Recall Curve Comparison", fig.height=5.5, fig.width=4.8}
-# Create Precision-Recall Curve
-get_avg_probs <- function(mira_fit) {
-  m_count <- length(mira_fit$analyses)
-  pred_list <- lapply(mira_fit$analyses, function(x) predict(x, type = "response"))
-  rowMeans(as.data.frame(pred_list))
-}
-
-avg_probs_m1 <- get_avg_probs(fit1_refit)
-avg_probs_m2 <- get_avg_probs(fit2_refit)
-
-precrec_obj <- evalmod(
-  scores = list(avg_probs_m1, avg_probs_m2, avg_probs_m3), 
-  labels = list(actual_pcr_subset, actual_pcr_subset, actual_pcr_subset),
-  modnames = c("Model 1", "Model 2", "Model 3")
-)
-
-# Plot the Comparison
-autoplot(precrec_obj, curvetype = "PRC", size = 1.2) +
-  theme_bw() +
-  coord_cartesian(expand = FALSE) + 
-  theme(
-    legend.position = "bottom",
-    legend.title = element_blank(),
-    text = element_text(size = 12),
-    plot.title = element_text(face = "bold", size = 14, hjust = 0.5),
-    plot.subtitle = element_text(hjust = 0.5, color = "grey30"),
-    panel.grid.minor = element_blank(),
-    axis.title = element_text(face = "bold"),
-    plot.margin = unit(c(0.2, 0.4, 0.1, 0.2), "cm") 
-  ) +
-  scale_color_manual(values = c("brown1", "royalblue", "darkgreen")) +
-  labs(
-    title = "Precision-Recall Comparison",
-    subtitle = "Standardized subset analysis (N=1,044)",
-    x = "Recall (Sensitivity)",
-    y = "Precision (PPV)"
-  )
-
-```
-
-### Clinical Significance of the Baseline Model
-
-Despite the slight performance advantages of Model 3, the results underscore the vital importance of the baseline and demographic models. While the treatment-inclusive model provides a refined retrospective view of response, the baseline model offers the highest utility for pre-treatment decision-making. By identifying patients with a low baseline probability of pCR before any agents are administered, clinicians can more accurately weigh the risks of chemotherapy toxicity against the likelihood of successful response.
-
-```{r OR-plot, fig.cap="OR Comparison", fig.height=14, fig.width=7}
+```{r OR-plot, fig.cap="Odds-Ratio Comparison", fig.height=14, fig.width=7}
 # Plot OR forest plot with all three models together
 # Helper function to extract and transform pooled results
 get_plot_data <- function(fit, model_name) {
@@ -624,11 +549,85 @@ ggplot(plot_data_filtered, aes(x = reorder(color_term, OR), y = OR, color = Mode
 
 ```
 
+### Model Selection and Predictive Utility
+
+To evaluate the clinical trade-offs between these models, we compared their performance using AIC and PR curves on the standardized patient subset ($N^*=1,044$). As show in Table \ref{tab:aic-table}, Model 3 demonstrated the lowest mean AIC, confirming it as the most parsimonious model for explaining the variance in pCR outcomes. Furthermore, the PR curve analysis in Figure \ref{fig:prec-recall} showed that the treatment-augmented model provided a distinct "lift" in precision, maintaining higher positive predictive values across various recall thresholds compared to the clinical-only models. However, as the baseline models maintained a competitive Area Under the ROC Curve (AUROC), they remain robust tools for initial screening.
+
+```{r aic-table, fig.cap="Akaike Information Coefficient (AIC) Comparison"}
+# Tabulate AIC comparison
+aic_table_data <- data.frame(
+  Model = c("Model 1", "Model 2", "Model 3"),
+  Description = c("Baseline", "Demographic", "Treatment"),
+  `Mean AIC` = c(
+    mean(sapply(fit1_refit$analyses, AIC)),
+    mean(sapply(fit2_refit$analyses, AIC)),
+    mean(sapply(fit3$analyses, AIC))
+  )
+)
+
+# Render table
+kable(aic_table_data, 
+      digits = 1, 
+      booktabs = TRUE, 
+      caption = "Akaike Information Criterion Comparison") %>%
+  kable_styling(latex_options = c("striped", "hold_position")) %>%
+  row_spec(3, bold = TRUE, background = "#e5f5e0")
+
+```
+
+### Clinical Significance of the Baseline Model
+
+Despite the minor performance advantages of Model 3, the results underscore the vital importance of the baseline and demographic models. While the treatment-inclusive model provides a refined retrospective view of response, the baseline model offers the highest utility for pre-treatment decision-making. By identifying patients with a low baseline probability of pCR before any agents are administered, clinicians can more accurately weigh the risks of chemotherapy toxicity against the likelihood of successful response.
+
+
+```{r prec-recall, warning=F, message=F, echo=F, fig.cap="Precision Recall Curve Comparison", fig.height=5.5, fig.width=4.8}
+# Create Precision-Recall Curve
+get_avg_probs <- function(mira_fit) {
+  m_count <- length(mira_fit$analyses)
+  pred_list <- lapply(mira_fit$analyses, function(x) predict(x, type = "response"))
+  rowMeans(as.data.frame(pred_list))
+}
+
+avg_probs_m1 <- get_avg_probs(fit1_refit)
+avg_probs_m2 <- get_avg_probs(fit2_refit)
+
+precrec_obj <- evalmod(
+  scores = list(avg_probs_m1, avg_probs_m2, avg_probs_m3), 
+  labels = list(actual_pcr_subset, actual_pcr_subset, actual_pcr_subset),
+  modnames = c("Model 1", "Model 2", "Model 3")
+)
+
+# Plot the Comparison
+autoplot(precrec_obj, curvetype = "PRC", size = 1.2) +
+  theme_bw() +
+  coord_cartesian(expand = FALSE) + 
+  theme(
+    legend.position = "bottom",
+    legend.title = element_blank(),
+    text = element_text(size = 12),
+    plot.title = element_text(face = "bold", size = 14, hjust = 0.5),
+    plot.subtitle = element_text(hjust = 0.5, color = "grey30"),
+    panel.grid.minor = element_blank(),
+    axis.title = element_text(face = "bold"),
+    plot.margin = unit(c(0.2, 0.4, 0.1, 0.2), "cm") 
+  ) +
+  scale_color_manual(values = c("brown1", "royalblue", "darkgreen")) +
+  labs(
+    title = "Precision-Recall Comparison",
+    subtitle = "Standardized subset analysis (N=1,044)",
+    x = "Recall (Sensitivity)",
+    y = "Precision (PPV)"
+  )
+
+```
 
 ## Conclusion
 
-The comparative analysis of these three models reveals a critical distinction between statistical optimization and clinical utility. While the inclusion of neoadjuvant treatment agents in Model 3 provides the highest predictive precision and the most parsimonious fit according to AIC metrics, this performance gain must be weighed against practical application in a pre-treatment setting. The treatment-augmented model is inherently retrospective; it confirms that specific drugs drive the pathologic response, effectively mediating the biological signals of subtypes like Triple Negative.  
-However, for the practicing clinician, the baseline and demographic models (Models 1 and 2) hold greater clinical importance. By relying solely on information available before a treatment plan is finalized, these models provide the necessary foresight to evaluate whether a patient is likely to benefit from neoadjuvant chemotherapy at all. In cases where baseline models predict a negligible probability of pCR, clinicians may consider bypassing systemic therapy in favor of immediate surgical intervention. This approach prioritizes patient quality of life by avoiding the significant toxicities and long-term side effects of chemotherapy when the likelihood of a complete pathologic response is statistically minimal. Ultimately, while treatment variables slightly increase the predictive "ceiling," the true value of predictive modeling in this cohort lies in its ability to support the early de-escalation of care. 
+The comparative analysis of these three models reveals a critical distinction between statistical optimization and clinical utility. While the inclusion of neoadjuvant treatment agents in Model 3 provides the highest predictive precision and the most parsimonious fit according to AIC metrics, this performance gain must be weighed against practical application in a pre-treatment setting. The treatment-augmented model is no predictive, but inherently retrospective; it confirms that specific drugs drive the pathologic response, effectively mediating the biological signals of HER2 status and subtypes like Triple Negative.
+
+However, for the practicing clinician, the baseline and demographic models (Models 1 and 2) hold greater clinical importance. By relying solely on information available before a treatment plan is finalized, these models provide the necessary foresight to evaluate whether a patient is likely to benefit from neoadjuvant chemotherapy at all. Our results indicate that while accounting for patient age reveals a significant negative association between Luminal breast cancer status and pCR, the minute increase in predictive power and worsened AIC score indicate that the baseline model is a more parsimonious choice. 
+
+In cases where the baseline model predicts a negligible probability of pCR, clinicians may consider bypassing systemic therapy in favor of immediate surgical intervention. This approach prioritizes patient quality of life by avoiding the significant toxicities and long-term side effects of chemotherapy when the likelihood of a complete pathologic response is statistically minimal. Ultimately, while the inclusion of specific treatment agents increases the model's predictive "ceiling," the true value lies in identifying who can safely undergo less intensive therapy, thereby reducing the medical burdens on breast cancer patients.
 
 \newpage
 \onecolumn
@@ -640,7 +639,7 @@ However, for the practicing clinician, the baseline and demographic models (Mode
 ::: {#refs}
 :::
 
-## Supplementary Tables
+## Supplemental Materials
 
 ```{r clinical-results, include=T}
 reg_table_data <- summary(pooled_results1) %>%
@@ -701,6 +700,8 @@ reg_table_data %>%
   column_spec(1, italic = TRUE)
 
 ```
+
+\newpage 
 
 ## Code Appendix
 
